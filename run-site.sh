@@ -2,7 +2,8 @@
 set -eu
 
 echo "Sync submodule"
-git submodule update --init --recursive --depth=1
+# git submodule update --init --recursive --depth=1
+git submodule update --init --depth=1 rime-list 
 
 # echo "Update docs"
 # if [[ -d docs/wiki ]]; then
