@@ -1,0 +1,21 @@
+[submodule "rime-wiki"]
+	path = rime-wiki
+	url = https://github.com/rime/home.wiki.git
+[submodule "rime-collect"]
+	path = rime-collect
+	url = https://github.com/LEOYoon-Tsaw/Rime_collections.git
+[submodule "rime-list"]
+	path = rime-list
+	url = https://github.com/hantang/rime-list.git
+[submodule "rime-squirrel-wiki"]
+	path = rime-squirrel-wiki
+	url = https://github.com/rime/squirrel.wiki.git
+[submodule "rime-weasel-wiki"]
+	path = rime-weasel-wiki
+	url = https://github.com/rime/weasel.wiki.git
+[submodule "rime-trime-wiki"]
+	path = rime-trime-wiki
+	url = https://github.com/osfans/trime.wiki.git
+[submodule "rime-hamster-wiki"]
+	path = rime-hamster-wiki
+	url = https://github.com/imfuxiao/Hamster.wiki.git
