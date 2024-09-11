@@ -1,0 +1,27 @@
+# python
+__pycache__/
+__pypackages__/
+*.py[cod]
+*$py.class
+*.so
+*.ipynb
+*.py
+
+# macos
+.DS_Store
+
+# linux
+*~
+
+# ide
+.vscode/
+.idea/
+
+# local
+temp/
+todo/
+trash/
+
+# mkdocs
+site/
+data.tsv
