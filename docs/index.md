@@ -57,9 +57,8 @@ icon: material/keyboard
   - [:material-github: 倉輸入法·工具](https://lost-melody.github.io/hamster-tools/)
   - [:material-github: rime-soak 「润笔」](https://pdog18.github.io/rime-soak)
 - 第三方在线输入平台 [:simple-vercel: My RIME](https://my-rime.vercel.app)
-- [:material-github: 小狼毫 Weasel Rime工具箱](https://github.com/Yiklek/RimeTool)
+- [:material-github: 中州韵助手（重构版）【多平台】](https://github.com/yanhuacuo/rimetool)
 - [:material-github: 小狼毫 Weasel的基本配置工具](https://github.com/qzly/RimeControl)
-- [:material-github: 双拼输入法生成器和测评](https://macroxue.github.io/shuangpin/)
 
 ## 方言输入方案
 
@@ -68,5 +67,11 @@ icon: material/keyboard
 - [:material-github: 潮语拼音教程](https://kahaani.github.io/gatian/)
 - [:material-github: 平話字表 (閩東語‣福州話)](https://only3km.github.io/ciklinbekin/)
 - [:material-github: 哈拼（哈萨克语拼音画）Rime输入方案指南](https://ha-pin.github.io/ime-guide)
+
+## 拼音方案
+
+- [:material-github: 双拼输入法生成器和测评](https://macroxue.github.io/shuangpin/)
+  - [:material-github: 双拼方案评测、优化和生成](https://macroxue.github.io/shuangpin/eval.html)
+- [:material-github: 双拼布局的统计计算](https://tiansh.github.io/lqbz/sp/)
 
 更多参见[列表](./list.md)
