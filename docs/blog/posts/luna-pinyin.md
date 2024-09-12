@@ -4,6 +4,8 @@ date: 2013-09-19 21:25:33
 tags:
 ---
 
+> date: 2013-09-19 21:25:33
+
 中秋之夜，可想在部落格上寫二句。
 
 於是 `vim ~/Library/Rime/squirrel.custom.yaml` 寫下
