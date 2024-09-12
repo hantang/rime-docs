@@ -290,6 +290,7 @@ nav:
       - macos/squirrel/SwitchLanguage.md
       - fcitx5:
         - macos/fcitx5/index.md
+        - macos/fcitx5/install.md
     - Android版本:
       - fcitx5:
         - android/fcitx5/index.md
