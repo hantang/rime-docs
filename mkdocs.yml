@@ -247,7 +247,10 @@ nav:
       - wiki/Rime-in-Emacs.md
   - 版本:
     - Linux-中州韵:
+      - linux/index.md
+      - linux/CHANGELOG.md
       - wiki/RimeWithIBus.md
+      - linux/fcitx5/index.md
     - Windows-小狼毫:
       - windows/index.md
       - windows/INSTALL.md
