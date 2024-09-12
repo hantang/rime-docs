@@ -17,7 +17,7 @@ theme:
   # custom_dir: overrides
   favicon: static/favicon.png
   logo: static/favicon.png
-  # language: "zh"
+  language: "zh"
   icon:
     logo: material/keyboard
     repo: fontawesome/brands/square-github
@@ -138,22 +138,16 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/tablesort@5.3.0/dist/sorts/tablesort.date.min.js
   - https://cdn.jsdelivr.net/npm/tablesort@5.3.0/dist/sorts/tablesort.number.min.js
   - static/js/tablesort.js
-#   - https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
-#   - https://cdn.jsdelivr.net/npm/datatables.net@2.0.8/js/dataTables.min.js
-#   # - https://code.jquery.com/jquery-3.7.1.min.js
-#   # - https://cdn.datatables.net/2.0.8/js/dataTables.min.js
-#   - static/js/datatables-zh.js
 
 # extra_css:
-#   - https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css
 #   - static/css/extra.css
 
 plugins:
-  - search:
-      lang:
-        - en
-        - zh
-      separator: '[\s\-,:!=\[\]()"/\u200b]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - search
+      # lang:
+      #   - en
+      #   - zh
+      # separator: '[\s\-,:!=\[\]()"/\u200b]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - table-reader
   - awesome-pages:
       collapse_single_pages: true
@@ -161,56 +155,56 @@ plugins:
       # order: asc
       # sort_type: natural
       # order_by: title
-  - minify:
-      minify_html: true
-  - i18n:
-      docs_structure: suffix
-      languages:
-        - locale: zh
-          default: true
-          name: 简体中文
-          build: true
-        - locale: zh-Hant
-          name: 繁體中文
-          build: true
-          nav_translations:
-            主页: 主頁
-            列表: 列表
-            文档: 文檔
-            介绍: 介紹
-            基础: 基礎
-            发行版: 發行版
-            macOS-鼠须管: macOS-鼠須管
-            Windows-小狼毫: windows-小狼毫
-            Linux-中州韵: Linux-中州韻
-            进阶: 進階
-            更多: 更多
-            博客: 網誌
-            杂项: 雜項
-            正式版: 正式版
-            测试版: 測試版
-            发布: 發佈
-        - locale: en
-          name: English
-          build: true
-          # site_name:
-          nav_translations:
-            主页: Home
-            列表: List
-            文档: Wiki
-            介绍: Introduction
-            基础: Basic
-            发行版: Distribution
-            macOS-鼠须管: macOS-Squirrel
-            Windows-小狼毫: Windows-Weasel
-            Linux-中州韵: Linux-Rime
-            进阶: Advanced
-            更多: More
-            博客: Blog
-            杂项: Misc
-            正式版: Release Version
-            测试版: Testing Version
-            发布: Release
+  # - minify:
+  #     minify_html: true
+  # - i18n:
+  #     docs_structure: suffix
+  #     languages:
+  #       - locale: zh
+  #         default: true
+  #         name: 简体中文
+  #         build: true
+  #       - locale: zh-Hant
+  #         name: 繁體中文
+  #         build: true
+  #         nav_translations:
+  #           主页: 主頁
+  #           列表: 列表
+  #           文档: 文檔
+  #           介绍: 介紹
+  #           基础: 基礎
+  #           发行版: 發行版
+  #           macOS-鼠须管: macOS-鼠須管
+  #           Windows-小狼毫: windows-小狼毫
+  #           Linux-中州韵: Linux-中州韻
+  #           进阶: 進階
+  #           更多: 更多
+  #           博客: 網誌
+  #           杂项: 雜項
+  #           正式版: 正式版
+  #           测试版: 測試版
+  #           发布: 發佈
+  #       - locale: en
+  #         name: English
+  #         build: true
+  #         # site_name:
+  #         nav_translations:
+  #           主页: Home
+  #           列表: List
+  #           文档: Wiki
+  #           介绍: Introduction
+  #           基础: Basic
+  #           发行版: Distribution
+  #           macOS-鼠须管: macOS-Squirrel
+  #           Windows-小狼毫: Windows-Weasel
+  #           Linux-中州韵: Linux-Rime
+  #           进阶: Advanced
+  #           更多: More
+  #           博客: Blog
+  #           杂项: Misc
+  #           正式版: Release Version
+  #           测试版: Testing Version
+  #           发布: Release
   # - git-revision-date-localized
 
 # exclude_docs: |
@@ -219,5 +213,54 @@ plugins:
 nav:
   - 主页:
     - index.md
-  - 列表:
-      - list.md
+    - list.md
+  - 博客:
+      - ... | flat | blog/posts/*.md
+  - 文档:
+    - wiki/index.md
+    - 介绍:
+      - wiki/Introduction.md
+      - wiki/Downloads.md
+      - blog/download/index.md
+      - wiki/FAQ.md
+      - blog/docs/index.md
+      - wiki/MoodCollection.md
+      - wiki/UserQuotes.md
+    - 基础:
+      - wiki/GettingStarted.md
+      - wiki/UserGuide.md
+      - wiki/RimeWithTheDesign.md
+      - wiki/UserData.md
+      - wiki/SharedData.md
+      - wiki/CustomizationGuide.md
+    - 进阶:
+      - wiki/Configuration.md
+      - wiki/RimeWithSchemata.md
+      - collect/RimeDescription-Schema.md
+      - collect/RimeDescription-Dict.md
+      - wiki/DictionaryPack.md
+      - wiki/Recipes.md
+      - wiki/RimeWithTheCode.md
+      - blog/code/index.md
+      - blog/i-rime-with-fool/index.md
+      - wiki/SpellingAlgebra.md
+      - wiki/Rime-in-Emacs.md
+  - 版本:
+    - 发布说明:
+        - ... | flat |blog/release/**/*.md
+    - Linux-中州韵:
+      - wiki/RimeWithIBus.md
+    - Windows-小狼毫:
+      - wiki/RimeWithWeasel.md
+      - wiki/WeaselReleaseManual.md
+    - macOS-鼠须管:
+      - collect/SquirrelGuide.md
+      - wiki/RimeWithSquirrel.md
+      - wiki/SquirrelReleaseManual.md
+    - Android
+    - iOS
+
+  - 更多:
+    - wiki/ComboPinyin.md
+    - collect/OldCantonese.md
+    # - ...

@@ -2,11 +2,11 @@
 
 ## 專題
 
-* [[認識 La Rime|Introduction]]
-* [[下載與安裝|Downloads]]
-* [[定製指南|CustomizationGuide]]（初階）
-* [[輸入方案設計書|RimeWithSchemata]]（中階）
-* [[程序開發|RimeWithTheCode]]（高階）
+* [認識 La Rime|Introduction](./Introduction.md)
+* [下載與安裝|Downloads](./Downloads.md)
+* [定製指南|CustomizationGuide](./CustomizationGuide.md)（初階）
+* [輸入方案設計書|RimeWithSchemata](./RimeWithSchemata.md)（中階）
+* [程序開發|RimeWithTheCode](./RimeWithTheCode.md)（高階）
 
 ## 第三方文檔
 
@@ -29,7 +29,7 @@
 
 ## 輸入法設定
 
-——參閱[[《定製指南》|CustomizationGuide]]，從中瞭解如何自定義方案選單、每頁候選個數等全局選項；修改界面外觀；以及調整輸入方案的工作方式如指定選字、換頁的按鍵、標點符號映射等。
+——參閱[《定製指南》|CustomizationGuide](./CustomizationGuide.md#定製指南)，從中瞭解如何自定義方案選單、每頁候選個數等全局選項；修改界面外觀；以及調整輸入方案的工作方式如指定選字、換頁的按鍵、標點符號映射等。
 
 目前僅【小狼毫】配有一組簡單的設定面板，包含輸入方案選單設定、界面風格設定、用戶詞典管理。其他發行版可通過修改配置文件後重新部署的方式來定製。
 
@@ -47,9 +47,9 @@
 
 除了可用標準的 `Page Up`、`Page Down` 換頁之外，大多數輸入方案裏還設置了以下幾組等效的換頁鍵：
 
-  * `Shift+Tab`、`Tab`
-  * 符號鍵 `- =`
-  * 符號鍵 `, .`
+* `Shift+Tab`、`Tab`
+* 符號鍵 `- =`
+* 符號鍵 `, .`
 
 ### 令輸入碼直接上屏
 
@@ -82,25 +82,26 @@
 
 註：Windows 版本 Alt 組合鍵不可用。
 
-  * ↑：`Control+p`
-  * ↓：`Control+n`
-  * ←：`Control+b`
-  * →：`Control+f`
-  * 上頁：`Alt+v`
-  * 下頁：`Control+v`
-  * 句首：`Control+a`
-  * 句末：`Control+e`
-  * 回退：`Control+h`
-  * 刪除：`Control+d`
-  * 清空：`Control+g`
-  * 刪詞：`Control+k`
+* ↑：`Control+p`
+* ↓：`Control+n`
+* ←：`Control+b`
+* →：`Control+f`
+* 上頁：`Alt+v`
+* 下頁：`Control+v`
+* 句首：`Control+a`
+* 句末：`Control+e`
+* 回退：`Control+h`
+* 刪除：`Control+d`
+* 清空：`Control+g`
+* 刪詞：`Control+k`
 
 ### 輸入標點符號
 
 按鍵到標點符號的映射有三種形式：
-  * 按鍵對應惟一的符號，按鍵後直接輸出該符號，如「，」
-  * 按鍵對應一組配對的符號，符號交替出現，如「“”」
-  * 按鍵對應多種符號，按鍵後展現選單。此時可按空格鍵或回車鍵確認高亮的符號，反復按該鍵則選中下一種符號。
+
+* 按鍵對應惟一的符號，按鍵後直接輸出該符號，如「，」
+* 按鍵對應一組配對的符號，符號交替出現，如「“”」
+* 按鍵對應多種符號，按鍵後展現選單。此時可按空格鍵或回車鍵確認高亮的符號，反復按該鍵則選中下一種符號。
 
 每一款輸入方案，都可以定義兩套符號表，以「方案選單」裏的選項「半角←→全角」往復切換。
 
@@ -133,7 +134,7 @@ Rime 輸入法詞庫多以傳統漢字編排。
 與時下流行的拼音輸入法相近。默認安裝後將使用此方案。
 其詞典包含 Rime 內置的【八股文】繁體詞庫。設有繁簡轉換的開關。
 
-敲 \` 鍵開始用 `hspnz` 輸入五筆畫（橫豎撇捺折），反查五筆編碼。需要安裝【五筆畫】以啓用反查。
+敲 `` ` `` 鍵開始用 `hspnz` 輸入五筆畫（橫豎撇捺折），反查五筆編碼。需要安裝【五筆畫】以啓用反查。
 
 以下有若干輸入方案衍生自朙月拼音，如【語句流】、各式雙拼、【宮保拼音】。還有不少方案使用朙月拼音作反查碼。
 
@@ -191,11 +192,13 @@ Rime【注音】輸入方案，允許省略聲調（包含作爲第一聲的空�
 要選用當頁第二個候選字，可按↓鍵、再按空格鍵選定第二字，又可按下 `Shift+B` 鍵直接選取。
 
 一些標點符號由於所在按鍵用作輸入注音符號的原因而有所調整：
-  * 逗號， `Shift+,`
-  * 句號。 `Shift+.`
-  * 分號； `Shift+;`
-  * ／號  `Shift+/`
-  * 減號  `Shift+-`
+
+* 逗號， `Shift+,`
+* 句號。 `Shift+.`
+* 分號； `Shift+;`
+* ／號  `Shift+/`
+* 減號  `Shift+-`
+
 規則很簡單：符號鍵被注音字母佔用時，加打上檔鍵 Shift 從符號列表中選取。
 
 ### 倉頡
@@ -297,14 +300,17 @@ https://github.com/rime-aca/dictionaries
 ---
 
 如果你認定要將碼表導入已存在的用戶詞典，則要注意：
-  * 碼表文件的格式是否 Rime 所要求的 UTF-8 (no BOM) 編碼
-  * 文本行是否爲製表符分隔，至少有文字、編碼兩列，及一列可選的頻次
-  * 文字的字形（繁、簡字）是否與源碼表一致
-  * 編碼的形式是否源碼表中定義的標準形式
+
+* 碼表文件的格式是否 Rime 所要求的 UTF-8 (no BOM) 編碼
+* 文本行是否爲製表符分隔，至少有文字、編碼兩列，及一列可選的頻次
+* 文字的字形（繁、簡字）是否與源碼表一致
+* 編碼的形式是否源碼表中定義的標準形式
 
 第一點，有一臺專業的文本編輯器就控制住啦。比如VIM裏面用命令
 
-    :set fenc=utf8 nobomb ff=unix
+```vimrc
+:set fenc=utf8 nobomb ff=unix
+```
 
 轉換、保存文件就中啦。
 
@@ -326,45 +332,57 @@ https://github.com/rime-aca/dictionaries
 
 直接編輯用戶文件夾下的 `installation.yaml` ，添加：
 
-    sync_dir: 'D:\Dropbox\RimeSync'
+```yaml
+sync_dir: 'D:\Dropbox\RimeSync'
+```
 
 又如 Mac 上添加：
 
-    sync_dir: '/Users/fred/Dropbox/RimeSync'
+```yaml
+sync_dir: '/Users/fred/Dropbox/RimeSync'
+```
 
 又如使用 USB 存儲來同步：（[真實案例](https://gist.github.com/4483504)）
 
-    sync_dir: '/Volumes/USBDRIVE/RimeSync'
+```yaml
+sync_dir: '/Volumes/USBDRIVE/RimeSync'
+```
 
 默認地，每套 Rime 會隨機生成一個 UUID 作爲標識。不同 installation ID 可區分來自不同機器/系統的用戶詞典。
 
 與安裝在其他系統上的 Rime 同步後，同步文件夾呈如下佈局：
 
-    D:\Dropbox\RimeSync\id-xxx\luna_pinyin.userdb.txt
-    D:\Dropbox\RimeSync\id-xxx\terra_pinyin.userdb.txt
-    D:\Dropbox\RimeSync\id-xxx\installation.yaml
-    D:\Dropbox\RimeSync\id-xxx\default.custom.yaml
-    D:\Dropbox\RimeSync\id-xxx\weasel.custom.yaml
+```plaintext
+D:\Dropbox\RimeSync\id-xxx\luna_pinyin.userdb.txt
+D:\Dropbox\RimeSync\id-xxx\terra_pinyin.userdb.txt
+D:\Dropbox\RimeSync\id-xxx\installation.yaml
+D:\Dropbox\RimeSync\id-xxx\default.custom.yaml
+D:\Dropbox\RimeSync\id-xxx\weasel.custom.yaml
 
-    D:\Dropbox\RimeSync\id-yyy\terra_pinyin.userdb.txt
-    D:\Dropbox\RimeSync\id-yyy\installation.yaml
-    D:\Dropbox\RimeSync\id-yyy\default.custom.yaml
-    D:\Dropbox\RimeSync\id-yyy\squirrel.custom.yaml
+D:\Dropbox\RimeSync\id-yyy\terra_pinyin.userdb.txt
+D:\Dropbox\RimeSync\id-yyy\installation.yaml
+D:\Dropbox\RimeSync\id-yyy\default.custom.yaml
+D:\Dropbox\RimeSync\id-yyy\squirrel.custom.yaml
 
-    D:\Dropbox\RimeSync\id-zzz\luna_pinyin.userdb.txt
-    D:\Dropbox\RimeSync\id-zzz\installation.yaml
-    D:\Dropbox\RimeSync\id-zzz\alternative.yaml
-    D:\Dropbox\RimeSync\id-zzz\luna_pinyin.custom.yaml
+D:\Dropbox\RimeSync\id-zzz\luna_pinyin.userdb.txt
+D:\Dropbox\RimeSync\id-zzz\installation.yaml
+D:\Dropbox\RimeSync\id-zzz\alternative.yaml
+D:\Dropbox\RimeSync\id-zzz\luna_pinyin.custom.yaml
+```
 
 同步時，依次將各子文件夾中的詞典快照合併到用戶詞典，最後爲合併後的用戶詞典生成一份新的快照文件。
 另外，還會把用戶文件夾中非自動生成的 YAML 文件及 .txt 文件單向 **備份** 到同步文件夾。
 
 有些特別講究命名的用家，不喜隨機生成的 UUID，可編輯 `installation.yaml` ，取一個有意義的 ID，如：
 
-    installation_id: 'fred-win7-desktop'
+```yaml
+installation_id: 'fred-win7-desktop'
+```
 
 又如：
 
-    installation_id: 'fred-macbook'
+```yaml
+installation_id: 'fred-macbook'
+```
 
 當心！因爲 Rime 要以這個 ID 爲名創建文件夾，因此 ID 不得包含（所有涉及同步的文件系統）文件名中非法的字符；建議不要用中文，只用小寫字母、數字、橫線和下劃線。

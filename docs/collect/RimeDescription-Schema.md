@@ -1,5 +1,5 @@
 ---
-source:  rime-collect/Rime_description.md
+source:  rime-collect/Rime_description.md#Schema
 ---
 
 # `Schema.yaml` 詳解
@@ -8,7 +8,7 @@ source:  rime-collect/Rime_description.md
 
 ## 開始之前
 
-```
+```yaml
 # Rime schema
 # encoding: utf-8
 ```
@@ -24,7 +24,7 @@ source:  rime-collect/Rime_description.md
 
 #### **示例**
 
-```
+```yaml
 schema:
   name: "蒼頡檢字法"
   schema_id: cangjie6
@@ -55,7 +55,7 @@ schema:
 
 *   所有關關選項名偁可自定義，可用快捷鍵切換：該名偁可用於`key_binder/bindings`中的`toggle:`後
 
-```
+```yaml
 - name: simplification
   states: ["漢字", "汉字"]
   reset: 0
@@ -63,7 +63,7 @@ schema:
 
 *   亦可使用多選開關，同樣支持快捷鍵：`options`名偁用於`key_binder/bindings`時，使用`set_option:`或`unset_option:`開啓或關閉某一個
 
-```
+```yaml
 - options: [ zh_trad, zh_cn, zh_mars ]
   states:
     - 字型 → 漢字
@@ -78,7 +78,7 @@ schema:
 
 #### **示例**
 
-```
+```yaml
 switches:
   - name: ascii_mode
     reset: 0
@@ -174,7 +174,7 @@ switches:
 
 cangjie6.schema.yaml
 
-```
+```yaml
 engine:
   processors:
     - ascii_composer
@@ -220,14 +220,14 @@ engine:
 
 **引擎中所舉之加粗者均可在下方詳細描述，格式爲：**
 
-```
+```yaml
 name:
   branches: configurations
 ```
 
 或
 
-```
+```yaml
 name:
   branches:
     - configurations
@@ -247,7 +247,7 @@ name:
 
 *   `speller`的演算包含：
 
-```
+```plaintext
 xform --改寫〔不保留原形〕
 derive --衍生〔保留原形〕
 abbrev --簡拼〔出字優先級較上兩組更低〕
@@ -260,7 +260,7 @@ erase --刪除
 
 luna\_pinyin.schema.yaml
 
-```
+```yaml
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
@@ -299,7 +299,7 @@ speller:
 
 cangjie6.schema.yaml
 
-```
+```yaml
 reverse_lookup:
   tag: reverse_lookup
   prefix: "`"
@@ -351,7 +351,7 @@ reverse_lookup:
 
 cangjie6.schema.yaml 蒼頡主翻譯器
 
-```
+```yaml
 translator:
   dictionary: cangjie6
   enable_charset_filter: true
@@ -372,7 +372,7 @@ translator:
 
 cangjie6.schema.yaml 拼音副翻譯器
 
-```
+```yaml
 pinyin:
   tag: pinyin
   dictionary: luna_pinyin
@@ -389,7 +389,7 @@ pinyin:
 
 pinyin\_simp.schema.yaml 拼音・簡化字主翻譯器
 
-```
+```yaml
 translator:
   dictionary: luna_pinyin
   prism: luna_pinyin_simp
@@ -401,7 +401,7 @@ translator:
 
 luna\_pinyin.schema.yaml 朙月拼音用戶短語
 
-```
+```yaml
 custom_phrase: #這是一個table_translator
   dictionary: ""
   user_dict: custom_phrase
@@ -425,7 +425,7 @@ custom_phrase: #這是一個table_translator
 
 cangjie6.schema.yaml
 
-```
+```yaml
 pinyin_reverse_lookup: #該反查濾鏡名
   tags: [ pinyin_lookup ] #掛在這個tag所對應的翻譯器上
   overwrite_comment: true
@@ -459,7 +459,7 @@ pinyin_reverse_lookup: #該反查濾鏡名
 
 修改自 luna\_pinyin\_kunki.schema
 
-```
+```yaml
 zh_tw:
   option_name: zh_tw
   opencc_config: t2tw.json
@@ -483,7 +483,7 @@ zh_tw:
 
 combo\_pinyin.schema.yaml
 
-```
+```yaml
 chord_composer:
   # 字母表，包含用於並擊的按鍵
   # 擊鍵雖有先後，形成並擊時，一律以字母表順序排列
@@ -526,7 +526,7 @@ chord_composer:
 
 rime.lua
 
-```
+```lua
 function get_date(input, seg, env)
   --- 以 show_date 爲開關名或 key_binder 中 toggle 的對象
   on = env.engine.context:get_option("show_date")
@@ -718,8 +718,7 @@ noop	空
 
 修改自 cangjie6.schema.yaml
 
-```
-
+```yaml
 key_binder:
   import_preset: default
   bindings:
@@ -758,8 +757,7 @@ recognizer:
 
 #### **示例**
 
-```
-
+```yaml
 menu:
   alternative_select_labels: [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨ ]  # 修改候選標籤
   alternative_select_keys: ASDFGHJKL #如編碼字符佔用數字鍵則須另設選字鍵
@@ -781,7 +779,7 @@ style:
 
 ## 開始之前
 
-```
+```yaml
 # Rime dict
 # encoding: utf-8
 〔你還可以在這註釋字典來源、變動記錄等〕
@@ -819,7 +817,7 @@ version: "0.1"
 
 cangjie6.extended.dict.yaml
 
-```
+```yaml
 sort: by_weight
 use_preset_vocabulary: false
 import_tables:
@@ -848,7 +846,7 @@ encoder:
 
 cangjie6.dict.yaml
 
-```
+```yaml
 columns:
   - text #第一列字／詞
   - code #第二列碼
@@ -858,7 +856,7 @@ columns:
 
 cangjie6.dict.yaml
 
-```
+```yaml
 個	owjr	246268	ow'jr
 看	hqbu	245668
 中	l	243881
