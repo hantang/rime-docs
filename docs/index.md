@@ -2,13 +2,12 @@
 icon: material/keyboard
 ---
 
-# Welcome to RIME List
+# Hello, RIME!
 
-本站汇集Rime相关工具、输入法方案、配置和词库等，以及文档备份。
-（仅修正标题格式、目录、图片链接以及Markdown解析错误问题，另外对文章进行简单排序。
-但部分文档年代较久，格式凌乱、笔误、错字、链接过时等问题，仍留有原样）
+本站汇集RIME相关工具、输入法方案、配置和词库等，以及文档备份。
 
-【另外，标题中以`*`结尾的皆本站所加】
+本站主要对其中等标题格式、目录、图片链接以及Markdown解析错误问题进行适当修正，另外对文章进行简单归类排序（不一定合适）。
+由于部分文档年代较久，存在格式凌乱、笔误、错字、重复引用、链接过时等问题，目前仍留有原样；待时机合适，当发布新版的简明文档，以飨用户。
 
 ## 网站
 
@@ -25,7 +24,7 @@ icon: material/keyboard
 | :fontawesome-brands-windows: Windows | - `Weasel` 小狼毫 [:simple-github: rime/weasel][gh-weasel] <br> - `Rabbit` 玉兔毫 [:simple-github: amorphobia/rabbit][gh-rabbit]                                                                                                                                                            |
 | :fontawesome-brands-apple: macOS     | - `Squirrel` 鼠须管 [:simple-github: rime/squirrel][gh-squirrel] <br> - `fcitx5-macos` 小企鹅 [:simple-github: fcitx-contrib/fcitx5-macos][gh-fcitx5-mac]                                                                                                                                   |
 | :fontawesome-brands-android: Android | - `fcitx5-android` 小企鹅  [:simple-github: fcitx5-android][gh-fcitx5] [:simple-fdroid: Fcitx5][fd-fcitx5] [:simple-googleplay: Fcitx5][gp-fcitx5] <br> - `Trime` 同文 [:simple-github: osfans/trime][gh-trime] [:simple-fdroid: Trime][fd-trime] ~~[:simple-googleplay: Trime][gp-trime]~~ |
-| :simple-ios: iOS                     | - `Hamster` 仓 [:simple-github: imfuxiao/Hamster][gh-ham] / [:simple-appstore: 仓输入法][ap-ham] <br> irime输入法 [:simple-appstore: irime输入法][ap-irime]                              |
+| :simple-ios: iOS                     | - `Hamster` 仓 [:simple-github: imfuxiao/Hamster][gh-ham] / [:simple-appstore: 仓输入法][ap-ham] <br> irime输入法 [:simple-appstore: irime输入法][ap-irime]                                                                                                                                 |
 
 [gh-ibus-rime]: https://github.com/rime/ibus-rime
 [gh-fcitx5-rime]: https://github.com/fcitx/fcitx5-rime
