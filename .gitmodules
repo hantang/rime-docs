@@ -19,3 +19,6 @@
 [submodule "rime-hamster-wiki"]
 	path = rime-hamster-wiki
 	url = https://github.com/imfuxiao/Hamster.wiki.git
+[submodule "rime-fcitx5-android-docs"]
+	path = rime-fcitx5-android-docs
+	url = https://github.com/fcitx5-android/fcitx5-android.github.io.git
