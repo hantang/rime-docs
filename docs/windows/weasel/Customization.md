@@ -5,7 +5,7 @@ title: Weasel-定制化
 
 Weasel（小狼毫）是 Rime 输入法引擎的 Windows 平台发行版。您如果需要调整 Rime 的输入方案、快捷键等诸多 Rime 发行版共有的设置，请移步 Rime 主项目 wiki：
 
-- [Rime 定制指南](../wiki/CustomizationGuide.md)
+- [Rime 定制指南](../../wiki/CustomizationGuide.md)
 
 而如果您需要定制 Weasel 的候选窗口布局、字体、颜色等 Weasel 独有的样式或行为，本页面可以提供额外的指导与参考。
 
@@ -61,7 +61,7 @@ patch:
   "含列表的设定项/+": 与节点合并的设定值
 ```
 
-更详细、高级的定制方法以及注意事项请参考 [Rime 配置文件](../wiki/Configuration.md#rime-配置文件) 页面和 [定制指南](../wiki/CustomizationGuide.md) 页面。
+更详细、高级的定制方法以及注意事项请参考 [Rime 配置文件](../../wiki/Configuration.md#rime-配置文件) 页面和 [定制指南](../../wiki/CustomizationGuide.md) 页面。
 
 譬如我希望：
 
@@ -382,7 +382,7 @@ preset_color_schemes:
 - [RIME 西米](https://fxliang.github.io/RimeSeeMe/)
 - [润笔](https://pdog18.github.io/rime-soak/#/theme)
 
-关于配色方案的详细说明，请参考 [定制小狼毫配色](定制小狼毫配色) 页面。
+关于配色方案的详细说明，请参考 [定制小狼毫配色](./ColorSchemes.md) 页面。
 
 ### 应用设置
 

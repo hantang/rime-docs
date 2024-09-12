@@ -175,7 +175,7 @@ plugins:
             基础: 基礎
             发行版: 發行版
             macOS-鼠须管: macOS-鼠須管
-            Windows-小狼毫: windows-小狼毫
+            Windows-小狼毫: Windows-小狼毫
             Linux-中州韵: Linux-中州韻
             进阶: 進階
             更多: 更多
@@ -184,6 +184,10 @@ plugins:
             正式版: 正式版
             测试版: 測試版
             发布: 發佈
+            Android版本: Android版本
+            iOS版本: iOS版本
+            仓（Hamster）: 倉（Hamster）
+            同文（Trime）: 同文（Trime）
         - locale: en
           name: English
           build: true
@@ -194,7 +198,7 @@ plugins:
             文档: Wiki
             介绍: Introduction
             基础: Basic
-            发行版: Distribution
+            发行版: Distributions
             macOS-鼠须管: macOS-Squirrel
             Windows-小狼毫: Windows-Weasel
             Linux-中州韵: Linux-Rime
@@ -205,6 +209,10 @@ plugins:
             正式版: Release Version
             测试版: Testing Version
             发布: Release
+            Android版本: Android Version
+            iOS版本: iOS Version
+            仓（Hamster）: Hamster (仓)
+            同文（Trime）: Trime (同文)
   # - git-revision-date-localized
 
 # exclude_docs: |
@@ -245,7 +253,7 @@ nav:
       - blog/i-rime-with-fool/index.md
       - wiki/SpellingAlgebra.md
       - wiki/Rime-in-Emacs.md
-  - 版本:
+  - 发行版:
     - Linux-中州韵:
       - linux/index.md
       - linux/CHANGELOG.md
@@ -280,10 +288,15 @@ nav:
       - macos/squirrel/Shortcut.md
       - macos/squirrel/SwitchInputMethod.md
       - macos/squirrel/SwitchLanguage.md
-      - macos/fcitx5/index.md
+      - fcitx5:
+        - macos/fcitx5/index.md
     - Android版本:
       - fcitx5:
         - android/fcitx5/index.md
+        - android/fcitx5/installation.md
+        - android/fcitx5/faq.md
+        - android/fcitx5/privacy.md
+        - android/fcitx5/readme.md
       - 同文（Trime）:
         - android/trime/index.md
         - android/trime/CHANGELOG.md
@@ -300,6 +313,8 @@ nav:
         - android/trime/Case2.md
         - android/trime/Case3.md
         - android/trime/Case4.md
+        - android/trime/CONTRIBUTING.md
+        - android/trime/CODE_OF_CONDUCT.md
     - iOS版本:
       - 仓（Hamster）:
         - ios/hamster/index.md
@@ -317,4 +332,4 @@ nav:
   - 更多:
     - wiki/ComboPinyin.md
     - collect/OldCantonese.md
-    # - ...
+    - ...
