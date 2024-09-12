@@ -1,8 +1,7 @@
 ---
 note: HOME.md
+title: 中州韻輸入法*
 ---
-
-# 中州韻輸入法*
 
 ## 中州韻輸入法引擎 | Rime Input Method Engine
 

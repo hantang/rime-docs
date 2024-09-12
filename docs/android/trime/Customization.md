@@ -288,15 +288,15 @@ patch:
     - { label: " %s. ", candidate: "%s " }
 ```
 
-![横排效果](https://user-images.githubusercontent.com/16501929/30546255-c1380606-9c51-11e7-8043-48da4cf04119.png)
+![横排效果](./images/16501929/30546255-c1380606-9c51-11e7-8043-48da4cf04119.png)
 
 - 2、竖排  
   把上面补丁的`sticky_lines`改成`5`，水平模式`horizontal`改成`false`。  
-  ![竖排效果](https://user-images.githubusercontent.com/16501929/30546276-cde91520-9c51-11e7-8d17-0541b140a7a4.png)
+  ![竖排效果](./images/16501929/30546276-cde91520-9c51-11e7-8d17-0541b140a7a4.png)
 
 - 3、横竖混排  
   只需要把上面补丁的`sticky_lines`改成`1`即可。  
-  ![混排效果](https://user-images.githubusercontent.com/16501929/30546289-d8ac3046-9c51-11e7-8344-0015197d8c89.png)
+  ![混排效果](./images/16501929/30546289-d8ac3046-9c51-11e7-8344-0015197d8c89.png)
 
 ※ 以上示例中去掉了悬浮窗的`composition`组件，因此需要开启嵌入模式才能在文本框中显示编码。另外，开启悬浮窗后，也可以把底下多余的候选栏关掉（参考附录中的示例）。
 
@@ -485,7 +485,7 @@ patch:
 ```
 
 这是一个用色最少的配色方案。效果是这样：  
- <img src="https://user-images.githubusercontent.com/16501929/30100484-a77d63fc-92ae-11e7-87b9-42f546ba7f19.png" alt="简单配色" width="512" height="438">  
+ <img src="./images/16501929/30100484-a77d63fc-92ae-11e7-87b9-42f546ba7f19.png" alt="简单配色" width="512" height="438">  
  ※ 部署完成后，需要从配色菜单中选取刚才添加的配色方案「xxx 极简」，才能看到效果。
 
 试试再加两个颜色：
@@ -502,7 +502,7 @@ patch:
 ```
 
 好像变得更难看了 😜：  
- <img src="https://user-images.githubusercontent.com/16501929/30100628-17401176-92af-11e7-8a9b-1634647cd38f.png" alt="改进效果" width="512" height="436">
+ <img src="./images/16501929/30100628-17401176-92af-11e7-8a9b-1634647cd38f.png" alt="改进效果" width="512" height="436">
 
 再加个背景图看看：
 
@@ -519,7 +519,7 @@ patch:
 ```
 
 最后变成这样：  
- <img src="https://user-images.githubusercontent.com/16501929/30100688-39976756-92af-11e7-946d-f7e041137a87.png" alt="改进效果" width="512" height="439">
+ <img src="./images/16501929/30100688-39976756-92af-11e7-946d-f7e041137a87.png" alt="改进效果" width="512" height="439">
 
 ……  
 在每个按键上加图片背景会怎样？您若感兴趣可以试试。
@@ -622,7 +622,7 @@ patch:
 ```
 
 好了，看看效果：  
- <img src="https://user-images.githubusercontent.com/16501929/30117873-266633a0-92e7-11e7-9f3a-4de6d0e8bd8f.png" alt="数字键颜色分组" width="360" height="226">
+ <img src="./images/16501929/30117873-266633a0-92e7-11e7-9f3a-4de6d0e8bd8f.png" alt="数字键颜色分组" width="360" height="226">
 
 ※自定义的分组标签可以在当前主题的所有配色方案中使用。只需要在相应的配色方案中给`k_n_b`和`h_k_n_b`设定颜色值即可。这样每个配色方案中的数字键都可以独立设置颜色，自由度更高。（若某个配色方案中的`k_n_b`省略不写，则数字键的背景色会默认使用普通按键背景色，不用担心会出错。）
 

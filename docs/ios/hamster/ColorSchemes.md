@@ -17,7 +17,7 @@ source: rime-hamster-wiki/配色说明.md
 
 已下图为例：
 
-![Pasted image 20231020173507](https://github.com/imfuxiao/Hamster/assets/6482586/d802b994-9e6f-4deb-8fee-43ee69670cba)
+![Pasted image 20231020173507](./assets/6482586/276895217-d802b994-9e6f-4deb-8fee-43ee69670cba.png)
 
 
 上面是BGR格式颜色，下面是对应的RGB格式颜色。你会发现他们只是交换了一下 R 与 B 所表示的的两位数字的**位置**。
@@ -179,7 +179,7 @@ source: rime-hamster-wiki/配色说明.md
   comment_text_color: 0x005947 # 候选栏次选文字 Comment 信息颜色
 ```
 
-![IMG_0258](https://github.com/imfuxiao/Hamster/assets/6482586/d6e424d7-b00c-4218-88e8-719a29102128)
+![IMG_0258](./assets/6482586/276895339-d6e424d7-b00c-4218-88e8-719a29102128.jpeg)
 
 
 键盘配色

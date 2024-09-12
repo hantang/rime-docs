@@ -55,11 +55,11 @@ GitHub: [![release version](https://img.shields.io/github/v/release/fcitx5-andro
 
 |拼音, Material Light theme, key border enabled|自然码双拼, Pixel Dark theme, key border disabled|
 |:-:|:-:|
-|<img src="https://github.com/fcitx5-android/fcitx5-android/assets/13914967/bd429247-62d9-4c78-bab8-70ef3ce47588" width="360px">|<img src="https://github.com/fcitx5-android/fcitx5-android/assets/13914967/3ae969c1-7ed0-4f92-a5df-19dc8c90a8c3" width="360px">|
+|<img src="./images/13914967/bd429247-62d9-4c78-bab8-70ef3ce47588.png" width="360px">|<img src="./images/13914967/3ae969c1-7ed0-4f92-a5df-19dc8c90a8c3.png" width="360px">|
 
 |Emoji picker, Pixel Light theme, key border enabled|Symbol picker, Material Dark theme, key border disabled|
 |:-:|:-:|
-|<img src="https://user-images.githubusercontent.com/13914967/202181845-6a5f6bb2-a877-468c-851a-fd7e66e64ed4.png" width="360px">|<img src="https://user-images.githubusercontent.com/13914967/202181861-dd253439-1d5e-4f5f-9535-934f28796a6b.png" width="360px">|
+|<img src="./images/13914967/202181845-6a5f6bb2-a877-468c-851a-fd7e66e64ed4.png" width="360px">|<img src="./images/13914967/202181861-dd253439-1d5e-4f5f-9535-934f28796a6b.png" width="360px">|
 
 ## Get involved
 
@@ -148,15 +148,15 @@ Install Android SDK Platform, Android SDK Build-Tools, Android NDK and cmake via
 **Note:** These screenshots are for references and the versions in them may be out of date.
 The current recommended versions are recorded in [Versions.kt](build-logic/convention/src/main/kotlin/Versions.kt) file.
 
-![Open SDK Manager](https://user-images.githubusercontent.com/13914967/202184493-3ee1546b-0a83-4cc9-9e41-d20b0904a0cf.png)
+![Open SDK Manager](./images/13914967/202184493-3ee1546b-0a83-4cc9-9e41-d20b0904a0cf.png)
 
-![Install SDK Platform](https://user-images.githubusercontent.com/13914967/202184534-340a9e7c-7c42-49bd-9cf5-1ec9dcafcf32.png)
+![Install SDK Platform](./images/13914967/202184534-340a9e7c-7c42-49bd-9cf5-1ec9dcafcf32.png)
 
-![Install SDK Build-Tools](https://user-images.githubusercontent.com/13914967/202185945-0c7a9f39-1fcc-4018-9c81-b3d2bf1c2d3f.png)
+![Install SDK Build-Tools](./images/13914967/202185945-0c7a9f39-1fcc-4018-9c81-b3d2bf1c2d3f.png)
 
-![Install NDK](https://user-images.githubusercontent.com/13914967/202185601-0cf877ea-e148-4b88-bd2f-70533189b3d4.png)
+![Install NDK](./images/13914967/202185601-0cf877ea-e148-4b88-bd2f-70533189b3d4.png)
 
-![Install CMake](https://user-images.githubusercontent.com/13914967/202184655-3c1ab47c-432f-4bd7-a508-92096482de50.png)
+![Install CMake](./images/13914967/202184655-3c1ab47c-432f-4bd7-a508-92096482de50.png)
 
 </details>
 

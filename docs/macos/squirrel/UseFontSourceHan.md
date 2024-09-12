@@ -25,8 +25,8 @@ patch:
 
 1. 使用前
 
-    ![使用前](https://cloud.githubusercontent.com/assets/5491695/3866802/19314e1a-1fe3-11e4-9612-71014180f980.png)
+    ![使用前](./assets/5491695/19314e1a-1fe3-11e4-9612-71014180f980.png)
 
 2. 使用後
 
-    ![使用後](https://cloud.githubusercontent.com/assets/5491695/3866801/192feda4-1fe3-11e4-8600-8855963be233.png)
+    ![使用後](./assets/5491695/192feda4-1fe3-11e4-8600-8855963be233.png)

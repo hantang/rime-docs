@@ -93,7 +93,7 @@ TODO: 更新該文檔，以反映自動化發佈流程
     更新 [源代碼](../blog/release/weasel/index.md) 文件頭的 `date` 字段，
     並用 `weasel/CHANGELOG.md` 的內容替換 Markdown 正文部份（YAML 結束標記 `---` 及隨後空行以下）
   - [推送更新頻道](https://rime.im/release/weasel/appcast.xml)，
-    將 [源代碼](../blog/release/weasel/appcast.xml) 替換爲第 5 步修改過的 `weasel/update/appcast.xml`
+    將 [源代碼](https://rime.im/release/weasel/appcast.xml) 替換爲第 5 步修改過的 `weasel/update/appcast.xml`
   - [推送更新提示](https://rime.im/release/weasel/release-notes.html)，
     將 [源代碼](../blog/release/weasel/index.md) 替換爲第 10 步生成的 `release-notes.html`
 

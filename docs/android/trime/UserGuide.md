@@ -45,7 +45,7 @@ title: 用户指南
 [F-Droid]:https://f-droid.org/packages/com.osfans.trime/
 [测试版]:https://osfans.github.io/trime/
 [Rime 同文堂]:https://jq.qq.com/?_wv=1027&k=jwhi1Bi3
-[简易图解]:https://user-images.githubusercontent.com/16501929/39121157-583bfda6-4723-11e8-9cf0-b08718ca127e.jpg
+[简易图解]:./images/16501929/39121157-583bfda6-4723-11e8-9cf0-b08718ca127e.jpg
 [常用输入方案]:https://github.com/rime/plum/blob/master/README.md#packages
 [更多开源输入方案]:https://github.com/osfans/rime-tool
 [Rime说明书]:https://github.com/rime/home/wiki/UserGuide
