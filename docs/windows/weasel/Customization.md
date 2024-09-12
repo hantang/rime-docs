@@ -1,8 +1,7 @@
 ---
 source: rime-weasel-wiki/Weasel-定制化.md
+title: Weasel-定制化
 ---
-
-# Weasel-定制化
 
 Weasel（小狼毫）是 Rime 输入法引擎的 Windows 平台发行版。您如果需要调整 Rime 的输入方案、快捷键等诸多 Rime 发行版共有的设置，请移步 Rime 主项目 wiki：
 

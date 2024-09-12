@@ -1,8 +1,7 @@
 ---
 source: rime-weasel-wiki/定制小狼毫配色.md
+title: 定制小狼毫配色
 ---
-
-# 定制小狼毫配色
 
 您可以在 `weasel.yaml` 的 `preset_color_schemes` 节点下定制配色方案。
 

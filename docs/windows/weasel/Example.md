@@ -1,8 +1,7 @@
 ---
 source: rime-weasel-wiki/示例.md
+title: 示例
 ---
-
-# 示例
 
 ## 竖排 天圆地方
 
