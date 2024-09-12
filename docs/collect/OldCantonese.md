@@ -11,7 +11,12 @@ source: rime_collect/Old_cantonese.markdown
 [英華分韻撮要](https://library.umac.mo/ebooks/b31043793.pdf)[^1]是美國人衞三畏所著，1856年出版於廣州。
 英華分韻撮要以江湖尺牘分韻撮要合集爲底本，按照英式字典的體例和順序編排，除了粵語讀音之外，在每個字頭上還標註了官話讀音。
 
-[^1]: 原链接失效，更新为[cyingcwcfanwan00williala.pdf - archive.org](http://www.archive.org/download/cyingcwcfanwan00williala/cyingcwcfanwan00williala.pdf) 【原扫描文件约60MB，本站中文件为压缩的PDF】
+<object data="/rime-docs/assets/pdf/英華分韻撮要.pdf" type="application/pdf" width="100%" height="500" >
+  <embed src="/rime-docs/assets/pdf/英華分韻撮要.pdf" type="application/pdf" />
+</object>
+
+
+[^1]: 原链接失效，更新为[cyingcwcfanwan00williala.pdf - archive.org](http://www.archive.org/download/cyingcwcfanwan00williala/cyingcwcfanwan00williala.pdf) 
 
 ### 記音體例
 

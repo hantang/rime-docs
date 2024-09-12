@@ -155,56 +155,56 @@ plugins:
       # order: asc
       # sort_type: natural
       # order_by: title
-  # - minify:
-  #     minify_html: true
-  # - i18n:
-  #     docs_structure: suffix
-  #     languages:
-  #       - locale: zh
-  #         default: true
-  #         name: 简体中文
-  #         build: true
-  #       - locale: zh-Hant
-  #         name: 繁體中文
-  #         build: true
-  #         nav_translations:
-  #           主页: 主頁
-  #           列表: 列表
-  #           文档: 文檔
-  #           介绍: 介紹
-  #           基础: 基礎
-  #           发行版: 發行版
-  #           macOS-鼠须管: macOS-鼠須管
-  #           Windows-小狼毫: windows-小狼毫
-  #           Linux-中州韵: Linux-中州韻
-  #           进阶: 進階
-  #           更多: 更多
-  #           博客: 網誌
-  #           杂项: 雜項
-  #           正式版: 正式版
-  #           测试版: 測試版
-  #           发布: 發佈
-  #       - locale: en
-  #         name: English
-  #         build: true
-  #         # site_name:
-  #         nav_translations:
-  #           主页: Home
-  #           列表: List
-  #           文档: Wiki
-  #           介绍: Introduction
-  #           基础: Basic
-  #           发行版: Distribution
-  #           macOS-鼠须管: macOS-Squirrel
-  #           Windows-小狼毫: Windows-Weasel
-  #           Linux-中州韵: Linux-Rime
-  #           进阶: Advanced
-  #           更多: More
-  #           博客: Blog
-  #           杂项: Misc
-  #           正式版: Release Version
-  #           测试版: Testing Version
-  #           发布: Release
+  - minify:
+      minify_html: true
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: zh
+          default: true
+          name: 简体中文
+          build: true
+        - locale: zh-Hant
+          name: 繁體中文
+          build: true
+          nav_translations:
+            主页: 主頁
+            列表: 列表
+            文档: 文檔
+            介绍: 介紹
+            基础: 基礎
+            发行版: 發行版
+            macOS-鼠须管: macOS-鼠須管
+            Windows-小狼毫: windows-小狼毫
+            Linux-中州韵: Linux-中州韻
+            进阶: 進階
+            更多: 更多
+            博客: 網誌
+            杂项: 雜項
+            正式版: 正式版
+            测试版: 測試版
+            发布: 發佈
+        - locale: en
+          name: English
+          build: true
+          # site_name:
+          nav_translations:
+            主页: Home
+            列表: List
+            文档: Wiki
+            介绍: Introduction
+            基础: Basic
+            发行版: Distribution
+            macOS-鼠须管: macOS-Squirrel
+            Windows-小狼毫: Windows-Weasel
+            Linux-中州韵: Linux-Rime
+            进阶: Advanced
+            更多: More
+            博客: Blog
+            杂项: Misc
+            正式版: Release Version
+            测试版: Testing Version
+            发布: Release
   # - git-revision-date-localized
 
 # exclude_docs: |
@@ -251,6 +251,7 @@ nav:
       - linux/CHANGELOG.md
       - wiki/RimeWithIBus.md
       - linux/fcitx5/index.md
+      - linux/fcitx/index.md
     - Windows-小狼毫:
       - windows/index.md
       - windows/INSTALL.md
@@ -264,7 +265,7 @@ nav:
       - windows/weasel/Theme.md
       - windows/weasel/ColorSchemes.md
       - windows/weasel/Font.md
-      - windows/weasel/Cheatsheet.md
+      - windows/weasel/ConfigCheatsheet.md
     - macOS-鼠须管:
       - macos/index.md
       - macos/INSTALL.md
@@ -279,9 +280,40 @@ nav:
       - macos/squirrel/Shortcut.md
       - macos/squirrel/SwitchInputMethod.md
       - macos/squirrel/SwitchLanguage.md
-    - Android
-    - iOS
-
+      - macos/fcitx5/index.md
+    - Android版本:
+      - fcitx5:
+        - android/fcitx5/index.md
+      - 同文（Trime）:
+        - android/trime/index.md
+        - android/trime/CHANGELOG.md
+        - android/trime/Home.md
+        - android/trime/Customization.md
+        - android/trime/ConfigCheatsheet.md
+        - android/trime/Frontends.md
+        - android/trime/Materials.md
+        - android/trime/UserGuide.md
+        - android/trime/Tricks.md
+        - android/trime/Tips1.md
+        - android/trime/Tips2.md
+        - android/trime/Case1.md
+        - android/trime/Case2.md
+        - android/trime/Case3.md
+        - android/trime/Case4.md
+    - iOS版本:
+      - 仓（Hamster）:
+        - ios/hamster/index.md
+        - ios/hamster/Home.md
+        - ios/hamster/ConfigCheatsheet.md
+        - ios/hamster/CustomKeyboard.md
+        - ios/hamster/CustomLayout.md
+        - ios/hamster/ColorSchemes.md
+        - ios/hamster/Clipboard.md
+        - ios/hamster/iCloud.md
+        - ios/hamster/ImportRimeIce.md
+        - ios/hamster/SwitchChinese.md
+        - ios/hamster/Sync.md
+        - ios/hamster/Develop.md
   - 更多:
     - wiki/ComboPinyin.md
     - collect/OldCantonese.md

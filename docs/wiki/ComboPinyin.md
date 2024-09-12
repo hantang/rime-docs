@@ -48,8 +48,8 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
 
 《漢語拼音方案》的完整文本，請參閱《新華字典》《現代漢語詞典》附錄、[教育部網站提供的影印版](https://www.moe.gov.cn/ewebeditor/uploadfile/2015/03/02/20150302165814246.pdf) 或 [維基文庫頁面](https://zh.wikisource.org/wiki/汉语拼音方案)。
 
-<object data="/rime-list/assets/pdf/汉语拼音方案.pdf" type="application/pdf" width="100%" height="500" >
-  <embed src="/rime-list/assets/pdf/汉语拼音方案.pdf" type="application/pdf" />
+<object data="/rime-docs/assets/pdf/汉语拼音方案.pdf" type="application/pdf" width="100%" height="500" >
+  <embed src="/rime-docs/assets/pdf/汉语拼音方案.pdf" type="application/pdf" />
 </object>
 
 ## 《漢語拼音方案》導讀
@@ -528,8 +528,8 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
 本文用到的所有圖表彙編成卷，供用家參考。
 <https://github.com/rime/home/blob/master/manual/combo-pinyin-cheatsheet.pdf>
 
-<object data="/rime-list/assets/pdf/combo-pinyin-cheatsheet.pdf" type="application/pdf" width="100%" height="500" >
-  <embed src="/rime-list/assets/pdf/combo-pinyin-cheatsheet.pdf" type="application/pdf" />
+<object data="/rime-docs/assets/pdf/combo-pinyin-cheatsheet.pdf" type="application/pdf" width="100%" height="500" >
+  <embed src="/rime-docs/assets/pdf/combo-pinyin-cheatsheet.pdf" type="application/pdf" />
 </object>
 
 輸入技術，亦無他，惟手熟耳。

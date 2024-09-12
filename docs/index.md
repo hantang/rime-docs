@@ -25,7 +25,7 @@ icon: material/keyboard
 | :fontawesome-brands-windows: Windows | - `Weasel` 小狼毫 [:simple-github: rime/weasel][gh-weasel] <br> - `Rabbit` 玉兔毫 [:simple-github: amorphobia/rabbit][gh-rabbit]                                                                                                                                                            |
 | :fontawesome-brands-apple: macOS     | - `Squirrel` 鼠须管 [:simple-github: rime/squirrel][gh-squirrel] <br> - `fcitx5-macos` 小企鹅 [:simple-github: fcitx-contrib/fcitx5-macos][gh-fcitx5-mac]                                                                                                                                   |
 | :fontawesome-brands-android: Android | - `fcitx5-android` 小企鹅  [:simple-github: fcitx5-android][gh-fcitx5] [:simple-fdroid: Fcitx5][fd-fcitx5] [:simple-googleplay: Fcitx5][gp-fcitx5] <br> - `Trime` 同文 [:simple-github: osfans/trime][gh-trime] [:simple-fdroid: Trime][fd-trime] ~~[:simple-googleplay: Trime][gp-trime]~~ |
-| :simple-ios: iOS                     | - `Hamster` 仓 [:simple-github: imfuxiao/Hamster][gh-ham] [:simple-appstore: 仓输入法][ap-ham]                                                                                                                                                                                              |
+| :simple-ios: iOS                     | - `Hamster` 仓 [:simple-github: imfuxiao/Hamster][gh-ham] / [:simple-appstore: 仓输入法][ap-ham] <br> irime输入法 [:simple-appstore: irime输入法][ap-irime]                              |
 
 [gh-ibus-rime]: https://github.com/rime/ibus-rime
 [gh-fcitx5-rime]: https://github.com/fcitx/fcitx5-rime
@@ -41,6 +41,7 @@ icon: material/keyboard
 [gp-trime]: https://play.google.com/store/apps/details?id=com.osfans.trime
 [gh-ham]: https://github.com/imfuxiao/Hamster
 [ap-ham]: https://apps.apple.com/cn/app/仓输入法/id6446617683
+[ap-irime]: https://apps.apple.com/cn/app/irime输入法-小鹤双拼五笔郑码输入法/id1142623977
 
 ## 辅助工具
 
