@@ -54,11 +54,11 @@ Rime 中所有文本文檔，均要求以 UTF-8 編碼，並建議使用 UNIX �
 莫要從文件的第一行開始正文，而請在該行行首以 # 記號起一行註釋，如：
 
 ```yaml
-## Rime default settings
+# Rime default settings
 
-## Rime schema: My First Cool Schema
+# Rime schema: My First Cool Schema
 
-## Rime dictionary: Lingua Latina
+# Rime dictionary: Lingua Latina
 ```
 
 也可繼續以註釋行寫下方案簡介、碼表來源、製作者、修訂記錄等信息，再切入正文。
@@ -217,8 +217,8 @@ Rime 可以在不同會話裏使用不同輸入方案。因爲有「方案選單
 好，看代碼：
 
 ```yaml
-## luna_pinyin.schema.yaml
-## ...
+# luna_pinyin.schema.yaml
+# ...
 
 engine:                    # 輸入引擎設定，即掛接組件的「處方」
   processors:              # 一、這批組件處理各類按鍵消息
@@ -591,10 +591,10 @@ https://github.com/lotem/rimeime/tree/master/doc/tutorial
 第一個例子，總是最簡單的（也是最傻的）。
 
 ```yaml
-## Rime schema
-## encoding: utf-8
+# Rime schema
+# encoding: utf-8
 #
-## 最簡單的 Rime 輸入方案
+# 最簡單的 Rime 輸入方案
 #
 
 schema:
@@ -685,8 +685,8 @@ engine:
 那就寫一部詞典，碼表中設定以 `hello` 作爲短語「大家好」的編碼：
 
 ```yaml
-## Rime dictionary
-## encoding: utf-8
+# Rime dictionary
+# encoding: utf-8
 
 ---
 name: hello
@@ -900,8 +900,8 @@ key_binder:
 用 `punctuator` 這一套組件，就可實現一款鍵盤輸入法：
 
 ```yaml
-## Rime schema
-## encoding: utf-8
+# Rime schema
+# encoding: utf-8
 
 schema:
   schema_id: numbers
@@ -1159,8 +1159,8 @@ punctuator:
 編製詞典：
 
 ```yaml
-## Rime dictionary
-## encoding: utf-8
+# Rime dictionary
+# encoding: utf-8
 
 ---
 name: numbers
@@ -1289,8 +1289,8 @@ use_preset_vocabulary: true
 設計一款【智能ABC雙拼】輸入方案做練習！
 
 ```yaml
-## Rime schema
-## encoding: utf-8
+# Rime schema
+# encoding: utf-8
 
 schema:
   schema_id: double_pinyin_abc  # 專有的方案標識
