@@ -1,6 +1,6 @@
 ---
 source: rime-squirrel-wiki/禁用-Squirrel-英文模式，使用左侧-Shift-切换中英.md
-title: 使用左侧-Shift-切换中英
+title: 使用左侧-Shift 切换中英
 ---
 
 时间：2018-08-19    

@@ -1,6 +1,6 @@
 ---
 source: rime-squirrel-wiki/实现Shift_L-按下时切换输入法即Shift_L-代替Ctrl_Space-切换系统输入法.md
-title: 实现`Shift L`按下时切换输入法
+title: 实现 Shift-L 按下时切换输入法
 ---
 
 > 实现Shift_L-按下时切换输入法即Shift_L-代替Ctrl_Space-切换系统输入法

@@ -1,7 +1,9 @@
 ---
 source: rime-weasel-wiki/weasel.yaml-速查.md
-title: `weasel.yaml` 速查
+title: weasel.yaml 速查
 ---
+
+`weasel.yaml` 速查
 
 ```yaml
 # Weasel settings

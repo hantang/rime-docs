@@ -246,17 +246,36 @@ nav:
       - wiki/SpellingAlgebra.md
       - wiki/Rime-in-Emacs.md
   - 版本:
-    - 发布说明:
-        - ... | flat |blog/release/**/*.md
     - Linux-中州韵:
       - wiki/RimeWithIBus.md
     - Windows-小狼毫:
+      - windows/index.md
+      - windows/INSTALL.md
+      - windows/CHANGELOG.md
       - wiki/RimeWithWeasel.md
       - wiki/WeaselReleaseManual.md
+      - windows/weasel/Home.md
+      - windows/weasel/Installation.md
+      - windows/weasel/Customization.md
+      - windows/weasel/Example.md
+      - windows/weasel/Theme.md
+      - windows/weasel/ColorSchemes.md
+      - windows/weasel/Font.md
+      - windows/weasel/Cheatsheet.md
     - macOS-鼠须管:
+      - macos/index.md
+      - macos/INSTALL.md
+      - macos/CHANGELOG.md
       - collect/SquirrelGuide.md
       - wiki/RimeWithSquirrel.md
       - wiki/SquirrelReleaseManual.md
+      - macos/squirrel/Home.md
+      - macos/squirrel/Customization.md
+      - macos/squirrel/FindFontname.md
+      - macos/squirrel/UseFontSourceHan.md
+      - macos/squirrel/Shortcut.md
+      - macos/squirrel/SwitchInputMethod.md
+      - macos/squirrel/SwitchLanguage.md
     - Android
     - iOS
 
