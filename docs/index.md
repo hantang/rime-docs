@@ -74,4 +74,5 @@ icon: material/keyboard
   - [:material-github: 双拼方案评测、优化和生成](https://macroxue.github.io/shuangpin/eval.html)
 - [:material-github: 双拼布局的统计计算](https://tiansh.github.io/lqbz/sp/)
 
-更多参见[列表](./list.md)
+更多参见本站[:material-map-marker: 列表](./list.md) 
+或仓库 [:simple-github: hantang/rime-list](https://github.com/hantang/rime-list)

@@ -238,12 +238,12 @@ nav:
       - wiki/GettingStarted.md
       - wiki/UserGuide.md
       - wiki/RimeWithTheDesign.md
-      - wiki/UserData.md
-      - wiki/SharedData.md
+      - wiki/RimeWithSchemata.md
       - wiki/CustomizationGuide.md
     - 进阶:
       - wiki/Configuration.md
-      - wiki/RimeWithSchemata.md
+      - wiki/UserData.md
+      - wiki/SharedData.md
       - collect/RimeDescription-Schema.md
       - collect/RimeDescription-Dict.md
       - wiki/DictionaryPack.md

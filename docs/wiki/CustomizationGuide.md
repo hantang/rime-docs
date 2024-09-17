@@ -360,7 +360,8 @@ patch:
 
 也可以參照這張比較直觀的圖：
 
-![](https://i.imgur.com/hSty6cB.png)
+<!-- ![](https://i.imgur.com/hSty6cB.png) -->
+![](./images/starcraft.png)
 
 另，此處有現成的配色方案工具供用家調配：
 

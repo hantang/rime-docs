@@ -425,7 +425,7 @@ use_preset_vocabulary: true
 
 ### 設定項速查手冊
 
-[雪齋的文檔](https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md) 全面而詳細解釋了輸入方案及詞典中各設定項的含義及用法。
+[雪齋的文檔](../collect/RimeDescription-Schema.md) 全面而詳細解釋了輸入方案及詞典中各設定項的含義及用法。
 
 
 ### 八股文
@@ -726,10 +726,10 @@ translator:
 
 工作流程是這樣的：
 
-  * `speller` 將字母鍵加入輸入碼序列
-  * `abc_segmentor` 給輸入碼打上標籤 `abc`
-  * `table_translator` 把帶有 `abc` 籤的輸入碼以查表的方式譯爲中文
-  * `table_translator` 所查的碼表在 `translator/dictionary` 所指定的詞典裏
+* `speller` 將字母鍵加入輸入碼序列
+* `abc_segmentor` 給輸入碼打上標籤 `abc`
+* `table_translator` 把帶有 `abc` 籤的輸入碼以查表的方式譯爲中文
+* `table_translator` 所查的碼表在 `translator/dictionary` 所指定的詞典裏
 
 現在可以敲 `hello` 而打出「大家好」。完工！
 
