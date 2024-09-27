@@ -3,7 +3,7 @@ set -eu
 
 echo "Sync submodule"
 # git submodule update --init --recursive --depth=1
-git submodule update --init --depth=1 rime-list 
+git submodule update --init --recursive --remote rime-list 
 
 # echo "Update docs"
 # if [[ -d docs/wiki ]]; then
@@ -18,6 +18,6 @@ if [[ -f rime-list/README.md ]]; then
 fi
 
 echo "Build sites"
-mkdocs build >/dev/null 2>&1
+# mkdocs build >/dev/null 2>&1
 
 echo Done
