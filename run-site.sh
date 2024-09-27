@@ -18,6 +18,6 @@ if [[ -f rime-list/README.md ]]; then
 fi
 
 echo "Build sites"
-# mkdocs build >/dev/null 2>&1
+mkdocs build >/dev/null 2>&1
 
 echo Done
