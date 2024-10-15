@@ -21,7 +21,8 @@ __pypackages__/
 temp/
 todo/
 trash/
+src/
+data.tsv
 
 # mkdocs
 site/
-data.tsv

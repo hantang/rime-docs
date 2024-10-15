@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 set -eu
 
-echo "Sync submodule"
-# git submodule update --init --recursive --depth=1
-git submodule update --init --recursive --remote rime-list 
+echo "install deps"
+pip install -r requirements.txt >/dev/null 2>&1
+
+if [[ -f .gitmodules ]]; then
+    echo "Sync submodule"
+    git submodule update --depth=1 --init --recursive --remote rime-list
+fi
 
 # echo "Update docs"
 # if [[ -d docs/wiki ]]; then
