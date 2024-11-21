@@ -7,8 +7,8 @@ copyright: Copyleft &copy; 2024
 # docs_dir: docs/
 
 # Repository
-repo_name: rime-docs
-repo_url: https://github.com/hantang/rime-docs/
+repo_name: rime-list
+repo_url: https://github.com/hantang/rime-list/
 # edit_uri: tree/main
 
 # Theme
@@ -269,11 +269,12 @@ nav:
       - windows/weasel/Home.md
       - windows/weasel/Installation.md
       - windows/weasel/Customization.md
+      - windows/weasel/Customization2.md
       - windows/weasel/Example.md
       - windows/weasel/Theme.md
       - windows/weasel/ColorSchemes.md
       - windows/weasel/Font.md
-      - windows/weasel/ConfigCheatsheet.md
+      - windows/weasel/ConfigCheatSheet.md
     - macOS-鼠须管:
       - macos/index.md
       - macos/INSTALL.md
