@@ -19,19 +19,19 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         # with:
         #   submodule: "recursive"
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.x"
       # - run: pip install -r requirements.txt
       - name: Build Site
         run: bash deploy.sh
       - name: Setup pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./site
       - name: Deploy to GitHub pages
