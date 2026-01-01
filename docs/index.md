@@ -18,13 +18,27 @@ icon: material/keyboard
 
 ## 软件
 
-| 平台                                 | 输入法                                                                                                                                                                                                                                                                                      |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| :fontawesome-brands-linux: Linux     | - `ibus-rime` 中州韵 [:simple-github: rime/ibus-rime][gh-ibus-rime] <br> - `fcitx5-rime` 小企鹅 [:simple-github: fcitx/fcitx5-rime][gh-fcitx5-rime]                                                                                                                                         |
-| :fontawesome-brands-windows: Windows | - `Weasel` 小狼毫 [:simple-github: rime/weasel][gh-weasel] <br> - `Rabbit` 玉兔毫 [:simple-github: amorphobia/rabbit][gh-rabbit]                                                                                                                                                            |
-| :fontawesome-brands-apple: macOS     | - `Squirrel` 鼠须管 [:simple-github: rime/squirrel][gh-squirrel] <br> - `fcitx5-macos` 小企鹅 [:simple-github: fcitx-contrib/fcitx5-macos][gh-fcitx5-mac]                                                                                                                                   |
-| :fontawesome-brands-android: Android | - `fcitx5-android` 小企鹅  [:simple-github: fcitx5-android][gh-fcitx5] [:simple-fdroid: Fcitx5][fd-fcitx5] [:simple-googleplay: Fcitx5][gp-fcitx5] <br> - `Trime` 同文 [:simple-github: osfans/trime][gh-trime] [:simple-fdroid: Trime][fd-trime] ~~[:simple-googleplay: Trime][gp-trime]~~ |
-| :simple-ios: iOS                     | - `Hamster` 仓 [:simple-github: imfuxiao/Hamster][gh-ham] / [:simple-appstore: 仓输入法][ap-ham] <br> irime输入法 [:simple-appstore: irime输入法][ap-irime]                                                                                                                                 |
+| 平台 | 输入法 | 链接 |
+| --- | --- | --- |
+| :fontawesome-brands-linux: **Linux** | | |
+| | `ibus-rime` 中州韵 | [:simple-github: rime/ibus-rime][gh-ibus-rime] |
+| | `fcitx5-rime` 小企鹅 | [:simple-github: fcitx/fcitx5-rime][gh-fcitx5-rime] |
+| | | |
+| :fontawesome-brands-windows: **Windows** | | |
+| | `Weasel` 小狼毫 | [:simple-github: rime/weasel][gh-weasel] |
+| | `Rabbit` 玉兔毫 | [:simple-github: amorphobia/rabbit][gh-rabbit] |
+| | | |
+| :fontawesome-brands-apple: **macOS** | | |
+| | `Squirrel` 鼠须管 | [:simple-github: rime/squirrel][gh-squirrel] |
+| | `fcitx5-macos` 小企鹅 | [:simple-github: fcitx-contrib/fcitx5-macos][gh-fcitx5-mac] |
+| | | |
+| :fontawesome-brands-android: **Android** | | |
+| | `fcitx5-android` 小企鹅 | [:simple-github: fcitx5-android][gh-fcitx5] <br> [:simple-fdroid: Fcitx5][fd-fcitx5] <br> [:simple-googleplay: Fcitx5][gp-fcitx5] |
+| | `Trime` 同文 | [:simple-github: osfans/trime][gh-trime] <br> [:simple-fdroid: Trime][fd-trime] <br> ~~[:simple-googleplay: Trime][gp-trime]~~ |
+| | | |
+| :fontawesome-brands-apple: **iOS** | | |
+| | `Hamster` 仓 | [:simple-github: imfuxiao/Hamster][gh-ham] <br> [:simple-appstore: 仓输入法][ap-ham] |
+| | irime 输入法 | [:simple-appstore: irime 输入法][ap-irime] |
 
 [gh-ibus-rime]: https://github.com/rime/ibus-rime
 [gh-fcitx5-rime]: https://github.com/fcitx/fcitx5-rime
@@ -50,29 +64,29 @@ icon: material/keyboard
       - [:simple-baidu: Rime吧 - 分享生成Rime配色方案的小工具](https://tieba.baidu.com/p/2491103778)
       - [:simple-baidu: 百度网盘下载地址](http://pan.baidu.com/share/link?shareid=1116561757&uk=2635838991)
     - 镜像备份：
-      - [:material-github: RIME See 西米 - bennyyip](https://bennyyip.github.io/Rime-See-Me/)
-      - [:material-github: RIME See 西米(squirrel) - gjrobert](https://gjrobert.github.io/Rime-See-Me-squirrel/)
-      - [:material-github: RIME See 西米 - fxliang](https://fxliang.github.io/RimeSeeMe/)
-      - [:material-github: RIME See 西米 - nb5p](https://nb5p.github.io/Rime-See-Me/)
-  - [:material-github: 倉輸入法·工具](https://lost-melody.github.io/hamster-tools/)
-  - [:material-github: rime-soak 「润笔」](https://pdog18.github.io/rime-soak)
+      - [:simple-github: RIME See 西米 - bennyyip](https://bennyyip.github.io/Rime-See-Me/)
+      - [:simple-github: RIME See 西米(squirrel) - gjrobert](https://gjrobert.github.io/Rime-See-Me-squirrel/)
+      - [:simple-github: RIME See 西米 - fxliang](https://fxliang.github.io/RimeSeeMe/)
+      - [:simple-github: RIME See 西米 - nb5p](https://nb5p.github.io/Rime-See-Me/)
+  - [:simple-github: 倉輸入法·工具](https://lost-melody.github.io/hamster-tools/)
+  - [:simple-github: rime-soak 「润笔」](https://pdog18.github.io/rime-soak)
 - 第三方在线输入平台 [:simple-vercel: My RIME](https://my-rime.vercel.app)
-- [:material-github: 中州韵助手（重构版）【多平台】](https://github.com/yanhuacuo/rimetool)
-- [:material-github: 小狼毫 Weasel的基本配置工具](https://github.com/qzly/RimeControl)
+- [:simple-github: 中州韵助手（重构版）【多平台】](https://github.com/yanhuacuo/rimetool)
+- [:simple-github: 小狼毫 Weasel的基本配置工具](https://github.com/qzly/RimeControl)
 
 ## 方言输入方案
 
-- [:material-github: 吴语学堂拼音输入方案合集](https://ngli.github.io)
-- [:material-github: 吳語·溫州話](https://zwolken.github.io/rime-wenzhounese/)
-- [:material-github: 潮语拼音教程](https://kahaani.github.io/gatian/)
-- [:material-github: 平話字表 (閩東語‣福州話)](https://only3km.github.io/ciklinbekin/)
-- [:material-github: 哈拼（哈萨克语拼音画）Rime输入方案指南](https://ha-pin.github.io/ime-guide)
+- [:simple-github: 吴语学堂拼音输入方案合集](https://ngli.github.io)
+- [:simple-github: 吳語·溫州話](https://zwolken.github.io/rime-wenzhounese/)
+- [:simple-github: 潮语拼音教程](https://kahaani.github.io/gatian/)
+- [:simple-github: 平話字表 (閩東語‣福州話)](https://only3km.github.io/ciklinbekin/)
+- [:simple-github: 哈拼（哈萨克语拼音画）Rime输入方案指南](https://ha-pin.github.io/ime-guide)
 
 ## 拼音方案
 
-- [:material-github: 双拼输入法生成器和测评](https://macroxue.github.io/shuangpin/)
-  - [:material-github: 双拼方案评测、优化和生成](https://macroxue.github.io/shuangpin/eval.html)
-- [:material-github: 双拼布局的统计计算](https://tiansh.github.io/lqbz/sp/)
+- [:simple-github: 双拼输入法生成器和测评](https://macroxue.github.io/shuangpin/)
+  - [:simple-github: 双拼方案评测、优化和生成](https://macroxue.github.io/shuangpin/eval.html)
+- [:simple-github: 双拼布局的统计计算](https://tiansh.github.io/lqbz/sp/)
 
 更多参见本站[:material-map-marker: 列表](./list.md) 
 或仓库 [:simple-github: hantang/rime-list](https://github.com/hantang/rime-list)
