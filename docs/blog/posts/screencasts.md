@@ -48,7 +48,7 @@ tags:
 * [百度網盤](http://pan.baidu.com/s/1otdUW)
 * [Google Drive](https://drive.google.com/file/d/0B27t6vT9fgezZnhwY01qN0JTdDA/edit?usp=sharing)
 
-### 演職員表
+### 演職員表 
 * 錄入：佛振
 * 輸入法：【鼠鬚管】0.9
 * 鍵盤兄：KBC Poker 2 ♦青軸
@@ -93,7 +93,8 @@ tags:
   [LEOYoon-Tsaw/kuankhiunn.dict.yaml](https://gist.github.com/LEOYoon-Tsaw/5613122)
 
 ### 在線播放
-<embed src="http://player.youku.com/player.php/sid/XNjM1OTcxMzI0/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+<embed src="http://player.youku.com/player.php/sid/XNjM1OTcxMzI0/v.swf" 
+  allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 
 ### 原畫質視頻
 * [百度網盤](http://pan.baidu.com/s/1quVtJ)

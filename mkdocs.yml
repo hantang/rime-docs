@@ -223,7 +223,15 @@ nav:
     - index.md
     - list.md
   - 博客:
-      - ... | flat | blog/posts/*.md
+    -  blog/posts/index.md
+    -  blog/posts/hello-world.md
+    -  blog/posts/spelling-algebra-debugger.md
+    -  blog/posts/screencasts.md
+    -  blog/posts/luna-pinyin.md
+    -  blog/posts/qna-in-mtvu.md
+    -  blog/posts/weasel-release-0-11.md
+    -  blog/posts/rime-configuration-manager.md
+    -  blog/posts/theme-music.md
   - 文档:
     - wiki/index.md
     - 介绍:
@@ -334,4 +342,3 @@ nav:
   - 更多:
     - wiki/ComboPinyin.md
     - collect/OldCantonese.md
-    - ...

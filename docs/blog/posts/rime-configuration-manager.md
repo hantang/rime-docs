@@ -30,9 +30,15 @@ tags:
 趁這次清明假期，閉門造車，終於寫成了這套腳本，並將原本隨輸入法軟件發佈的輸入方案納入這一體系。
 目前該工具只設按「配方」從 GitHub 獲取代碼的功能，和一個命令行介面的交互菜單。
 
-初始安裝： `curl -fsSL https://git.io/rime-install | bash`
+初始安裝： 
+```shell
+curl -fsSL https://git.io/rime-install | bash
+```
 
-命令行示例： `bash rime-install :preset combo-pinyin jyutping wubi`
+命令行示例： 
+```shell
+bash rime-install :preset combo-pinyin jyutping wubi
+```
 
 交互菜單用例截圖：
 ![](../../wiki/images/rime-install-select.png)

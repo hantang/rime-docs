@@ -89,7 +89,7 @@ tags: QnA
 * **地球拼音**：地球人學的用的都是包括聲調的《[漢語拼音](https://www.zdic.net/appendix/f8.htm)》。打倒聲調失傳的（僞）[全拼](https://zh.wikipedia.org/wiki/全拼)
 * [**宮保拼音**](../../wiki/ComboPinyin.md)：利用標準 PC 鍵盤的多鍵並擊（chord）輸入法。以拼音輸入法爲基礎，融合了速錄鍵盤的操作方式。「宮保」爲「Combo」的音譯，可能包含着私廚祕製的意味
 
-[^1]: [:simple-github: sunpinyin/sunpinyin](https://github.com/sunpinyin/sunpinyin)
+[^1]: [sunpinyin/sunpinyin](https://github.com/sunpinyin/sunpinyin)
 
 ## 答語
 
