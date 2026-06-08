@@ -22,3 +22,6 @@
 [submodule "rime-fcitx5-android-docs"]
 	path = rime-fcitx5-android-docs
 	url = https://github.com/fcitx5-android/fcitx5-android.github.io.git
+[submodule "rime-home"]
+	path = rime-home
+	url = https://github.com/rime/home.git

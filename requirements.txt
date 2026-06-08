@@ -1,4 +1,5 @@
-mkdocs-material
+mkdocs==1.6.1
+mkdocs-material=9.7.6
 mkdocs-minify-plugin
 mkdocs-table-reader-plugin
 mkdocs-static-i18n
