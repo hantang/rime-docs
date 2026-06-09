@@ -121,10 +121,12 @@ iCloud 同步是指:
 3. 如果放在icloud中的方案有default.yaml，那么请删掉，sharedsupport中有内置，（如果不需要内置方案，删除rime文件夹即可，这样可以减少仓所占空间，如果需要使用内置方案可以不需要删除）
 4. 再点重新部署，就会把icloud云中的方rime整个文件夹拷贝下来案
 5. 记得在仓的icloud同步中设置过滤的正则:
-       ^.*build.*$,^.*SharedSupport.*$
+    ```
+    ^.*build.*$,^.*SharedSupport.*$
     注意，如果没有使用的userdb文件请再加上
-       ^.*[.]userdb.*$
+    ^.*[.]userdb.*$
     中间用,隔开
+    ```
 
 这样操作，就能在使用点击拷贝到icloud功能时，不会把这些文件上传，同时也保持了icloud中仅存方案文件
 

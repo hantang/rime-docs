@@ -1,4 +1,4 @@
-# RIME List
+# RIME LIST
 
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/hantang/rime-list)
 ![GitHub Commit Badge](https://img.shields.io/github/last-commit/hantang/rime-list.svg)

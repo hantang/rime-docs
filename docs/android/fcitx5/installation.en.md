@@ -21,4 +21,4 @@ You can download the latest build from [Jenkins](https://jenkins.fcitx-im.org/jo
 
 [fcitx5-android-updater](https://github.com/fcitx5-android/fcitx5-android-updater) is an independent App, which downloads and installs the apk from Jenkins, include plugins and the updater itself.
 
-You can download the updater from Jenkins as well: [fcitx5-android-updater [android] [Jenkins]](https://jenkins.fcitx-im.org/job/android/job/fcitx5-android-updater/)
+You can download the updater from Jenkins as well: [fcitx5-android-updater \[android\] \[Jenkins\]](https://jenkins.fcitx-im.org/job/android/job/fcitx5-android-updater/)

@@ -6,7 +6,7 @@ source: osfans/trime/CHANGELOG.md
 
 All notable changes to this project will be documented in this file.
 
-## [3.3.0] - 2024-09-01
+## \[3.3.0\] - 2024-09-01
 
 ### 🚀 Features
 
@@ -84,7 +84,7 @@ All notable changes to this project will be documented in this file.
 - Upgrade gradle to 8.10
 - Add 3.3.0 changelog
 
-## [3.2.19] - 2024-06-30
+## \[3.2.19\] - 2024-06-30
 
 ### 🚀 Features
 
@@ -179,7 +179,7 @@ All notable changes to this project will be documented in this file.
 
 - Upgrade kotlin to 2 and more
 
-## [3.2.18] - 2024-05-01
+## \[3.2.18\] - 2024-05-01
 
 ### 🚀 Features
 
@@ -209,7 +209,7 @@ All notable changes to this project will be documented in this file.
 - Retain current scheme ID when changing day/night theme
 - Didn't actually enable iconv for boost locale
 - Build failure with glog v0.7.0
-- Wrong judge condition for opencc dict type [skip ci]
+- Wrong judge condition for opencc dict type \[skip ci\]
 - Update to the latest librime to fix api's malfunction
 - Disappear clipboard, collection and draft in LiquidKeyboard
 - Random NPE when loading config in TrimeInputMethodService
@@ -341,7 +341,7 @@ All notable changes to this project will be documented in this file.
 
 - Drop koin dependency injection framework
 
-## [3.2.17] - 2024-02-26
+## \[3.2.17\] - 2024-02-26
 
 ### 🚀 Features
 
@@ -472,7 +472,7 @@ All notable changes to this project will be documented in this file.
 
 - Bump version to 3.2.17
 - Complete release ci configuration
-- Create preprelease when ref name contains 'alpha' or 'beta' [skip ci]
+- Create preprelease when ref name contains 'alpha' or 'beta' \[skip ci\]
 - Create nightly release attached to the latest commit
 - Use built-in generated release notes on nightly build
 - Remove obsolete keystore tar
@@ -519,7 +519,7 @@ All notable changes to this project will be documented in this file.
 
 - Change the way to resolve keystore.properties file
 
-## [3.2.16] - 2024-01-01
+## \[3.2.16\] - 2024-01-01
 
 ### 🚀 Features
 
@@ -642,7 +642,7 @@ All notable changes to this project will be documented in this file.
 - Add cmake format target
 - Add missing cmake file
 
-## [3.2.15] - 2023-11-01
+## \[3.2.15\] - 2023-11-01
 
 ### 🐛 Bug Fixes
 
@@ -656,7 +656,7 @@ All notable changes to this project will be documented in this file.
 - Upgrade ktlint to 1.0.1
 - Format code with ktlint 1.0.1
 
-## [3.2.14] - 2023-08-31
+## \[3.2.14\] - 2023-08-31
 
 ### 🚀 Features
 
@@ -701,7 +701,7 @@ All notable changes to this project will be documented in this file.
 - Upgrade rime to latest
 - Upgrade boost to 1.83.0
 
-## [3.2.13] - 2023-06-15
+## \[3.2.13\] - 2023-06-15
 
 ### 🐛 Bug Fixes
 
@@ -715,7 +715,7 @@ All notable changes to this project will be documented in this file.
 
 - Monochrome icon for Android 13+ devices
 
-## [3.2.12] - 2023-04-24
+## \[3.2.12\] - 2023-04-24
 
 ### 🚀 Features
 
@@ -812,7 +812,7 @@ All notable changes to this project will be documented in this file.
 
 - Migrate build configuration from Groovy to KTS
 
-## [3.2.11] - 2023-02-28
+## \[3.2.11\] - 2023-02-28
 
 ### 🚀 Features
 
@@ -877,7 +877,7 @@ All notable changes to this project will be documented in this file.
 
 - *(data,ime)* Optimize the handling of key code/event somewhere
 
-## [3.2.10] - 2022-12-25
+## \[3.2.10\] - 2022-12-25
 
 ### 🚀 Features
 
@@ -944,7 +944,7 @@ All notable changes to this project will be documented in this file.
 - *(jni)* Remove capnproto module
 - *(jni)* Replace miniglog with glog bundled by librime
 
-## [3.2.9] - 2022-10-22
+## \[3.2.9\] - 2022-10-22
 
 ### 🚀 Features
 
@@ -1010,7 +1010,7 @@ All notable changes to this project will be documented in this file.
 - Add andoridx room to manage database
 - Mark argument to export room database architecture
 
-## [3.2.8] - 2022-08-18
+## \[3.2.8\] - 2022-08-18
 
 ### 🚀 Features
 
@@ -1078,7 +1078,7 @@ All notable changes to this project will be documented in this file.
 - Disable desugaring temporarily
 - Move acticity part to activity alias
 
-## [3.2.7] - 2022-07-02
+## \[3.2.7\] - 2022-07-02
 
 ### 🚀 Features
 
@@ -1122,7 +1122,7 @@ All notable changes to this project will be documented in this file.
 ### 📚 Documentation
 
 - Update build guide (#783)
-- Polish readme document [ci skip]
+- Polish readme document \[ci skip\]
 - Minor change words in readme
 
 ### ⚡ Performance
@@ -1192,7 +1192,7 @@ All notable changes to this project will be documented in this file.
 - Improve compatibility for hook ctrl+c/v/x
 - Add switch for long clicking to delete candidate
 
-## [3.2.6] - 2022-04-21
+## \[3.2.6\] - 2022-04-21
 
 ### 🚀 Features
 
@@ -1229,7 +1229,7 @@ All notable changes to this project will be documented in this file.
 - SpotlessApply
 - Print formated init log
 
-## [3.2.5] - 2022-01-15
+## \[3.2.5\] - 2022-01-15
 
 ### 🚀 Features
 
@@ -1296,7 +1296,7 @@ All notable changes to this project will be documented in this file.
 - Upgrade kotlin to 1.6.10
 - *(jni)* Use the phony name of librime-octagram
 
-## [3.2.4] - 2021-11-26
+## \[3.2.4\] - 2021-11-26
 
 ### 🚀 Features
 
@@ -1399,7 +1399,7 @@ All notable changes to this project will be documented in this file.
 
 - *(core)* Remove unnecessary `finishComposingText`
 
-## [3.2.3] - 2021-10-19
+## \[3.2.3\] - 2021-10-19
 
 ### 🚀 Features
 
@@ -1475,7 +1475,7 @@ All notable changes to this project will be documented in this file.
 - `YamlUtils`: new, adapted from `Config`
 - Try to meet styling specification
 
-## [3.2.2] - 2021-09-02
+## \[3.2.2\] - 2021-09-02
 
 ### 🚀 Features
 
@@ -1530,7 +1530,7 @@ All notable changes to this project will be documented in this file.
 - Adjust preference trees
 - Support for hiding icon in the launcher
 - Split two objects from `Function` class
-- Fix typo in comment [ci skip]
+- Fix typo in comment \[ci skip\]
 - *(components)* Put the seekbar into a dialog
 - *(components)* Let activity restart after confirming checked schema(s)
 - *(settings)* Add icon for preferences item in top page
@@ -1642,7 +1642,7 @@ All notable changes to this project will be documented in this file.
 
 - `AppVersionUtil.kt`: optimization
 
-## [3.2.1] - 2021-06-08
+## \[3.2.1\] - 2021-06-08
 
 ### 🐛 Bug Fixes
 
@@ -1661,7 +1661,7 @@ All notable changes to this project will be documented in this file.
 
 - Charset_filter doesn't work after librime(1.6.1)
 
-## [3.2.0] - 2021-06-06
+## \[3.2.0\] - 2021-06-06
 
 ### 🚀 Features
 
@@ -1697,7 +1697,7 @@ All notable changes to this project will be documented in this file.
 - Copy assets in rime folder
 - 無內置方案時部署失敗
 - Add clang package for build
-- Fix broken coolapk badage url[ci skip]
+- Fix broken coolapk badage url\[ci skip\]
 - Fix keyboard config close #382
 - Avoid return default board fix #382 #389
 - Fix opencc file format
@@ -1732,7 +1732,7 @@ All notable changes to this project will be documented in this file.
 - Use constant versionName for F-Droid (3.1.2 20181224)
 - 僅Android P需要此權限在最上層顯示懸浮窗、對話框
 - *(travis)* 自動發佈更新日誌
-- *(docs)* Add F-Droid badge for download[ci skip]
+- *(docs)* Add F-Droid badge for download\[ci skip\]
 - *(cmake)* 默認編譯release版
 - *(cmake)* Configure snappy in output directory
 - *(docs)* 修復鏈接
@@ -1768,10 +1768,10 @@ All notable changes to this project will be documented in this file.
 - *(travis)* Use default build tools
 - Use direct download link for last release
 - Add rimerc tip to release note fix #349
-- Add sponsor for trime[ci skip]
-- Update contributor of abay[ci skip]
-- Lower case of rimerc[ci skip]
-- Add new contributor[ci skip]
+- Add sponsor for trime\[ci skip\]
+- Update contributor of abay\[ci skip\]
+- Lower case of rimerc\[ci skip\]
+- Add new contributor\[ci skip\]
 - Upgrade ndk version to 22
 - Welcome to version 3.2.0
 - Change name style
@@ -1779,13 +1779,13 @@ All notable changes to this project will be documented in this file.
 - Use github action close #411
 - Fix pull rquest typo and tigger it
 - Rename last commit action
-- Add new contributor[ci skip]
+- Add new contributor\[ci skip\]
 
 ### Fix
 
 - Crash when key_vibrate_duration is 0
 
-## [3.1] - 2018-12-17
+## \[3.1\] - 2018-12-17
 
 ### 🚀 Features
 
@@ -2044,7 +2044,7 @@ All notable changes to this project will be documented in this file.
 
 - Shift鎖定
 
-## [3.0.1] - 2017-02-10
+## \[3.0.1\] - 2017-02-10
 
 ### 🚀 Features
 
@@ -2088,7 +2088,7 @@ All notable changes to this project will be documented in this file.
 - *(settings)* Update string
 - *(jni)* Add abi in rime version
 
-## [3.0] - 2017-01-04
+## \[3.0\] - 2017-01-04
 
 ### #33
 
@@ -2124,9 +2124,9 @@ All notable changes to this project will be documented in this file.
 - 提取申請權限減少崩潰
 - *(jni)* Use ndk instead of cmake to fix charset_filter crash
 - Copy files when sdcard is ready to close #15
-- *(README)* Add ndk path and refactor in guide[ci skip]
-- *(README)* Update contributors [ci skip]
-- *(icon)* Update the icons dues to typo in '-w 36 -h 38'[ci skip]
+- *(README)* Add ndk path and refactor in guide\[ci skip\]
+- *(README)* Update contributors \[ci skip\]
+- *(icon)* Update the icons dues to typo in '-w 36 -h 38'\[ci skip\]
 - *(icon)* Update status icon
 - *(travis)* Ci includes *.trime.yaml
 - *(Makefile)* Add ant release and install targets
@@ -2136,7 +2136,7 @@ All notable changes to this project will be documented in this file.
 
 - *(build)* Improve build guide for other platform
 - Use docs folder instead of branch
-- *(README)* Update guide due to make release[ci skip] (#128)
+- *(README)* Update guide due to make release\[ci skip\] (#128)
 
 ### 🎨 Styling
 

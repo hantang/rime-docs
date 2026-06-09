@@ -106,6 +106,3 @@ cangjie6.dict.yaml
 
 雪齋  
 09-Nov-2013
-
-[1]: https://www.boost.org/doc/libs/1_49_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html
-[2]: https://github.com/hchunhui/librime-lua

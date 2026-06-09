@@ -6,20 +6,22 @@ icon: material/keyboard
 
 本站汇集RIME相关工具、输入法方案、配置和词库等，以及文档备份。
 
-本站主要对其中等标题格式、目录、图片链接以及Markdown解析错误问题进行适当修正，另外对文章进行简单归类排序（不一定合适）。
-由于部分文档年代较久，存在格式凌乱、笔误、错字、重复引用、链接过时等问题，目前仍留有原样；待时机合适，当发布新版的简明文档，以飨用户。
+!!! INFO
 
-## 网站
+    本站展示的文档，来源RIME各平台发行版文档和博客资料，对其中等标题格式、目录、图片链接以及Markdown解析错误问题进行适当修正，
+    另外对文章简单进行了适当分组归档（仅供参考，部分文档可能原文已更新）。
+
+    由于部分文档年代较久，维护欠佳，存在格式凌乱、笔误、错字、重复引用、链接过时等问题，目前仍留有原样；
+    待时机合适，当发布新版的简明文档，以飨用户。
+
+## RIME 网站
 
 - GitHub仓库: [:simple-github: rime](https://github.com/rime/)
 - 官网：[:material-link: RIME | 中州韻輸入法引擎](https://rime.im/)
 - 文档: [:simple-github: Wiki](https://github.com/rime/home/wiki)
 - 鼠须管文档补充: [:simple-github: 鼠鬚管介面配置指南.md](https://github.com/LEOYoon-Tsaw/Rime_collections)
 
-
-
-
-## 软件
+## 各平台发行版
 
 | 平台 | 输入法 | 链接 | 最新版 |
 | --- | --- | --- | --- |
@@ -73,23 +75,26 @@ icon: material/keyboard
 [rel-squirrel]: https://img.shields.io/github/v/release/rime/squirrel
 [rel-weasel]: https://img.shields.io/github/v/release/rime/weasel
 [rel-fcitx5]: https://img.shields.io/github/v/release/fcitx5-android/fcitx5-android
-[gh-trime]: https://github.com/osfans/trime
 [rel-trime]: https://img.shields.io/github/v/release/osfans/trime
 [rel-ham]: https://img.shields.io/github/v/release/imfuxiao/Hamster
 
+## 配置工具
 
-## 辅助工具
-
+- App版：
+  - 【多平台】 [:simple-github: 中州韵助手（重构版）](https://github.com/yanhuacuo/rimetool)
+  - 【Windows】 [:simple-github: 小狼毫 Weasel的基本配置工具](https://github.com/qzly/RimeControl)
+  - 【macOS】 [:simple-github: Squirrel Theme Simulator](https://github.com/LEOYoon-Tsaw/Squirrel-Designer)
+  - 【macOS】 [:simple-github: Squirrel Configuration Tool (SCT)](https://github.com/neolee/sct)
+- 【Web】[:simple-github: 小狼毫主题编辑器](https://github.com/owlzou/weasel-theme-editor)
 - 配色（皮肤）等调试：
-  - RIME西米
-  - [:simple-github: 倉輸入法·工具](https://lost-melody.github.io/hamster-tools/)
-  - [:simple-github: rime-soak 「润笔」](https://pdog18.github.io/rime-soak)
-- [:simple-github: 中州韵助手（重构版）【多平台】](https://github.com/yanhuacuo/rimetool)
-- [:simple-github: 小狼毫 Weasel的基本配置工具](https://github.com/qzly/RimeControl)
-- [:simple-github: 配色编辑器（macOS）](https://github.com/LEOYoon-Tsaw/Squirrel-Designer)
-- [:simple-github:小狼毫主题编辑器（Web）](https://github.com/owlzou/weasel-theme-editor)
+    - RIME西米
+    - [:simple-github: 倉輸入法·工具](https://lost-melody.github.io/hamster-tools/)
+    - [:simple-github: rime-soak 「润笔」](https://pdog18.github.io/rime-soak)
 
 ## 热门配置
+
+更多参见本站[:material-map-marker: 列表](./list.md) 
+或仓库 [:simple-github: hantang/rime-list](https://github.com/hantang/rime-list)
 
 | 收藏 | 更新 | 仓库 | 说明 |
 | --- | --- | --- | --- |
@@ -103,7 +108,6 @@ icon: material/keyboard
 | ![1521][gh_046_stars]<br>![149][gh_046_forks] | ![gh_046_commit] | [wongdean/rime-settings][gh_046] | 鼠须管输入法傻瓜式配置指南 |
 | ![1073][gh_044_stars]<br>![99][gh_044_forks] | ![gh_044_commit] | [SivanLaai/rime-pure][gh_044] | 【rime 小狼毫trime 同文】手机/PC一站式配置<br> <http//blog.laais.cn/posts/projects/rime/info/> |
 | ![1000][gh_035_stars]<br>![66][gh_035_forks] | ![gh_035_commit] | [gaboolic/rime-shuangpin-fuzhuma][gh_035] | 墨奇音形，双拼辅助码，基于雾凇-白霜词库。<br> <https//moqiyinxing.chunqiujinjing.com/index> |
-
 
 [gh_036]: https://github.com/iDvel/rime-ice
 [gh_036_stars]: https://img.shields.io/github/stars/iDvel/rime-ice?style=flat-square
@@ -147,19 +151,16 @@ icon: material/keyboard
 [gh_035_commit]: https://img.shields.io/github/last-commit/gaboolic/rime-shuangpin-fuzhuma?style=flat-square&label=update
 
 
-## 方言输入方案
+<!-- ## 方言输入方案 -->
 
-- [:simple-github: 吴语学堂拼音输入方案合集](https://ngli.github.io)
-- [:simple-github: 吳語·溫州話](https://zwolken.github.io/rime-wenzhounese/)
-- [:simple-github: 潮语拼音教程](https://kahaani.github.io/gatian/)
-- [:simple-github: 平話字表 (閩東語‣福州話)](https://only3km.github.io/ciklinbekin/)
-- [:simple-github: 哈拼（哈萨克语拼音画）Rime输入方案指南](https://ha-pin.github.io/ime-guide)
+<!-- - [:simple-github: 吴语学堂拼音输入方案合集](https://ngli.github.io) -->
+<!-- - [:simple-github: 吳語·溫州話](https://zwolken.github.io/rime-wenzhounese/) -->
+<!-- - [:simple-github: 潮语拼音教程](https://kahaani.github.io/gatian/) -->
+<!-- - [:simple-github: 平話字表 (閩東語‣福州話)](https://only3km.github.io/ciklinbekin/) -->
+<!-- - [:simple-github: 哈拼（哈萨克语拼音画）Rime输入方案指南](https://ha-pin.github.io/ime-guide) -->
 
-## 拼音方案
+<!-- ## 拼音方案 -->
 
-- [:simple-github: 双拼输入法生成器和测评](https://macroxue.github.io/shuangpin/)
-  - [:simple-github: 双拼方案评测、优化和生成](https://macroxue.github.io/shuangpin/eval.html)
-- [:simple-github: 双拼布局的统计计算](https://tiansh.github.io/lqbz/sp/)
-
-更多参见本站[:material-map-marker: 列表](./list.md) 
-或仓库 [:simple-github: hantang/rime-list](https://github.com/hantang/rime-list)
+<!-- - [:simple-github: 双拼输入法生成器和测评](https://macroxue.github.io/shuangpin/) -->
+  <!-- - [:simple-github: 双拼方案评测、优化和生成](https://macroxue.github.io/shuangpin/eval.html) -->
+<!-- - [:simple-github: 双拼布局的统计计算](https://tiansh.github.io/lqbz/sp/) -->

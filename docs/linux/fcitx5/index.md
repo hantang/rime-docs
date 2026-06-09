@@ -3,7 +3,7 @@ source: fcitx5-rime/README.md
 title: fcitx5-rime
 ---
 
-## RIME support for Fcitx
+# RIME support for Fcitx
 
 RIME(中州韻輸入法引擎) is _mainly_ a Traditional Chinese input method engine.
 

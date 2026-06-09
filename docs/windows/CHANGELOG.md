@@ -1,6 +1,6 @@
 ---
 source: weasel/CHANGELOG.md
-source2: blog/release/weasel/index.md
+source2: blog/release/weasel.md
 title: 【小狼毫】更新日誌
 comments: false
 date: 2024-06-06 20:00:00

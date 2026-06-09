@@ -40,10 +40,10 @@ feat: WeaselSetup 默认启动不请求管理员权限，必要时使用管理�
 
 #### Chores
 chore: update bump version scripts ([fxliang](https://github.com/rime/weasel/commit/967674ff5295c4a389b35e9f8070b9fe43d0dcb1))
-chore: update update/bump-version.ps1 [skip ci] ([fxliang](https://github.com/rime/weasel/commit/d13fd1250545d05df6573be7c0dee2529a4dc3fc))
-chore: update update/bump_version.sh [skip ci] ([fxliang](https://github.com/rime/weasel/commit/8d12cafec0a84498c3f32d6821b7ccbd85fe1f21))
-chore: follow #1379, update `update/bump-version.sh` to work without clog[skip ci] ([fxliang](https://github.com/rime/weasel/commit/d75b34bce20026f54ebbae73b6c591b3db473d11))
-chore: make clang-format.ps1 worked in linux/Mac OS[skip ci] ([fxliang](https://github.com/rime/weasel/commit/d3e872c6671aaab5bfc0a6caa8227b416a5c5601))
+chore: update update/bump-version.ps1 \[skip ci\] ([fxliang](https://github.com/rime/weasel/commit/d13fd1250545d05df6573be7c0dee2529a4dc3fc))
+chore: update update/bump_version.sh \[skip ci\] ([fxliang](https://github.com/rime/weasel/commit/8d12cafec0a84498c3f32d6821b7ccbd85fe1f21))
+chore: follow #1379, update `update/bump-version.sh` to work without clog\[skip ci\] ([fxliang](https://github.com/rime/weasel/commit/d75b34bce20026f54ebbae73b6c591b3db473d11))
+chore: make clang-format.ps1 worked in linux/Mac OS\[skip ci\] ([fxliang](https://github.com/rime/weasel/commit/d3e872c6671aaab5bfc0a6caa8227b416a5c5601))
 chore: update update/bump_version.ps1 ([fxliang](https://github.com/rime/weasel/commit/18cb65206c494e5b3bc21380dc938d5553a7e83a))
 chore: add powershell script for linting ([fxliang](https://github.com/rime/weasel/commit/a6d15cea4ad14c921bbde4c6b9c99a8a15c4dcde))
 chore: update .gitignore ([fxliang](https://github.com/rime/weasel/commit/094e99de9e47b0aa9469b3d94a03e78501d8b1bb))
@@ -89,7 +89,7 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 
 #### Chores
 * add update\bump-version.ps1 to bump version in powershell, when clog is not required ([fxliang](https://github.com/rime/weasel/commit/8770fb3ed1b4341b7875c1d60e98bfa5b42f8ac7))
-* update bump-version.sh, appcast.xml and testing-appcast.xml[skip ci] ([fxliang](https://github.com/rime/weasel/commit/91d5e4e224a0d73b8303a6ce10f03c71dace5cdd))
+* update bump-version.sh, appcast.xml and testing-appcast.xml\[skip ci\] ([fxliang](https://github.com/rime/weasel/commit/91d5e4e224a0d73b8303a6ce10f03c71dace5cdd))
 
 #### Continuous Integration
 * release and update testing appcast only in rime/weasel ([fxliang](https://github.com/rime/weasel/commit/4af83b6e17f7c3cf78257dd300f4adadbffa1083))

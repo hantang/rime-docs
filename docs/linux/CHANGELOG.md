@@ -2,8 +2,8 @@
 source: ibus-rime/CHANGELOG.md
 title: 【中州韻】更新日誌
 ---
+# 【中州韻】更新日誌
 
-<a name="1.5.0"></a>
 ## 1.5.0 (2021-01-24)
 
 

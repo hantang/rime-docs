@@ -166,7 +166,7 @@ The current recommended versions are recorded in [Versions.kt](build-logic/conve
 
     Switch to "Project" view in the "Project" tool window (namely the file tree side bar), right click `lib/fcitx5/src/main/cpp/prebuilt` directory, then select "Mark Directory as > Excluded". You may also need to restart the IDE to interrupt ongoing indexing process.
 
-- Gradle error: "No variants found for ':app'. Check build files to ensure at least one variant exists." or "[CXX1210] <whatever>/CMakeLists.txt debug|arm64-v8a : No compatible library found"
+- Gradle error: "No variants found for ':app'. Check build files to ensure at least one variant exists." or "\[CXX1210\] <whatever>/CMakeLists.txt debug|arm64-v8a : No compatible library found"
 
     Examine if there are environment variables set such as `_JAVA_OPTIONS` or `JAVA_TOOL_OPTIONS`. You might want to clear them (maybe in the startup script `studio.sh` of Android Studio), as some gradle plugin treats anything in stderr as errors and aborts.
 

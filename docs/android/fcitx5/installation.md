@@ -21,4 +21,4 @@ GitHub: [![release version](https://img.shields.io/github/v/release/fcitx5-andro
 
 [fcitx5-android-updater](https://github.com/fcitx5-android/fcitx5-android-updater) 是一个独立的应用，它可以从 Jenkins 上下载和安装最近几次构建的 apk 安装包，包括插件及更新器本身。
 
-更新器也可以从 Jenkins 上下载： [fcitx5-android-updater [android] [Jenkins]](https://jenkins.fcitx-im.org/job/android/job/fcitx5-android-updater/)
+更新器也可以从 Jenkins 上下载： [fcitx5-android-updater \[android\] \[Jenkins\]](https://jenkins.fcitx-im.org/job/android/job/fcitx5-android-updater/)

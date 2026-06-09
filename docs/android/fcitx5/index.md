@@ -1,8 +1,3 @@
----
-# hide:
-#   - navigation
----
-
 # Fcitx5 for Android
 
 * 在 Trello 看板查看开发进程与计划：<https://trello.com/b/gftk6ZdV/kanban>

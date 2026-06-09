@@ -750,7 +750,7 @@ date: 2026-01-13 19:00:00
   * 修復：自定義短語不應參與組詞
   * 修復：「链」「坂」「喂」在簡化字模式下無法組詞（須清除用戶字頻）
   * 新增：對特定類型候選字不做繁簡轉換<br/>
-    例如不轉換反查字 `simplifier/exclude_types: [ reverse_lookup ]`
+    例如不轉換反查字 `simplifier/exclude_types: \[ reverse_lookup \]`
 
 <a name="0.9.18"></a>
 ## 鼠鬚管 0.9.18 (2013-04-26)

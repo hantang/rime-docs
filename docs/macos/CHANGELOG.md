@@ -1,6 +1,6 @@
 ---
 source: squirrel/CHANGELOG.md
-source2: blog/release/squirrel/index.md
+source2: blog/release/squirrel.md
 title: 【鼠鬚管】更新日誌
 comments: false
 date: 2024-06-07 11:41:28
@@ -681,7 +681,7 @@ date: 2024-06-07 11:41:28
 * 修復：自定義短語不應參與組詞
 * 修復：「链」「坂」「喂」在簡化字模式下無法組詞（須清除用戶字頻）
 * 新增：對特定類型候選字不做繁簡轉換<br/>
-    例如不轉換反查字 `simplifier/exclude_types: [ reverse_lookup ]`
+    例如不轉換反查字 `simplifier/exclude_types: \[ reverse_lookup \]`
 
 <a name="0.9.18"></a>
 ## 鼠鬚管 0.9.18 (2013-04-26)

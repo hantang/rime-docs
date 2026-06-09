@@ -1,0 +1,269 @@
+[project]
+site_name = "RIME List & Docs"
+site_description = ""
+site_author = "hantang"
+site_url = "https://hantang.github.io/rime-docs/"
+copyright = "Copyleft &copy; 2024-2026"
+
+repo_url = "https://github.com/hantang/rime-list"
+repo_name = "RIME-LIST"
+
+# extra_css = []
+extra_javascript = [
+  "https://cdn.jsdelivr.net/npm/tablesort@5.7.1/src/tablesort.min.js",
+  "https://cdn.jsdelivr.net/npm/tablesort@5.7.1/dist/sorts/tablesort.date.min.js",
+  "https://cdn.jsdelivr.net/npm/tablesort@5.7.1/dist/sorts/tablesort.number.min.js",
+  "static/js/tablesort.js",
+]
+
+nav = [
+  { "主页" = [
+    "index.md",
+    "list.md",
+  ] },
+  { "文档" = [
+    { "安装" = [
+      "blog/download/index.md",
+      # "wiki/Downloads.md",
+      "blog/docs/index.md",
+      "blog/i-rime-with-fool/index.md",
+      "wiki/Rime-in-Emacs.md",
+      "wiki/RimeWithTheCode.md",
+      { "版本" = [
+        "blog/release/weasel.md",
+        "blog/release/squirrel.md",
+      ] },
+    ] },
+    { "介绍" = [
+      "wiki/HOME.md",
+      "wiki/Introduction.md",
+      "wiki/FAQ.md",
+      "wiki/MoodCollection.md",
+      "wiki/UserQuotes.md",
+    ] },
+    { "基础" = [
+      "wiki/GettingStarted.md",
+      "wiki/UserGuide.md",
+      "wiki/RimeWithTheDesign.md",
+      "wiki/RimeWithSchemata.md",
+      "wiki/CustomizationGuide.md",
+    ] },
+    { "进阶" = [
+      "wiki/Configuration.md",
+      "wiki/UserData.md",
+      "wiki/SharedData.md",
+      "collect/RimeDescription-Schema.md",
+      "collect/RimeDescription-Dict.md",
+      "wiki/DictionaryPack.md",
+      "wiki/Recipes.md",
+      "blog/code/index.md",
+      "wiki/SpellingAlgebra.md",
+    ] },
+
+  ] },
+  { "Windows" = [
+    "windows/index.md",
+    "windows/INSTALL.md",
+    "windows/CHANGELOG.md",
+    "wiki/RimeWithWeasel.md",
+    "wiki/WeaselReleaseManual.md",
+    { "小狼毫" = [
+      "windows/weasel/Home.md",
+      "windows/weasel/Installation.md",
+      "windows/weasel/Customization.md",
+      "windows/weasel/Customization2.md",
+      "windows/weasel/Example.md",
+      "windows/weasel/Theme.md",
+      "windows/weasel/ColorSchemes.md",
+      "windows/weasel/Font.md",
+      "windows/weasel/ConfigCheatsheet.md",
+    ] },
+  ] },
+  { "macOS" = [
+    "macos/index.md",
+    "macos/INSTALL.md",
+    "macos/CHANGELOG.md",
+    "collect/SquirrelGuide.md",
+    "wiki/RimeWithSquirrel.md",
+    "wiki/SquirrelReleaseManual.md",
+    { "鼠须管" = [
+      "macos/squirrel/Home.md",
+      "macos/squirrel/Customization.md",
+      "macos/squirrel/FindFontname.md",
+      "macos/squirrel/UseFontSourceHan.md",
+      "macos/squirrel/Shortcut.md",
+      "macos/squirrel/SwitchInputMethod.md",
+      "macos/squirrel/SwitchLanguage.md",
+    ] },
+    { "Fcitx5版" = [
+      "macos/fcitx5/index.md",
+      "macos/fcitx5/install.md",
+    ] },
+  ] },
+  { "Linux" = [
+    { "中州韵（IBus版）" = [
+      "linux/index.md",
+      "linux/CHANGELOG.md",
+      "wiki/RimeWithIBus.md",
+    ] },
+    { "Fcitx版" = [
+      "linux/fcitx5/index.md",
+      "linux/fcitx/index.md",
+    ] },
+  ] },
+  { "Android" = [
+    { "Fcitx5版" = [
+      "android/fcitx5/index.md",
+      "android/fcitx5/installation.md",
+      "android/fcitx5/faq.md",
+      "android/fcitx5/privacy.md",
+      "android/fcitx5/readme.md",
+    ] },
+    { "Trime（同文）" = [
+      "android/trime/index.md",
+      "android/trime/CHANGELOG.md",
+      "android/trime/Home.md",
+      "android/trime/Customization.md",
+      "android/trime/ConfigCheatsheet.md",
+      "android/trime/Frontends.md",
+      "android/trime/Materials.md",
+      "android/trime/UserGuide.md",
+      "android/trime/Tricks.md",
+      "android/trime/Tips1.md",
+      "android/trime/Tips2.md",
+      "android/trime/Case1.md",
+      "android/trime/Case2.md",
+      "android/trime/Case3.md",
+      "android/trime/Case4.md",
+      "android/trime/CONTRIBUTING.md",
+      "android/trime/CODE_OF_CONDUCT.md",
+    ] },
+  ] },
+  { "iOS" = [
+    { "Hamster（仓）" = [
+      "ios/hamster/index.md",
+      "ios/hamster/Home.md",
+      "ios/hamster/ConfigCheatsheet.md",
+      "ios/hamster/CustomKeyboard.md",
+      "ios/hamster/CustomLayout.md",
+      "ios/hamster/ColorSchemes.md",
+      "ios/hamster/Clipboard.md",
+      "ios/hamster/iCloud.md",
+      "ios/hamster/ImportRimeIce.md",
+      "ios/hamster/SwitchChinese.md",
+      "ios/hamster/Sync.md",
+      "ios/hamster/Develop.md",
+    ] },
+  ] },
+
+  { "更多" = [
+    "wiki/ComboPinyin.md",
+    "collect/OldCantonese.md",
+  ] },
+]
+
+[project.theme]
+# variant = "classic"
+# custom_dir = "overrides"
+favicon = "static/favicon.png"
+language = "zh"
+features = [
+  "announce.dismiss",
+  #"content.action.edit",
+  #"content.action.view",
+  "content.code.annotate",
+  "content.code.copy",
+  "content.code.select",
+  "content.footnote.tooltips",
+  "content.tabs.link",
+  "content.tooltips",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  #"navigation.instant.progress",
+  "navigation.path",
+  #"navigation.prune",
+  "navigation.sections",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  #"toc.integrate",
+]
+#logo = "assets/logo.png"
+# logo = "static/favicon.ico"
+[project.theme.icon]
+logo = "material/keyboard-variant"
+[project.theme.font]
+text = "Inter"
+code = "Jetbrains Mono"
+
+[project.validation]
+invalid_link_anchors = false
+# unresolved_references = false
+
+[project.plugins.search]
+separator = '[\s\u200b\-]'
+
+# Palette toggle for automatic mode
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+primary = "amber"
+accent = "orange"
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+primary = "black"
+accent = "indigo"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/hantang/rime-list/"
+[project.markdown_extensions.abbr]
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.md_in_html]
+[project.markdown_extensions.toc]
+permalink = true
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
+[project.markdown_extensions.pymdownx.betterem]
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.emoji]
+emoji_generator = "zensical.extensions.emoji.to_svg"
+emoji_index = "zensical.extensions.emoji.twemoji"
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.keys]
+[project.markdown_extensions.pymdownx.magiclink]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions.pymdownx.superfences]
+# custom_fences = [
+#   { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+# ]
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+combine_header_slug = true
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
+[project.markdown_extensions.pymdownx.tilde]
+[project.markdown_extensions.zensical.extensions.macros]
+module_name = "macros"

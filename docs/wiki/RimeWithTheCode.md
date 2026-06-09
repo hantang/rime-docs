@@ -24,11 +24,11 @@ Fork Rime on [GitHub](https://github.com/rime):
 
 ## How to Rime with the OS
 
-[[Instructions|RimeWithIBus]] on building and installing ibus-rime.
+- [Instructions](./RimeWithIBus.md) on building and installing ibus-rime.
 
-[[Instructions|RimeWithSquirrel]] on building Squirrel on macOS.
+- [Instructions](./RimeWithSquirrel) on building Squirrel on macOS.
 
-[[Instructions|RimeWithWeasel]] on building Weasel on Windows.
+- [Instructions](./RimeWithWeasel) on building Weasel on Windows.
 
 ## Report Issues
 

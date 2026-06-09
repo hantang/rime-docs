@@ -19,9 +19,9 @@ title: trime.yaml 詳解
 
 ### 注解
 
-每个配置条目以”**[版本号]**`配置名`：配置作用简介“或”`配置名`：配置作用简介“的格式呈现。 
+每个配置条目以“`**[版本号]**`配置名：配置作用简介”或“`配置名`：配置作用简介”的格式呈现。 
 
-**[版本号]** 表示此配置项自该版本才可用，**[~~版本号~~]** 表示此配置自该版本弃用。**[不可用]** 即不确定被弃用的起始版本。
+**\[版本号\]** 表示此配置项自该版本才可用，**\[~~版本号~~\]** 表示此配置自该版本弃用。**\[不可用\]** 即不确定被弃用的起始版本。
 
 ## 一、`style`
 
@@ -55,12 +55,12 @@ title: trime.yaml 詳解
 - `horizontal`： 水平模式。改变方向键的功能 （`true`：方向键适配横排候选；`false`：方向键适配竖排候选）
 - `keyboards`: 键盘配置。除主键盘外，其它需要用到的键盘都要在这里声明。
 - `proximity_correction`: 将按键之间的空白区域分配给相邻的按键，避免空按（`true`:打开；`false`:关闭）
-- **[3.2.3]**`background_folder`：背景图路径，即保存在 background 的哪个子目录。 使用此参数可以方便管理多个主题的图片（当然也可以指定多个主题共用一套图片）。
+- **\[3.2.3\]**`background_folder`：背景图路径，即保存在 background 的哪个子目录。 使用此参数可以方便管理多个主题的图片（当然也可以指定多个主题共用一套图片）。
 - `reset_ascii_mode`: 不同进程中显示键盘时重置为中文状态（`true`:重置为中文；`false`:记忆中英状态）
 - `latin_locale`: 在英文状态（ascii_mode）下，朗读按键时所用的语言。
 - `locale`: 在中文状态下，朗读上屏文本和按键时所用的语言。  
   ※ 需要先在同文设置界面开启朗读功能。朗读功能还需要手机的 TTS 引擎支持。可使用系统默认引擎，也可安装讯飞语记等第三方引擎。`latin_local`和`local`可以设置的语言也取决于 TTS 引擎。常见的语言：`zh_TW`, `zh_CN`, `zh_HK`, `en_US`, `ja_JP`, `ko_KR`,……
-- **[语音识别几乎不可用]**`speech_opencc_config`: 语音输入简繁转换（默认值`s2t.json`: 将语音识别的结果转换成繁体再上屏）  
+- **\[语音识别几乎不可用\]**`speech_opencc_config`: 语音输入简繁转换（默认值`s2t.json`: 将语音识别的结果转换成繁体再上屏）  
   需要配合 OpenCC 组件来使用。转换的选项有：
   - `s2t.json` #简体 → 繁体
   - `t2s.json` #繁体 → 简体
@@ -139,14 +139,14 @@ patch:
   ⚠ 若关闭了`proximity_correction`，过大的`horizontal_gap`与`vertical_gap`会引起空按漏按
 - `vertical_correction`: 触摸位置校正（竖直方向）。  
   ※ 为了提升打字手感，可将按键的实际触摸位置相对其显示位置上下偏移一点点（默认值`-10`，上偏为正，下偏为负，为`0`则不偏移）。
-- **[3.2.3]**`keyboard_padding`: 竖屏模式下，屏幕左右两侧与键盘的距离（减少曲面屏误触）
-- **[3.2.3][不可用]**`keyboard_padding_left`: 竖屏屏模式下，左手键盘布局，屏幕左侧与键盘的距离
-- **[3.2.3][不可用]**`keyboard_padding_right`: 竖屏屏模式下，左手键盘布局，屏幕右侧与键盘的距离
-- **[3.2.3]**`keyboard_padding_bottom`: 竖屏模式下，屏幕下边缘与键盘的距离（减少全面屏误触）
-- **[3.2.3]**`keyboard_padding_land`: 横屏模式下，屏幕左右两侧与键盘的距离（避免横屏按键过度拉伸变形）
-- **[3.2.3]**`keyboard_padding_land_bottom`: 横屏模式下，屏幕下边缘与键盘的距离
-- **[3.2.6]**`keyboard_height`: 键盘锁定的高度。当每行按键高度、行之间间距之和与此参数存在差异时，键盘自动缩放为锁定的高度。使用此参数可以快速调整键盘高度而无需复杂。当缺少此参数时，键盘高度不做缩放计算。
-- **[3.2.6]**`keyboard_height_land`: 横屏下键盘锁定的高度，同上
+- **\[3.2.3\]**`keyboard_padding`: 竖屏模式下，屏幕左右两侧与键盘的距离（减少曲面屏误触）
+- **\[3.2.3\]\[不可用\]**`keyboard_padding_left`: 竖屏屏模式下，左手键盘布局，屏幕左侧与键盘的距离
+- **\[3.2.3\]\[不可用\]**`keyboard_padding_right`: 竖屏屏模式下，左手键盘布局，屏幕右侧与键盘的距离
+- **\[3.2.3\]**`keyboard_padding_bottom`: 竖屏模式下，屏幕下边缘与键盘的距离（减少全面屏误触）
+- **\[3.2.3\]**`keyboard_padding_land`: 横屏模式下，屏幕左右两侧与键盘的距离（避免横屏按键过度拉伸变形）
+- **\[3.2.3\]**`keyboard_padding_land_bottom`: 横屏模式下，屏幕下边缘与键盘的距离
+- **\[3.2.6\]**`keyboard_height`: 键盘锁定的高度。当每行按键高度、行之间间距之和与此参数存在差异时，键盘自动缩放为锁定的高度。使用此参数可以快速调整键盘高度而无需复杂。当缺少此参数时，键盘高度不做缩放计算。
+- **\[3.2.6\]**`keyboard_height_land`: 横屏下键盘锁定的高度，同上
 
 #### 示例：更改字体
 
@@ -241,7 +241,7 @@ patch:
   - `spacing`: 悬浮窗位置上下偏移量（一般上移为正，下移为负，但当`position`设为 top_xxx 时，方向是相反的）
   - `round_corner`: 窗口圆角（同时也会使**候选栏**的高亮候选边框产生圆角）
   - `alpha`: 悬浮窗透明度\*（0x00~0xff。0x00 为全透明）
-  - **[~~3.2.3~~]**`background`: 悬浮窗背景\*（颜色或图片二选一。比如颜色：0xFFD3FF83；图片：xxx.jpg。图片格式 jpg 与 png 皆可，相应的图片需放置在用户文件夹的 backgrounds 目录下，放在共享文件夹无效
+  - **\[~~3.2.3~~\]**`background`: 悬浮窗背景\*（颜色或图片二选一。比如颜色：0xFFD3FF83；图片：xxx.jpg。图片格式 jpg 与 png 皆可，相应的图片需放置在用户文件夹的 backgrounds 目录下，放在共享文件夹无效
   - `elevation`: 悬浮窗阴影（~~≥Android 5.0~~，同文现已最低支持 Android 5.0）
   - `movable`: 是否可移动窗口，或仅移动一次。可能值：`true`|`false`|`once`
 - `window`: #悬浮窗口组件
@@ -374,11 +374,11 @@ shadow_color: border_color
 
   - `author`: 作者信息
 
-  - **[3.2.5]**`sound`：预设音效包。3.2.5 新增了按键音效包支持，当切换配色时可以自动切换音效。当配色没有指定音效包时，切换为同文偏好设置-按键效果-按键音效包指定的音效。音效包制作方式参照 [同文按键音效包说明](https://github.com/tumuyan/trime-without-CMake/wiki/%E5%90%8C%E6%96%87%E6%8C%89%E9%94%AE%E9%9F%B3%E6%95%88)
+  - **\[3.2.5\]**`sound`：预设音效包。3.2.5 新增了按键音效包支持，当切换配色时可以自动切换音效。当配色没有指定音效包时，切换为同文偏好设置-按键效果-按键音效包指定的音效。音效包制作方式参照 [同文按键音效包说明](https://github.com/tumuyan/trime-without-CMake/wiki/%E5%90%8C%E6%96%87%E6%8C%89%E9%94%AE%E9%9F%B3%E6%95%88)
 
-  - **[3.2.6]**`dark_scheme`：配色方案如有此参数，即视为明亮模式的配色。当系统切换为暗黑模式后，再次弹出键盘时，自动切换配色方案为`dark_scheme`指定的配色。
+  - **\[3.2.6\]**`dark_scheme`：配色方案如有此参数，即视为明亮模式的配色。当系统切换为暗黑模式后，再次弹出键盘时，自动切换配色方案为`dark_scheme`指定的配色。
 
-  - **[3.2.6]**`light_scheme`：与`dark_scheme`相反，一套配色方案中这两个参数只需要出现一个，或者一个都没有。
+  - **\[3.2.6\]**`light_scheme`：与`dark_scheme`相反，一套配色方案中这两个参数只需要出现一个，或者一个都没有。
 
     ▼ 悬浮窗口
 
@@ -395,18 +395,18 @@ shadow_color: border_color
     ※ 非高亮的编码背景与`back_color`相同
 
   - ☆`text_back_color`: 编码区背景 
-    ※ **[3.2.3]** 支持图片
-    ※ **[3.2.3]** 仅当`style/layout/background`设置失效时才会起作用（当`background`生效时，`text_back_color`就会失效）
+    ※ **\[3.2.3\]** 支持图片
+    ※ **\[3.2.3\]** 仅当`style/layout/background`设置失效时才会起作用（当`background`生效时，`text_back_color`就会失效）
 
     ▼ 输入面板
 
-    ☆**[3.2.3]**`root_background`键盘和候选区的整体背景。
+    ☆**\[3.2.3\]**`root_background`键盘和候选区的整体背景。
 
     ▼ 候选项
 
   - `back_color`: 候选区背景\*
 
-  - ☆**[3.2.3]**`candidate_background`：候选区整体背景
+  - ☆**\[3.2.3\]**`candidate_background`：候选区整体背景
 
   - `hilited_candidate_back_color`: 高亮候选背景（候选项被选中时）
 
@@ -441,11 +441,11 @@ shadow_color: border_color
 
   - ☆`keyboard_back_color`: 键盘背景。即将被 `keyboard_background` 取代。
 
-  - ☆ **[~3.2.17]**`keyboard_background`：键盘背景，铺满候选栏和导航栏（如果有）。可设颜色值或图片路径。
+  - ☆ **\[~3.2.17\]**`keyboard_background`：键盘背景，铺满候选栏和导航栏（如果有）。可设颜色值或图片路径。
 
-  - ☆[3.2.3]`liquid_keyboard_background`:liquidKeyboard 的键盘背景
+  - ☆\[3.2.3\]`liquid_keyboard_background`:liquidKeyboard 的键盘背景
 
-  - ☆[3.2.3]`long_text_back_color`: 包含长文本的按键背景（比如剪贴板）
+  - ☆\[3.2.3\]`long_text_back_color`: 包含长文本的按键背景（比如剪贴板）
 
   - `key_border_color`: 按键边框\*(暂无)  
     ▼ 功能键（functional: true）
@@ -469,7 +469,7 @@ shadow_color: border_color
     ※ shift 键锁定时的这四种颜色不会因为`functional: false`而失效
 
   ※ 以上标记为 ☆ 的都可以使用图片作背景（与悬浮窗背景图做法相同）。
-  ※ **[3.2.3]** 当背景图为.9 图，并且命名为 xxx.9.png 时，图片会按照 .9 图来加载。.9 图体积小，抗拉伸变形，节约内存资源。
+  ※ **\[3.2.3\]** 当背景图为.9 图，并且命名为 xxx.9.png 时，图片会按照 .9 图来加载。.9 图体积小，抗拉伸变形，节约内存资源。
 
 #### 示例：制作一个配色方案
 
@@ -683,7 +683,7 @@ h_k_n_b: 0x60DEEDB1 #高亮数字键背景色
   - `preview`: 按键气泡提示
   - `hint`: 按键助记（用于显示双拼的韵母等，通常显示在按键字符下方）
   - `label`: 按键标签 特别的：当按键为符号键，且输入模式为英文或英文标点时，此设置无效
-  - **[3.2.6]**`label_symbol`: 按键的符号标签（通常显示在按键字符上方，当缺少此参数时，显示 long_click 指定的预设按键的的 label）
+  - **\[3.2.6\]**`label_symbol`: 按键的符号标签（通常显示在按键字符上方，当缺少此参数时，显示 long_click 指定的预设按键的的 label）
   - `states`: 状态标签（用于切换开关的状态）
   - `repeatable`: 长按重复
   - `functional`: 功能键
@@ -829,7 +829,7 @@ overwrite: { text: "{Control+a}{Control+v}", label: 覆盖 }
 
 可以自由发挥想象力，看看你造出来的组合键同文能不能支持。
 
-例 6: **[3.2.6]** 简写
+例 6: **\[3.2.6\]** 简写
 
 特别的，keyboard 中允许一定程度的简写，从而减少 presetkey 的数量。
 
@@ -857,9 +857,9 @@ overwrite: { text: "{Control+a}{Control+v}", label: 覆盖 }
 - `columns`: 键盘最大列数，超过则自动换行，默认 30 列。
 - `width`: 按键默认宽度（也可以在按键里面单独定义某个按键的宽度）
 - `height`: 每行的高度（要想改变单独一行的高度，可以直接在那一行行首的按键里设`height`）
-- **[3.2.6]**`auto_height_index`: 当使用`style/keyboard_height`参数锁定键盘高度时，由于像素只能取整数，如果缩放产生了余数，哪一行吸收缩放后的余数。第一行即 0，第二行为 1，以此类推；特别的，当值为负数时，为倒序序号（-1 即倒数第一个）;当值大于按键行数时，为最后一行。
-- **[3.2.6]**`keyboard_height`: 键盘锁定的高度。当 style 中锁定键盘高度时，如 preset_keyboard 再次指定键盘高度，则当前键盘以此为准
-- **[3.2.6]**`keyboard_height_land`: 横屏下键盘锁定的高度，同上
+- **\[3.2.6\]**`auto_height_index`: 当使用`style/keyboard_height`参数锁定键盘高度时，由于像素只能取整数，如果缩放产生了余数，哪一行吸收缩放后的余数。第一行即 0，第二行为 1，以此类推；特别的，当值为负数时，为倒序序号（-1 即倒数第一个）;当值大于按键行数时，为最后一行。
+- **\[3.2.6\]**`keyboard_height`: 键盘锁定的高度。当 style 中锁定键盘高度时，如 preset_keyboard 再次指定键盘高度，则当前键盘以此为准
+- **\[3.2.6\]**`keyboard_height_land`: 横屏下键盘锁定的高度，同上
 - `key_hint_offset_x`: 助记符号 x 方向偏移量（向右为正，下同）
 - `key_hint_offset_y`: 助记符号 y 方向偏移量（向下为正，下同）
 - `key_symbol_offset_x`: 长按符号 x 方向偏移量
@@ -1078,7 +1078,7 @@ style:
 - `_hide_candidate` 隐藏候选栏
 - `_hide_comment` 隐藏候选项注释
 - `_hide_key_hint` 隐藏按键下方的助记符号
-- **[3.2.6]**`_hide_key_symbol` 隐藏按键上方的符号
+- **\[3.2.6\]**`_hide_key_symbol` 隐藏按键上方的符号
 
 ※ 这几个开关分别对应预设主题中`preset_keys`里的功能键：`Candidate_switch`、`Comment_switch`、`Hint_switch`。
 
@@ -1138,7 +1138,7 @@ switches:
 
   # 也可以只切换到一个特定的键盘
   - options: [_keyboard_number]
-    states: [123]
+    states: \[123\]
 
   #...
 ```

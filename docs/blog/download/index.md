@@ -13,7 +13,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ### 小狼毫 <small>Weasel</small>
 
-* [小狼毫 0.17.0](https://github.com/rime/weasel/releases/latest)〔[下載](https://github.com/rime/weasel/releases/download/0.17.0/weasel-0.17.0.0-installer.exe)〕〔[更新日誌](../release/weasel/index.md)〕〔[歷史版本](https://github.com/rime/weasel/releases)〕
+* [小狼毫 0.17.0](https://github.com/rime/weasel/releases/latest)〔[下載](https://github.com/rime/weasel/releases/download/0.17.0/weasel-0.17.0.0-installer.exe)〕〔[更新日誌](../release/weasel.md)〕〔[歷史版本](https://github.com/rime/weasel/releases)〕
   適用於 Windows 8.1, Windows 10, Windows 11
 
 * [小狼毫 0.14.3](https://github.com/rime/weasel/releases/tag/0.14.3)〔[下載](https://github.com/rime/weasel/releases/download/0.14.3/weasel-0.14.3.0-installer.exe)〕
@@ -26,7 +26,7 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 ### 鼠鬚管 <small>Squirrel</small>
 
-* [鼠鬚管 1.1.2](https://github.com/rime/squirrel/releases/latest)〔[下載](https://github.com/rime/squirrel/releases/download/1.1.2/Squirrel-1.1.2.pkg)〕〔[更新日誌](../release/squirrel/index.md)〕〔[歷史版本](https://github.com/rime/squirrel/releases)〕
+* [鼠鬚管 1.1.2](https://github.com/rime/squirrel/releases/latest)〔[下載](https://github.com/rime/squirrel/releases/download/1.1.2/Squirrel-1.1.2.pkg)〕〔[更新日誌](../release/squirrel.md)〕〔[歷史版本](https://github.com/rime/squirrel/releases)〕
   適用於 macOS 13.0+
 
 * [鼠鬚管 0.16.2](https://github.com/rime/squirrel/releases/0.16.2)〔[下載](https://github.com/rime/squirrel/releases/download/0.16.2/Squirrel-0.16.2.zip)〕
