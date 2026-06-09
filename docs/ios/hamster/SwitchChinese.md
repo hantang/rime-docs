@@ -10,6 +10,7 @@ title: 如何配置简繁切换
 <img width="530" alt="image" src="./assets/1455685/243921996-c77d5247-c329-4009-ba59-1a2ce14b49ee.png">
 
 ## 在输入功能调整处改为：traditionalization
+
 <img width="300" alt="image" src="./assets/1455685/243922024-8f43fc25-cbc3-465d-be67-edf26f2e5c80.png">
 
 ## 按键滑动手势处修改按键定义

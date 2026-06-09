@@ -30,7 +30,6 @@
 
 [雪齋的文檔](https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md) 全面而詳細解釋了輸入方案及詞典中各設定項的含義及用法。
 
-
 ## 定製指南
 
 Rime 輸入方案，將 Rime 輸入法的設定整理成完善的、可分發的形式。
@@ -42,7 +41,6 @@ Rime 輸入方案，將 Rime 輸入法的設定整理成完善的、可分發的
 
 * 當 Rime 軟件升級時，也會升級各種設定檔、預設輸入方案。用戶編輯過的文檔會被覆寫爲更高版本，所做調整也便丟失了。
 * 即使在軟件升級後再手動恢復經過編輯的文件，也會因設定檔的其他部分未得到更新而失去本次升級新增和修復的功能。
-
 
 因此，對於隨 Rime 發行的設定檔及預設輸入方案，推薦的定製方法是：
 
@@ -66,7 +64,6 @@ patch:
 
 不懂？那看我來示範。
 
-
 ### 一例、定製每頁候選數
 
 Rime 中，默認每頁至多顯示 5 個候選項，而允許的範圍是 1〜9（個別 Rime 發行版可支持10個候選）。
@@ -86,7 +83,6 @@ patch:
 
 註：請參閱前文「重新佈署的操作方法」★
 
-
 ### 一例、定製標點符號
 
 有的用家習慣以 `/` 鍵輸入標點「、」。
@@ -94,7 +90,9 @@ patch:
 仍以【朙月拼音】爲例，輸入方案中有以下設定：
 
 ```yaml
+
 # luna_pinyin.schema.yaml
+
 # ...
 
 punctuator:
@@ -137,7 +135,9 @@ patch:
 以上在輸入方案設定中寫入兩組新值，合併後的輸入方案成爲：
 
 ```yaml
+
 # luna_pinyin.schema.yaml
+
 # ...
 
 punctuator:
@@ -165,7 +165,9 @@ Rime 預設的詞彙表使用傳統漢字。
 Rime 中的過濾器組件 simplifier，完成對候選詞的繁簡轉換。
 
 ```yaml
+
 # luna_pinyin.schema.yaml
+
 # ...
 
 switches:
@@ -202,6 +204,7 @@ engine:
 於是佛振獻上默認輸出簡化字的設定檔：
 
 ```yaml
+
 # luna_pinyin.custom.yaml
 
 patch:
@@ -220,7 +223,9 @@ patch:
 看他的代碼如何卻與上篇定製檔寫得不同：
 
 ```yaml
+
 # luna_pinyin_simp.schema.yaml
+
 # ...
 
 switches:
@@ -254,7 +259,6 @@ simplifier:
 所以令【簡化字】使用獨立命名的開關、而非方案間共用的 `simplification` 開關，
 以避免影響其他輸入方案的繁簡轉換狀態。
 
-
 ### 一例、默認英文輸出
 
 有些用戶習慣默認英文輸出，在需要用中文時再做切換。這就需要我們在方案中重設狀態開關初始值。
@@ -264,18 +268,19 @@ simplifier:
 我們以【朙月拼音】爲例：
 
 ```yaml
+
 # luna_pinyin.custom.yaml
 
 patch:
   "switches/@0/reset": 1  #表示將 switcher 列表中的第一個元素（即 ascii_mode 開關）的初始值重設爲狀態1（即「英文」）。
 ```
 
-
 ### 一例、定製方案選單
 
 在【小狼毫】方案選單設定介面上勾勾選選，就可以如此定製輸入方案列表：
 
 ```yaml
+
 # default.custom.yaml
 
 patch:
@@ -289,7 +294,6 @@ patch:
 
 無有設定介面時，又想啓用、禁用某個輸入方案，手寫這樣一份定製檔、重新佈署就好啦。
 
-
 ### 一例、定製喚出方案選單的快捷鍵
 
 喚出方案選單，當然要用鍵盤。默認的快捷鍵爲 Ctrl+` 或 F4。
@@ -299,6 +303,7 @@ patch:
 那麼……
 
 ```yaml
+
 # default.custom.yaml
 
 patch:
@@ -320,12 +325,12 @@ patch:
 
 按鍵的名稱，大小寫字母和數字都用他們自己表示，其他的按鍵名稱 [參考這裏](https://github.com/rime/librime/blob/master/thirdparty/include/X11/keysymdef.h) [这个更直观的文档](https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md) 的定義，去除代碼前綴 `XK_` 即是。
 
-
 ### 一例、定製【小狼毫】字體字號
 
 雖與輸入方案無關，也在此列出以作參考。
 
 ```yaml
+
 # weasel.custom.yaml
 
 patch:
@@ -333,12 +338,12 @@ patch:
   "style/font_point": 14     # 字號，只認數字的，不認「五號」、「小五」這樣的
 ```
 
-
 ### 一例、定製【小狼毫】配色方案
 
 註：這款配色已經在新版本的小狼毫裏預設了，做練習時，你可以將文中 `starcraft` 換成自己命名的標識。
 
 ```yaml
+
 # weasel.custom.yaml
 
 patch:
@@ -396,7 +401,9 @@ https://gist.github.com/2309739
 使用橫向候選欄、嵌入式編碼行：
 
 ```yaml
+
 # weasel.custom.yaml
+
 patch:
   style/horizontal: true      # 候選橫排
   style/inline_preedit: true  # 內嵌編碼（僅支持TSF）
@@ -428,7 +435,9 @@ ibus用户： `ibus_rime.custom.yaml` 不包含控制配色、字體字號等外
 例如，要在 `Xcode` 裏面默認關閉中文輸入，又要在 `Alfred` 裏面恢復開啓中文輸入，可如此設定：
 
 ```yaml
+
 # example squirrel.custom.yaml
+
 patch:
   app_options/com.apple.Xcode:
     ascii_mode: true
@@ -442,7 +451,9 @@ patch:
 例如，要在 `gVim` 裏面默認關閉中文輸入，可如此設定：
 
 ```yaml
+
 # example weasel.custom.yaml
+
 patch:
   app_options/gvim.exe:  # 程序名字全用小寫字母
     ascii_mode: true
@@ -492,7 +503,9 @@ https://gist.github.com/2390510
 以【倉頡五代】爲例：
 
 ```yaml
+
 # cangjie5.custom.yaml
+
 patch:
   translator/enable_completion: false
 ```
@@ -502,7 +515,9 @@ patch:
 以【五笔86】爲例：
 
 ```yaml
+
 # wubi86.custom.yaml
+
 patch:
   translator/enable_user_dict: false
 ```
@@ -514,7 +529,9 @@ patch:
 以【倉頡】爲例：
 
 ```yaml
+
 # cangjie5.custom.yaml
+
 patch:
   translator/enable_sentence: false
 ```
@@ -526,7 +543,9 @@ patch:
 如此設定，直接敲字母只認作倉頡碼，但仍可在敲 ` 之後輸入拼音：
 
 ```yaml
+
 # cangjie5.custom.yaml
+
 patch:
   abc_segmentor/extra_tags: {}
 ```
@@ -538,7 +557,9 @@ patch:
 然後設定（以五筆86爲例）：
 
 ```yaml
+
 # wubi86.custom.yaml
+
 patch:
   translator/enable_sentence: false
   key_binder/bindings:
@@ -615,8 +636,11 @@ https://tieba.baidu.com/p/1909252328
 可是建立詞典稍顯繁瑣，而活用自定義標點，不失爲一個便捷的方法：
 
 ```yaml
+
 # luna_pinyin.custom.yaml
+
 # 如果不需要 ` 鍵的倉頡反查拼音功能，則可利用 ` 鍵輸入自定義詞組
+
 patch:
   recognizer/patterns/reverse_lookup:
   'punctuator/half_shape/`':

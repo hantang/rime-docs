@@ -1,7 +1,9 @@
 ---
 title: 下載及安裝
 comments: false
+
 # icon: fa fa-download
+
 date: 2024-06-01 00:00:00
 tags: download
 ---
@@ -44,7 +46,6 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 ### 小企鹅 <small>fcitx5-macos</small>
 
 *（第三方軟件）* [fcitx5-macos](https://github.com/fcitx-contrib/fcitx5-macos) 是 Fcitx 輸入法的 macOS 移植。〔[下載傳送門](https://github.com/fcitx-contrib/fcitx5-macos-installer/blob/master/README.zh-CN.md)〕需要下載中州韻版安裝器。
-
 
 ### XIME <small>XIME Input Method Editor</small>
 
@@ -110,6 +111,6 @@ RIME／中州韻輸入法引擎，是一個跨平臺的輸入法算法框架。
 
 請您知曉：
 
-- ※ 本品是按照 GPL 授權條款發佈的自由軟件，您可嘗試按照本站提供的指南自行編譯安裝。  
-- ※ 輸入法是一種有較高權限的系統軟件，所以一些 Windows 安全防護軟件會在輸入法安裝過程中彈出提示，需要選擇「允許繼續操作」方可正確安裝。  
+- ※ 本品是按照 GPL 授權條款發佈的自由軟件，您可嘗試按照本站提供的指南自行編譯安裝。
+- ※ 輸入法是一種有較高權限的系統軟件，所以一些 Windows 安全防護軟件會在輸入法安裝過程中彈出提示，需要選擇「允許繼續操作」方可正確安裝。
 - ※ 〔小狼毫〕的開發與發佈均在受保護的環境中完成。如果使用過程中，您系統中某種“安全”軟件稱「發現木馬」，那麼此種情形將考驗您的判斷力。

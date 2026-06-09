@@ -4,7 +4,9 @@ title: hamster.yaml 配置文件说明
 ---
 
 ```Yaml
+
 # 通用配置
+
 general:
   #是否开启icloud同步
   enableAppleCloud: false
@@ -18,6 +20,7 @@ general:
   textEditorLineWrappingEnabled: true
 
 # 工具栏
+
 toolbar:
   # 是否开启工具栏
   enableToolbar: true
@@ -47,6 +50,7 @@ toolbar:
   swipePaging: true
 
 # 键盘相关配置
+
 keyboard:
   # 使用键盘类型:
   # chinese: 中文26键
@@ -169,6 +173,7 @@ keyboard:
     __include: hamster_color_schemas:/colorSchemas
 
 # RIME 引擎相关配置
+
 rime:
   # 最大候选数量
   maximumNumberOfCandidate: 100
@@ -191,6 +196,7 @@ rime:
     - "^.*[.]txt$"
 
 # 划动相关配置
+
 swipe:
   # 指空格移动多个 point，光标移动一位。所以数字越小越灵敏
   spaceDragSensitivity: 15
@@ -209,8 +215,11 @@ swipe:
     __include: hamster_swipe:/keyboardSwipe
 
 # 自定义键盘布局
+
 # 布局文档说明文档：https://github.com/imfuxiao/Hamster/wiki/%E8%87%AA%E5%AE%9A%E4%B9%89%E9%94%AE%E7%9B%98%E5%B8%83%E5%B1%80
+
 # hamster_keyboards 为引用的键盘文件名称
+
 keyboards:
   __include: hamster_keyboards:/keyboards
 

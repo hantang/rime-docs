@@ -8,7 +8,9 @@ title: 示例
 ![image](assets/76689045/19d8211e-a6b0-4bed-8677-4325f95410d6.png)
 
 ```yaml
+
 # weasel.custom.yaml
+
 patch:
   style/+:
     inline_preedit: true
@@ -35,7 +37,9 @@ patch:
 ![image](assets/76689045/84670c42-90a9-4fe0-8908-de9e09d08898.png)
 
 ```yaml
+
 # weasel.custom.yaml
+
 patch:
   style/+:
     label_format: "%s"
@@ -58,12 +62,15 @@ patch:
       shadow_offset_x: 5
       shadow_offset_y: 5
 ```
+
 ## Windows 11 风格
 
 ![image](assets/76689045/93384900-1ccf-43c5-8d40-cc0e0da8cb03.png)
 
 ```yaml
+
 # weasel.custom.yaml
+
 patch:
   style/+:
     label_format: "%s"
@@ -114,7 +121,9 @@ patch:
 ![image](assets/76689045/6d767ac6-fdc0-4a70-8aa2-f7b9f862627d.png)
 
 ```yaml
+
 # weasel.custom.yaml
+
 patch:
   style/+:
     label_format: "%s"

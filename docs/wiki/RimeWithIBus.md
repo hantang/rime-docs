@@ -35,27 +35,49 @@ sudo apt-get install ibus-rime
 安裝更多輸入方案：（推薦使用 [/plum/](https://github.com/rime/plum) 安裝最新版本）
 
 ```shell
+
 # 朙月拼音（預裝）
+
 sudo apt-get install librime-data-luna-pinyin
+
 # 雙拼
+
 sudo apt-get install librime-data-double-pinyin
+
 # 宮保拼音
+
 sudo apt-get install librime-data-combo-pinyin
+
 # 注音、地球拼音
+
 sudo apt-get install librime-data-terra-pinyin librime-data-bopomofo
+
 # 倉頡五代（預裝）
+
 sudo apt-get install librime-data-cangjie5
+
 # 速成五代
+
 sudo apt-get install librime-data-quick5
+
 # 五筆86、袖珍簡化字拼音、五筆畫
+
 sudo apt-get install librime-data-wubi librime-data-pinyin-simp librime-data-stroke-simp
+
 # IPA (X-SAMPA)
+
 sudo apt-get install librime-data-ipa-xsampa
+
 # 上海吳語
+
 sudo apt-get install librime-data-wugniu
+
 # 粵拼
+
 sudo apt-get install librime-data-jyutping
+
 # 中古漢語拼音
+
 sudo apt-get install librime-data-zyenpheng
 ```
 
@@ -146,21 +168,26 @@ Voilà !
 今天天氣不錯，我更新了一把Ubuntu，記錄下安裝 ibus-rime 的步驟。
 
 ```shell
+
 # 安裝編譯工具
+
 sudo apt-get install build-essential cmake
 
 # 安裝程序庫
+
 sudo apt-get install libopencc-dev libz-dev libibus-1.0-dev libnotify-dev
 
 sudo apt-get install libboost-dev libboost-filesystem-dev libboost-regex-dev libboost-signals-dev libboost-system-dev libboost-thread-dev
+
 # 如果不嫌多，也可以安裝整套Boost開發包（敲字少：）
+
 # sudo apt-get install libboost-all-dev
 
 # 下文略……
+
 ```
 
 ### ibus-rime on Centos 7
-
 
 ```shell
 yum install -y gcc gcc-c++ boost boost-devel cmake make cmake3
@@ -168,6 +195,7 @@ yum install glog glog-devel kyotocabinet kyotocabinet-devel marisa-devel yaml-cp
 cd /usr/src
 
 # install opencc
+
 curl -L https://github.com/BYVoid/OpenCC/archive/ver.1.0.5.tar.gz | tar zx
 cd OpenCC-ver.1.0.5/
 make
@@ -178,5 +206,7 @@ cd /usr/src
 git clone --recursive https://github.com/rime/ibus-rime.git
 
 cd /usr/src/ibus-rime
+
 # 下文略，同前文給出的安裝步驟
+
 ```

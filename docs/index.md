@@ -93,7 +93,7 @@ icon: material/keyboard
 
 ## 热门配置
 
-更多参见本站[:material-map-marker: 列表](./list.md) 
+更多参见本站[:material-map-marker: 列表](./list.md)
 或仓库 [:simple-github: hantang/rime-list](https://github.com/hantang/rime-list)
 
 | 收藏 | 更新 | 仓库 | 说明 |
@@ -149,7 +149,6 @@ icon: material/keyboard
 [gh_035_stars]: https://img.shields.io/github/stars/gaboolic/rime-shuangpin-fuzhuma?style=flat-square
 [gh_035_forks]: https://img.shields.io/github/forks/gaboolic/rime-shuangpin-fuzhuma?style=flat-square
 [gh_035_commit]: https://img.shields.io/github/last-commit/gaboolic/rime-shuangpin-fuzhuma?style=flat-square&label=update
-
 
 <!-- ## 方言输入方案 -->
 

@@ -4,13 +4,17 @@ title: weasel.yaml 速查
 ---
 
 ```yaml
+
 # Weasel settings
+
 # encoding: utf-8
 
 config_version: "0.25"   # 版本号大于等于预置文件版本号时，才能生效
 
 # [app_options]
+
 # 针对特定应用的设置
+
 app_options:
   cmd.exe:               # 带 .exe 的进程名：Weasel 15.0 及之前版本须小写; PR #1049 合并后释出的版本大小写不敏感
     ascii_mode: true     # 英文模式
@@ -19,16 +23,21 @@ app_options:
   nvim-qt.exe:
     ascii_mode: true
     vim_mode: true       # vim 模式, Esc <C-c> <C-[> 切换到 ascii 状态
+
 # [End of <app_options>]
 
 # [global settings]
+
 show_notifications: true                   # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option name）
 show_notifications_time: 1200              # 通知显示的时间，单位 ms
 global_ascii: false                        # 切换为 ascii 模式时，是否影响所有窗口：true；false
+
 # [End of <global settings>]
 
 # [style]
+
 # 字体；候选项、候选窗口的行为、布局及样式
+
 style:
   color_scheme: aqua                       # 默认配色方案
   # color_scheme_dark: dark_temple         # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
@@ -42,7 +51,7 @@ style:
 
   inline_preedit: false                    # 行内显示预编辑区：true；false
   preedit_type: composition                # 预编辑区内容：composition（编码）； preview（选中的候选）；preview_all（全部候选）
-  
+
   fullscreen: false                        # 候选窗口全屏显示：true；false
   horizontal: false                        # 候选项横排：true；false
   vertical_text: false                     # 竖排文本：true；false
@@ -50,7 +59,7 @@ style:
   vertical_text_left_to_right: false       # 竖排方向是否从左到右：true；false
   vertical_text_with_wrap: false           # 文本竖排模式下，自动换行：true；false
   vertical_auto_reverse: false             # 文本竖排模式下，候选窗口位于光标上方时倒序排列：true；false
-  
+
   label_format: "%s."                      # 标签字符：例如 %s. -> 1. 2. 3. | %s: -> 1: 2: 3:
   mark_text: ""                            # 标记字符，显示在选中的候选标签前，需要在配色方案中指定颜色；如该项为空字符串 "" 而配色方案中 hilited_mark_color 非透明色，则显示类似 Windows 11 输入法的标记
   ascii_tip_follow_cursor: false           # 切换 ASCII 模式时，提示跟随鼠标，而非输入光标
@@ -86,10 +95,13 @@ style:
     corner_radius: 4                       # 候选窗口圆角半径
     round_corner: 4                        # 候选背景色块圆角半径，又名 hilited_corner_radius
     # type: vertical                       # 布局设置，效果和 style 下的设置相同：horizontal（横向）；vertical（竖向） ; vertical_text（竖排文本） ; vertical+fullscreen（全屏） ; horizontal+fullscreen（横向全屏）
+
 # [End of <style>]
 
 # [preset_color_schemes]
+
 # 配色设定
+
 preset_color_schemes:
   aqua:                                           # 在 style/color_schema 指定的配色方案值
     name: 碧水／Aqua                               # 方案设置中显示的配色名称
@@ -119,4 +131,5 @@ preset_color_schemes:
     # prevpage_color: 0x00000000                  # inline_preedit: false 翻页箭头颜色：上一页；不设置则不显示箭头
 
 # [end of <preset_color_schemes>]
+
 ```

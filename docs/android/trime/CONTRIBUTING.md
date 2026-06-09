@@ -13,20 +13,18 @@ SPDX-License-Identifier: GPL-3.0-or-later
 We would love for you to contribute to Trime and help make it even better than it is today!
 As a contributor, here are the guidelines we would like you to follow:
 
- - [Code of Conduct](#coc)
- - [Question or Problem?](#question)
- - [Issues and Bugs](#issue)
- - [Feature Requests](#feature)
- - [Submission Guidelines](#submit)
- - [Coding Rules](#rules)
- - [Commit Message Guidelines](#commit)
-
+- [Code of Conduct](#coc)
+- [Question or Problem?](#question)
+- [Issues and Bugs](#issue)
+- [Feature Requests](#feature)
+- [Submission Guidelines](#submit)
+- [Coding Rules](#rules)
+- [Commit Message Guidelines](#commit)
 
 ## <a name="coc"></a> Code of Conduct
 
 Help us keep Trime open and inclusive.
 Please read and follow our [Code of Conduct][coc].
-
 
 ## <a name="question"></a> Got a Question or Problem?
 
@@ -40,8 +38,8 @@ To save your and our time, we will systematically close all issues that are requ
 If you find a bug in the source code, you can help us by [submitting an issue](#submit-issue) to our [GitHub Repository][github].
 Even better, you can [submit a Pull Request](#submit-pr) with a fix.
 
-
 ## <a name="feature"></a> Missing a Feature?
+
 You can *request* a new feature by [submitting an issue](#submit-issue) to our GitHub Repository.
 If you would like to *implement* a new feature, please consider the size of the change in order to determine the right steps to proceed:
 
@@ -52,9 +50,7 @@ If you would like to *implement* a new feature, please consider the size of the 
 
 * **Small Features** can be crafted and directly [submitted as a Pull Request](#submit-pr).
 
-
 ## <a name="submit"></a> Submission Guidelines
-
 
 ### <a name="submit-issue"></a> Submitting an Issue
 
@@ -73,7 +69,6 @@ We understand that sometimes it might be hard to extract essential bits of code 
 Unfortunately, we are not able to investigate / fix bugs without a minimal reproduction, so if we don't hear back from you, we are going to close an issue that doesn't have enough info to be reproduced.
 
 You can file new issues by selecting from our [new issue templates](https://github.com/osfans/trime/issues/new/choose) and filling out the issue template.
-
 
 ### <a name="submit-pr"></a> Submitting a Pull Request (PR)
 
@@ -136,7 +131,6 @@ If we ask for changes via code reviews then:
 
 That's it! Thank you for your contribution!
 
-
 ##### Updating the commit message
 
 A reviewer might often suggest changes to a commit message (for example, to add more context for a change or adhere to our [commit message guidelines](#commit)).
@@ -163,7 +157,6 @@ In order to update the commit message of the last commit on your branch:
 > NOTE:<br />
 > If you need to update the commit message of an earlier commit, you can use `git rebase` in interactive mode.
 > See the [git docs](https://git-scm.com/docs/git-rebase#_interactive_mode) for more details.
-
 
 #### After your pull request is merged
 
@@ -193,8 +186,8 @@ After your pull request is merged, you can safely delete your branch and pull th
     git pull --ff upstream master
     ```
 
-
 ## <a name="rules"></a> Coding Rules
+
 To ensure consistency throughout the source code, keep these rules in mind as you are working:
 
 * All features or bug fixes **must be tested** by one or more specs (unit-tests).
@@ -202,7 +195,6 @@ To ensure consistency throughout the source code, keep these rules in mind as yo
 * We follow [Google's Java Style Guide](https://github.com/google/google-java-format]).
 
    An automated formatter is available, see [spotless](https://github.com/diffplug/spotless).
-
 
 ## <a name="commit"></a> Commit Message Format
 
@@ -212,7 +204,6 @@ We have very precise rules over how our Git commit messages must be formatted.
 This format leads to **easier to read commit history**.
 
 Each commit message consists of a **header**, a **body**, and a **footer**.
-
 
 ```
 <header>
@@ -231,7 +222,6 @@ The `footer` is optional. The [Commit Message Footer](#commit-footer) format des
 
 Any line of the commit message cannot be longer than 100 characters.
 
-
 #### <a name="commit-header"></a>Commit Message Header
 
 ```
@@ -249,7 +239,6 @@ Any line of the commit message cannot be longer than 100 characters.
 
 The `<type>` and `<summary>` fields are mandatory, the `(<scope>)` field is optional.
 
-
 ##### Type
 
 Must be one of the following:
@@ -263,8 +252,8 @@ Must be one of the following:
 * **refactor**: A code change that neither fixes a bug nor adds a feature
 * **test**: Adding missing tests or correcting existing tests
 
-
 ##### Scope
+
 The scope should be the name of the npm package affected (as perceived by the person reading the changelog generated from commit messages).
 
 The following is the list of supported scopes:
@@ -274,7 +263,6 @@ The following is the list of supported scopes:
 There are currently a few exceptions to the "use package name" rule:
 * none/empty string: useful for `test` and `refactor` changes that are done across all packages (e.g. `test: add missing unit tests`) and for docs changes that are not related to a specific package (e.g. `docs: fix typo in tutorial`).
 
-
 ##### Summary
 
 Use the summary field to provide a succinct description of the change:
@@ -283,14 +271,12 @@ Use the summary field to provide a succinct description of the change:
 * don't capitalize the first letter
 * no dot (.) at the end
 
-
 #### <a name="commit-body"></a>Commit Message Body
 
 Just as in the summary, use the imperative, present tense: "fix" not "fixed" nor "fixes".
 
 Explain the motivation for the change in the commit message body. This commit message should explain _why_ you are making the change.
 You can include a comparison of the previous behavior with the new behavior in order to illustrate the impact of the change.
-
 
 #### <a name="commit-footer"></a>Commit Message Footer
 
@@ -306,7 +292,6 @@ Fixes #<issue number>
 ```
 
 Breaking Change section should start with the phrase "BREAKING CHANGE: " followed by a summary of the breaking change, a blank line, and a detailed description of the breaking change that also includes migration instructions.
-
 
 ### Revert commits
 

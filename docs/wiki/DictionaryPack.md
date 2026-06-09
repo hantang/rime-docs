@@ -19,15 +19,22 @@ librime 1.6.0 增加了一種擴展詞典內容的機制——詞典擴展包。
 我有一例，請諸位靜觀。
 
 ```shell
+
 # 在Linux環境做出librime及命令行工具
+
 cd librime
 make
 
 # 準備示例文件（有三）
+
 # 做一個構建擴展包專用的方案，以示如何獨立於主詞典的構建流程。
+
 # 如果不需要把擴展包和主詞典分開製備，也可以用原有的輸入方案。
+
 cat > build/bin/luna_pinyin_packs.schema.yaml <<EOF
+
 # Rime schema
+
 schema:
   schema_id: luna_pinyin_packs
 
@@ -38,10 +45,15 @@ translator:
 EOF
 
 # 代用的主詞典。因爲本示例只構建擴展包。
+
 # 做這個文件的目的是不必費時地編譯導入了預設詞彙表的朙月拼音主詞典。
+
 # 如果在主詞典的構建流程生成擴展包，則可直接使用主詞典文件。
+
 cat > build/bin/luna_pinyin_packs.dict.yaml <<EOF
+
 # Rime dict
+
 ---
 name: luna_pinyin_packs
 version: '1.0'
@@ -54,8 +66,11 @@ import_tables:
 EOF
 
 # 擴展包源文件
+
 cat > build/bin/sample_pack.dict.yaml <<EOF
+
 # Rime dict
+
 ---
 name: sample_pack
 version: '1.0'
@@ -67,13 +82,19 @@ use_preset_vocabulary: false
 EOF
 
 # 製作擴展包
+
 (cd build/bin; ./rime_deployer --compile luna_pinyin_packs.schema.yaml)
+
 # 構建完成後可丟棄代用的主詞典，只留擴展包
+
 rm build/bin/build/luna_pinyin_packs.*
 
 # 重新配置朙月拼音輸入方案，令其加載先時生成的詞典擴展包
+
 (cd build/bin; ./rime_patch luna_pinyin 'translator/packs' '[sample_pack]')
+
 # 驗證詞典可查到擴展包中的詞語
+
 echo 'cubizhiyu' | (cd build/bin; ./rime_console)
 ```
 

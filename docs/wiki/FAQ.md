@@ -32,19 +32,19 @@ title: 常見問題解答*
 1. 在方案Schema裡面，switches項目之下加：
 
   ```yaml
-  - name: zh_tw  
+  - name: zh_tw
     reset: 1
   ```
 
 2. Schema檔案中再來多件一項simplifier項目（在reverse lookup下面位置），如下：
 
   ```yaml
-  simplifier:  
-    opencc_config: t2tw.json  
+  simplifier:
+    opencc_config: t2tw.json
     option_name: zh_tw
   ```
 
-3. 輸入引擎（ibus或fcitx）重新開啟後，就應該成功打出《麵包》、《裡面》等臺灣繁體字。  
+3. 輸入引擎（ibus或fcitx）重新開啟後，就應該成功打出《麵包》、《裡面》等臺灣繁體字。
 （註：schema檔案在 `~/.config/ibus/rime/` 裡面）
 
 ## Windows*

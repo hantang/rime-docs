@@ -124,7 +124,9 @@ make
 * You can either define the environment variables in your shell/terminal, or append them as arguments to the make command. For example:
 
 ``` sh
+
 # for Universal macOS App
+
 make ARCHS='arm64 x86_64' BUILD_UNIVERSAL=1
 ```
 
@@ -140,7 +142,7 @@ make package ARCHS='arm64'
 
 Define `DEV_ID` to automatically handle code signing and [notarization](https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution) (Apple Developer ID needed)
 
-To make this work, you need a `Developer ID Installer: (your name/org)` and set your name/org as `DEV_ID` env variable. 
+To make this work, you need a `Developer ID Installer: (your name/org)` and set your name/org as `DEV_ID` env variable.
 
 To make notarization work, you also need to save your credential under the same name as above.
 
@@ -157,7 +159,9 @@ You **don't** need to define `DEV_ID` if you don't intend to distribute the pack
 Once built, you can install and try it live on your Mac computer:
 
 ``` sh
+
 # Squirrel as a Universal app
+
 make install
 ```
 

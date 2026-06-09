@@ -5,17 +5,17 @@ title: squirrel.yaml 配置指南
 
 ## 鼠鬚管介面定製指南
 
-* 此處列出所有可用之選項，以便使用鼠鬚管的各位自定義喜歡的樣式。示例請參攷[自帶squirrel.yaml](https://github.com/rime/squirrel/blob/master/data/squirrel.yaml)，定製時請使用`squirrel.custom.yaml`文件patch   
-* **一般用戶請不要直接修改`squirrel.yaml`，否則可能丢失修改的內容，切記**   
+* 此處列出所有可用之選項，以便使用鼠鬚管的各位自定義喜歡的樣式。示例請參攷[自帶squirrel.yaml](https://github.com/rime/squirrel/blob/master/data/squirrel.yaml)，定製時請使用`squirrel.custom.yaml`文件patch
+* **一般用戶請不要直接修改`squirrel.yaml`，否則可能丢失修改的內容，切記**
 * `squirrel.custom.yaml`的使用方式非常靈活，在此提供一些參攷：[LEO Yoon-Tsaw的squirrel.custom.yaml](https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/squirrel.custom.yaml)
 
 ---
 
-* keyboard_layout: `last`/`default`或具體鍵板布局名   
-  `last`即最近一次使用的鍵板布局   
-  `default`即 US (ABC) 布局   
-  具體鍵板名如`com.apple.keylayout.USExtended`或其簡寫`USExtended`   
- 
+* keyboard_layout: `last`/`default`或具體鍵板布局名
+  `last`即最近一次使用的鍵板布局
+  `default`即 US (ABC) 布局
+  具體鍵板名如`com.apple.keylayout.USExtended`或其簡寫`USExtended`
+
 * app_options
   * ascii_mode: 初始爲西文模式
   * no_inline: 不使用行內編輯
@@ -28,7 +28,7 @@ title: squirrel.yaml 配置指南
 * style
   * color_scheme: 配色名，須存在于`preset_color_schemes`之中
   * color_scheme_dark: （可選）黑暗模式下的配色名，須存在于`preset_color_schemes`之中，未指定則始終使用`color_scheme`所指定的配色
-  * candidate_format: 以`[label]`指代序號，`[candidate]`指代候選詞，`[comment]`指代注釋，可另加任意其它字符，也可多次重復出現   
+  * candidate_format: 以`[label]`指代序號，`[candidate]`指代候選詞，`[comment]`指代注釋，可另加任意其它字符，也可多次重復出現
     例如`[label]. [candidate] [comment]`
 
   * candidate_list_layout: `stack`/`linear`，候選詞堆疊或平鋪顯示
@@ -46,7 +46,7 @@ title: squirrel.yaml 配置指南
   * memorize_size: `true`/`false` 一次輸入過程中，候選框觸及屏幕邊緣時**是否**粘住不再縮回，避免來回跳動
   * mutual_exclusive: `true`/`false` 候選區各背景色**是否**各自獨立，帶透明度的情況下互不浸染
   * translucency: `true`/`false` 是否添加毛玻璃背景（需配合透明背景色才得看到）
-  
+
   * corner_radius: 非負數，候選外框圓角大小
   * hilited_corner_radius: 非負數，高亮區圓角大小（包括高亮候選詞和高亮編輯區）
   * border_height: 可正可負，邊緣高度，爲負時可收窄圓角造成的避讓留白

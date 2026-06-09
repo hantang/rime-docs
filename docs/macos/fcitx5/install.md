@@ -12,6 +12,7 @@ Fcitx5 macOS Installer
 Support macOS >= 13
 
 ## Packaging
+
 ```sh
 python package.py [edition] [plugin,...] [enabled_im,...] [true]
 ```
@@ -43,26 +44,31 @@ See [ci.yml](.github/workflows/ci.yml) for examples.
 感谢您使用小企鹅输入法。
 
 ## 手动解锁
+
 系统设置 -> 隐私与安全性 -> 仍要打开
 
 <img src="assets/security.png" style="height: 400px" />
 
 ## 一键安装
+
 复制您选择的安装包的相应命令，打开系统的 **终端** 应用程序，粘贴并回车。
 
 请确认复制完整，命令以`Fcitx5Installer.app`结尾。
 
 ### 拼音版
+
 ```sh
 cd /tmp && rm -rf Fcitx5Installer.app && curl -LO https://github.com/fcitx-contrib/fcitx5-macos-installer/releases/download/latest/Fcitx5-Pinyin.zip && unzip Fcitx5-Pinyin.zip && open Fcitx5Installer.app
 ```
 
 ### 中州韵版
+
 ```sh
 cd /tmp && rm -rf Fcitx5Installer.app && curl -LO https://github.com/fcitx-contrib/fcitx5-macos-installer/releases/download/latest/Fcitx5-Rime.zip && unzip Fcitx5-Rime.zip && open Fcitx5Installer.app
 ```
 
 ### 原装版
+
 ```sh
 cd /tmp && rm -rf Fcitx5Installer.app && curl -LO https://github.com/fcitx-contrib/fcitx5-macos-installer/releases/download/latest/Fcitx5Installer.zip && unzip Fcitx5Installer.zip && open Fcitx5Installer.app
 ```

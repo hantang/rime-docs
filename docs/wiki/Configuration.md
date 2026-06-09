@@ -302,14 +302,18 @@ old_map:
 （註：請將實際的配置名稱代入 `<config>`）
 
 ```yaml
+
 # <config>.yaml 或 <config>.schema.yaml 的根節點
+
 __patch: <config>.custom:/patch?
 ```
 
 如果存在與舊版本 librime 兼容的補靪文件，則從中加載補靪：
 
 ```yaml
+
 # <config>.custom.yaml
+
 patch:
   key: value
 ```
@@ -317,7 +321,9 @@ patch:
 以上插件的效果相當於
 
 ```yaml
+
 # <config>.yaml 或 <config>.schema.yaml 的根節點
+
 __patch:
   key: value
 ```
@@ -326,7 +332,9 @@ __patch:
 如果這種情況下仍希望支持補靪文件，須將其列爲 `__patch:` 列表中的一項：
 
 ```yaml
+
 # <config>.yaml 或 <config>.schema.yaml 的根節點
+
 __patch:
   - other_patch # ...
   - <config>.custom:/patch?

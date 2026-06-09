@@ -4,9 +4,11 @@ date: 2025-05-17 22:29:58
 ---
 
 <a name="0.17.0"></a>
+
 ## [0.17.0](https://github.com/rime/weasel/compare/0.16.3...0.17.0)(2025-05-17)
 
 ### 主要更新
+
 * 更新 librime 至 1.13.1 版本
 * 修復托盤圖標卡死問題
 * 修復當熱鍵設置為空時 WeaselDeployer 崩潰的問題
@@ -24,6 +26,7 @@ date: 2025-05-17 22:29:58
 * `WeaselSetup.exe` 新增參數支援設定用戶資料目錄，例如：`WeaselSetup.exe /userdir:D:\rime_data_dir`
 
 #### Code Refactor
+
 refactor(WeaselUI): DirectWriteResources ([fxliang](https://github.com/rime/weasel/commit/16672f47cfcb75426459afa8d4ba3c7069eeb2d8))
 refactor(WeaselTSF): simplify codes of RegisterCategories and UnregisterCategories ([fxliang](https://github.com/rime/weasel/commit/4b47310e95c76cfffb0c0828be9563dbb4125aeb))
 refactor(WeaselTSF): simplify codes of RegisterProfiles and UnregisterProfiles ([fxliang](https://github.com/rime/weasel/commit/83881f07227ffec2f202847a6d2cbb28991f7fcc))
@@ -33,12 +36,14 @@ refactor(RimeWithWeasel): simplify _LoadSchemaSpecificSettings ([fxliang](https:
 refactor(RimeWithWeasel): string convertions with macro ([fxliang](https://github.com/rime/weasel/commit/597993e8992e5081c9c0786c9b491c93fc3bbd71))
 
 #### Features
+
 feat: WeaselSetup.exe with new param /? or /help to show help info ([fxliang](https://github.com/rime/weasel/commit/63f27915f3dd03da2bc2b9d4ae1209f1b5e56e0b))
 feat: WeaselDeployer.exe with new param /? or /help to show help info ([fxliang](https://github.com/rime/weasel/commit/1004f399d4b5c90652ae63f33f40247adc56e91b))
 feat: WeaselSetup.exe parameter /userdir:<user_data_dir_full_path> to set user data directory in command line ([fxliang](https://github.com/rime/weasel/commit/0ef3154e489eed1176e9ca3a2e5f244fc0c1cf0f))
 feat: WeaselSetup 默认启动不请求管理员权限，必要时使用管理员权限重启 (#1390) ([Wendy](https://github.com/rime/weasel/commit/ba768a6d65895837b052a1d366ffb872df5f0091))
 
 #### Chores
+
 chore: update bump version scripts ([fxliang](https://github.com/rime/weasel/commit/967674ff5295c4a389b35e9f8070b9fe43d0dcb1))
 chore: update update/bump-version.ps1 \[skip ci\] ([fxliang](https://github.com/rime/weasel/commit/d13fd1250545d05df6573be7c0dee2529a4dc3fc))
 chore: update update/bump_version.sh \[skip ci\] ([fxliang](https://github.com/rime/weasel/commit/8d12cafec0a84498c3f32d6821b7ccbd85fe1f21))
@@ -50,16 +55,19 @@ chore: update .gitignore ([fxliang](https://github.com/rime/weasel/commit/094e99
 chore(install_boost): update boost download url ([居戎氏](https://github.com/rime/weasel/commit/235308dc7425529b49ffe3a5eb29947a4657f8cd))
 
 #### Builds
+
 build: bump librime to 1.13.0 ([fxliang](https://github.com/rime/weasel/commit/9a5244b1fae8de8f52c2f774eddc2986d869e98a))
 build: set /utf-8 for source compilation ([fxliang](https://github.com/rime/weasel/commit/acbb0c393c65ebfea2ac176723f08e5b121442aa))
 build: IntDir and OutDir set for msbuild solution, intermediary files will be always in `$(SolutionDir)\msbuild`. ([fxliang](https://github.com/rime/weasel/commit/5d5d5b0338a5eead4d898a2589f280015acdae85))
 
 #### Continuous Integration
+
 ci: run update rime/home appcast on published or prereleased ([fxliang](https://github.com/rime/weasel/commit/41dc044d7c34d30a574a72095361abf345c133f5))
 ci: bump librime 1.13.1 ([fxliang](https://github.com/rime/weasel/commit/d279d9d78cce33a4e3f36e29c0a1ef6bef423121))
 ci: draft before release ([fxliang](https://github.com/rime/weasel/commit/57b4cc44b46a1e9050b154178885cfccd1e9fdbe))
 
 #### Bug Fixes
+
 fix(trayicon): explorer.exe hangs ([fxliang](https://github.com/rime/weasel/commit/f11831fb16446ab98c1a2fee9ec6245a0d24144b))
 fix(WeaselUI): hemispherical of hilite text preedit not correct ([fxliang](https://github.com/rime/weasel/commit/6e884c299b28c4a8e2d5ed2dc1845e702da35868))
 fix(WeaselDeployer): WeaselDeployer will dump if hotkeys is set empty #1549 ([fxliang](https://github.com/rime/weasel/commit/bf4853dde1a4476489c4d7e85ab9407e5fc7c5f7))
@@ -77,24 +85,30 @@ fix: fix unexpected crash in some applications (#1458) ([Alfred Lieu](https://gi
 fix: candidate ui can't be drawn correctly after GPU reset ([fxliang](https://github.com/rime/weasel/commit/37c8fa161a221a263bb439a1158ba401c0cf90a3))
 
 #### Commits
+
 remove duplicated branch ([Qijia Liu](https://github.com/rime/weasel/commit/78e20ab7893ffe07904ef10eebe55c27bb05cc2a))
 refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://github.com/rime/weasel/commit/836dc9e35c25564fb4b8ab95e575afa4454ee5f3))
 
 <a name="0.16.3"></a>
+
 ## [0.16.3](https://github.com/rime/weasel/compare/0.16.2...0.16.3)(2024-10-04)
 
 #### Bug Fixes
+
 * release channel feed_url not correct. ([fxliang](https://github.com/rime/weasel/commit/0c8bb0f01a929f46160482ae2f4492bed560b7b9))
 * invalid quick return ([Xuesong Peng](https://github.com/rime/weasel/commit/4da263727e16362f01054f6f0bb7522e83ae1e06))
 
 #### Chores
+
 * add update\bump-version.ps1 to bump version in powershell, when clog is not required ([fxliang](https://github.com/rime/weasel/commit/8770fb3ed1b4341b7875c1d60e98bfa5b42f8ac7))
 * update bump-version.sh, appcast.xml and testing-appcast.xml\[skip ci\] ([fxliang](https://github.com/rime/weasel/commit/91d5e4e224a0d73b8303a6ce10f03c71dace5cdd))
 
 #### Continuous Integration
+
 * release and update testing appcast only in rime/weasel ([fxliang](https://github.com/rime/weasel/commit/4af83b6e17f7c3cf78257dd300f4adadbffa1083))
 
 <a name="0.16.2"></a>
+
 ## [0.16.2](https://github.com/rime/weasel/compare/0.16.1...0.16.2) (2024-09-28)
 
 #### 安裝須知
@@ -104,6 +118,7 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 **⚠如您由0.16.0之前的版本升級，請確認您的 `installation.yaml` 文件編碼爲 `UTF-8`, 否則如您在其中修改了非 ASCII 字符內容的路徑時，有可能會引起未明錯誤。**
 
 #### 主要更新
+
 * 新特性：支持自動檢查更新使用測試通道，使用`WeaselSetup.exe`參數可修改，`/testing`使用測試通道，`/release`使用發佈版本，默認後者；
 * 新特性：`WeaselSetup.exe`參數設置界面語言，设置后覆盖区域设置的自动检测。`/lt`設置爲繁體中文界面，`/ls` 設置爲簡體中文界面，`/le`設置爲英文界面
 * 新特性：`WeaselSetup.exe`參數設置是否使用自動檢查更新，`/du`禁用自動檢查更新，`/eu`使用自動檢查更新
@@ -130,10 +145,9 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 修復構建腳本不能重生成正確的版本信息問題
 * 修復一些vs工程配置設置，處理一些deprecated API警告
 
-
 <a name="0.16.1"></a>
-## [0.16.1](https://github.com/rime/weasel/compare/0.16.0...0.16.1) (2024-06-06)
 
+## [0.16.1](https://github.com/rime/weasel/compare/0.16.0...0.16.1) (2024-06-06)
 
 #### 安裝須知
 
@@ -142,6 +156,7 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 **⚠如您由0.16.0之前的版本升級，請確認您的 `installation.yaml` 文件編碼爲 `UTF-8`, 否則如您在其中修改了非 ASCII 字符內容的路徑時，有可能會引起未明錯誤。**
 
 #### 主要更新
+
 * 爲`WeaselServer.exe`使能Windows Error Reporting, 提供對應的`WeaselServer.pdb`文件, 在`WeaselServer.exe`崩潰時可以生成dmp報告文件在日誌文件夾中
 * 提供`WeaselServer.exe`守護，在服務崩潰後6個按鍵事件（三次擊鍵Down&Up)後拉起服務
 * 新增英文界面語言
@@ -164,11 +179,9 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 修復Windows 11下Chrome等瀏覽器中非激活光標狀態下的按鍵響應異常問題
 * 修復64位系統下默認安裝路徑不準確的問題
 
-
-
 <a name="0.16.0"></a>
-## [0.16.0](https://github.com/rime/weasel/compare/0.15.0...0.16.0) (2024-05-14)
 
+## [0.16.0](https://github.com/rime/weasel/compare/0.15.0...0.16.0) (2024-05-14)
 
 #### 安裝須知
 
@@ -275,8 +288,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 仍有極少部分防病毒軟件可能誤報病毒
 
 <a name="0.15.0"></a>
-## [0.15.0](https://github.com/rime/weasel/compare/0.15.0...0.14.3) (2023-06-06)
 
+## [0.15.0](https://github.com/rime/weasel/compare/0.15.0...0.14.3) (2023-06-06)
 
 #### 安裝須知
 
@@ -372,11 +385,9 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * WeaselServer 仍可能發生崩潰
 * 部分防病毒軟件可能誤報病毒
 
-
-
 <a name="0.14.3"></a>
-## 0.14.3 (2019-06-22)
 
+## 0.14.3 (2019-06-22)
 
 #### 主要更新
 
@@ -384,11 +395,9 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
   * 修復 `single_char_filter` 組件
   * 完善上游項目 `librime` 的全自動發佈流程，免去手工上傳構建結果的步驟
 
-
-
 <a name="0.14.2"></a>
-## 0.14.2 (2019-06-17)
 
+## 0.14.2 (2019-06-17)
 
 #### 主要更新
 
@@ -396,22 +405,18 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
   * 修復用戶詞的權重，穩定造句質量、平衡翻譯器優先級 [librime#287](https://github.com/rime/librime/issues/287)
   * 建議 0.14.1 版本用家升級
 
-
-
 <a name="0.14.1"></a>
-## 0.14.1 (2019-06-16)
 
+## 0.14.1 (2019-06-16)
 
 #### 主要更新
 
 * 升級核心算法庫 [librime 1.5.1](https://github.com/rime/librime/blob/master/CHANGELOG.md#151-2019-06-16)
   * 修復未裝配語言模型時缺省的造句算法 ([weasel#383](https://github.com/rime/weasel/issues/383))
 
-
-
 <a name="0.14.0"></a>
-## 0.14.0 (2019-06-11)
 
+## 0.14.0 (2019-06-11)
 
 #### 主要更新
 
@@ -423,16 +428,13 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
     - [librime-octagram](https://github.com/lotem/librime-octagram)
 * 高清重製真彩輸入法狀態圖標
 
-
 #### Features
 
 * **ui:**  high-res status icons; display larger icons in WeaselPanel ([093fa806](https://github.com/rime/weasel/commit/093fa80678422f972e7a7285060553eeedb0e591))
 
-
-
 <a name="0.13.0"></a>
-## 0.13.0 (2019-01-28)
 
+## 0.13.0 (2019-01-28)
 
 #### 主要更新
 
@@ -441,7 +443,6 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
     當前僅限 QWERTY 鍵盤佈局及使用 `script_translator` 的方案
   * 修復升級、部署數據時發生的若干錯誤
 * 更換輸入法狀態圖標，適配高分辨率屏幕
-
 
 #### Features
 
@@ -455,9 +456,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * **test:**  Debug build ([c771126c](https://github.com/rime/weasel/commit/c771126c74fa1c4f91d4bfd8fb5ab8c16dcb7c4c))
 * **tsf:**  set current page to 0 as page count is always 1 ([5447f63b](https://github.com/rime/weasel/commit/5447f63bc7c9d0e31d7ba8ead1e1229938be276d))
 
-
-
 <a name="0.12.0"></a>
+
 ## 0.12.0  (2018-11-12)
 
 #### 主要更新
@@ -476,7 +476,6 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * **ipc:** eliminate some trivial warnings ([dae945c](https://github.com/rime/weasel/commit/dae945c))
 * fix constructor ([b25f968](https://github.com/rime/weasel/commit/b25f968))
 
-
 #### Features
 
 * **compartment:** show IME disabled on language bar ([#263](https://github.com/rime/weasel/issues/263)) ([4015d18](https://github.com/rime/weasel/commit/4015d18))
@@ -484,9 +483,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * **tsf:** get IME keyboard identifier by searching registry ([#272](https://github.com/rime/weasel/issues/272)) ([b60b5b1](https://github.com/rime/weasel/commit/b60b5b1))
 * **WeaselSetup:** detect 64-bit on single 32-bit build ([#266](https://github.com/rime/weasel/issues/266)) ([fb3ae0f](https://github.com/rime/weasel/commit/fb3ae0f))
 
-
-
 <a name="0.11.1"></a>
+
 ## 0.11.1 (2018-04-26)
 
 #### 主要更新
@@ -511,9 +509,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * **installer:**  bundle curl, update rime-install.bat, fixes #180 ([2f3b283d](https://github.com/rime/weasel/commit/2f3b283d6ef4aa0580d186e626dadb9e1030dfd5))
 * **rime-install.bat:**  built-in ZIP package installer ([739be9bc](https://github.com/rime/weasel/commit/739be9bc9ba08e294f51e1d7232407148ded716c))
 
-
-
 <a name="0.11.0"></a>
+
 ## 0.11.0 (2018-04-07)
 
 #### 主要更新
@@ -574,11 +571,9 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
   *  fix `ITfCandidateListUIElement` implemention ([9ce1fa87](https://github.com/rime/weasel/commit/9ce1fa87e6ef788e791e68193700e2ebdd950d20))
   *  use commmit text preview to show inline preview ([b1d1ec43](https://github.com/rime/weasel/commit/b1d1ec43e132998ea8764d8dac2098a2b3d9a3e8))
 
-
-
 <a name="0.10.0"></a>
-## 小狼毫 0.10.0 (2018-03-14)
 
+## 小狼毫 0.10.0 (2018-03-14)
 
 #### 主要更新
 
@@ -612,11 +607,9 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
   *  Results of auto-selection cleared by subsequent manual selection [#107](https://github.com/rime/weasel/issues/107)
   *  use commmit text preview to show inline preview ([b1d1ec43](https://github.com/rime/weasel/commit/b1d1ec43e132998ea8764d8dac2098a2b3d9a3e8))
 
-
-
 <a name="0.9.30"></a>
-## 小狼毫 0.9.30 (2014-04-01)
 
+## 小狼毫 0.9.30 (2014-04-01)
 
 #### Rime 算法庫變更集
 
@@ -634,11 +627,9 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 更新：【八股文】【朙月拼音】【地球拼音】【五筆畫】
 * 改進：【朙月拼音·語句流】`/0` ~ `/10` 輸入數字符號
 
-
-
 <a name="0.9.29.1"></a>
-## 小狼毫 0.9.29.1 (2013-12-22)
 
+## 小狼毫 0.9.29.1 (2013-12-22)
 
 #### 【小狼毫】變更集
 
@@ -661,11 +652,9 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 更新：【粵拼】匯入衆多粵語詞彙
 * 優化：調整部分異體字的字頻
 
-
-
 <a name="0.9.28"></a>
-## 小狼毫 0.9.28 <2013-12-01>
 
+## 小狼毫 0.9.28 <2013-12-01>
 
 #### 【小狼毫】變更集
 
@@ -687,11 +676,9 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 更新：Emoji 提供更加豐富的繪文字（需要字體支持）
 * 更新：【八股文】【朙月拼音】【地球拼音】【中古全拼】修正錯別字、註音錯誤
 
-
-
 <a name="0.9.27"></a>
-## 小狼毫 0.9.27 (2013-11-06)
 
+## 小狼毫 0.9.27 (2013-11-06)
 
 #### 【小狼毫】變更集
 
@@ -724,16 +711,14 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 改進：【倉頡五代】開啓繁簡轉換時，提示簡化字對應的傳統漢字
 * 變更：間隔號採用「·」`U+00B7`
 
-
-
 <a name="0.9.26.1"></a>
+
 ## 小狼毫 0.9.26.1 (2013-10-09)
 
 * 修復：從上一個版本升級【倉頡】輸入方案不會自動更新的問題
 
-
-
 <a name="0.9.26"></a>
+
 ## 小狼毫 0.9.26 (2013-10-08)
 
 * 新增：【倉頡】開啓自動造詞<br/>
@@ -751,25 +736,22 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 更新：修訂【八股文】詞典、【朙月拼音】【地球拼音】【粵拼】【吳語】
 * 更新：2013款 Rime 輸入法圖標
 
-
-
 <a name="0.9.25.2"></a>
+
 ## 小狼毫 0.9.25.2 (2013-07-26)
 
 * 改進：碼表輸入法連打，Shift+BackSpace 以字、詞爲單位回退
 * 修復：演示模式下開啓內嵌編碼行、查無候選字時程序卡死
 
-
-
 <a name="0.9.25.1"></a>
+
 ## 小狼毫 0.9.25.1 (2013-07-25)
 
 * 新增：開始菜單項「檢查新版本」，手動升級到最新測試版
 * 新增：【地球拼音】5 字內候選標註完整帶調拼音
 
-
-
 <a name="0.9.25"></a>
+
 ## 小狼毫 0.9.25 (2013-07-24)
 
 * 新增：演示模式（全屏的輸入窗口）`style/fullscreen: true`
@@ -778,9 +760,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 更新：拼音、粵拼等輸入方案
 * 更新：`symbols.yaml` 增加一批特殊字符
 
-
-
 <a name="0.9.24"></a>
+
 ## 小狼毫 0.9.24 (2013-07-04)
 
 * 新增：支持全角模式
@@ -793,9 +774,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
   選項 `translator/initial_quality: 0`
 * 修復：用戶詞典未能完整支持 `derive` 拼寫運算產生的歧義切分
 
-
-
 <a name="0.9.23"></a>
+
 ## 小狼毫 0.9.23 (2013-06-09)
 
 * 改進：方案選單按選用輸入方案的時間排列
@@ -808,17 +788,15 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 修復：自定義短語不應參與組詞
 * 修復：八股文錯詞及「鏈」字無法以簡化字組詞的 BUG
 
-
-
 <a name="0.9.22.1"></a>
+
 ## 小狼毫 0.9.22.1 (2013-04-24)
 
 * 修復：禁止自定義短語參與造句
 * 修復：GVim 裏進入命令模式或在插入模式換行錯使輸入法重置爲初始狀態
 
-
-
 <a name="0.9.22"></a>
+
 ## 小狼毫 0.9.22 (2013-04-23)
 
 * 新增：配色方案【曬經石】／Solarized Rock
@@ -839,9 +817,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 改進：碼表中 `# no comments` 行之後不再識別註釋，以支持 `#` 作文字內容
 * 改進：檢測到因斷電造成用戶詞典損壞時，自動在後臺線程恢復數據文件
 
-
-
 <a name="0.9.20"></a>
+
 ## 小狼毫 0.9.20 (2013-02-01)
 
 * 變更：Caps Lock 燈亮時默認輸出大寫字母 [Gist](https://gist.github.com/2981316)
@@ -860,9 +837,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 修復：用戶詞典管理／輸出詞典快照後定位文件出錯
 * 修復：TSF 內嵌輸入碼沒有反選效果、候選窗位置頻繁變化
 
-
-
 <a name="0.9.19.1"></a>
+
 ## 小狼毫 0.9.19.1 (2013-01-16)
 
 * 新增：Caps Lock 點亮時，切換到西文模式，輸出小寫字母<br/>
@@ -871,24 +847,21 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 修復：用戶詞典有可能因讀取時 I/O 錯誤導致部份詞序無法調整
 * 改進：用戶詞典同步／合入快照的字頻合併算法
 
-
-
 <a name="0.9.18.6"></a>
+
 ## 小狼毫 0.9.18.6 (2013-01-09)
 
 * 修復：從 0.9.16 及以下版本升級用戶詞典出錯
 
-
-
 <a name="0.9.18.5"></a>
+
 ## 小狼毫 0.9.18.5 (2013-01-07)
 
 * 修復：含簡化字的候選詞不能以音節爲單位移動光標
 * 改進：同步用戶資料時也備份用戶修改的YAML文件
 
-
-
 <a name="0.9.18"></a>
+
 ## 小狼毫 0.9.18 (2013-01-05)
 
 * 新增：同步用戶詞典，詳見 [Wiki » UserGuide](https://code.google.com/p/rimeime/wiki/UserGuide)
@@ -896,9 +869,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 改進：拼音輸入法中，按左方向鍵以音節爲單位移動光標
 * 修復：【地球拼音】不能以 - 鍵輸入第一聲
 
-
-
 <a name="0.9.17.1"></a>
+
 ## 小狼毫 0.9.17.1 (2012-12-25)
 
 * 修復：設置爲默認輸入語言後再安裝，IME 註冊失敗
@@ -906,9 +878,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 新增：從開始菜單訪問用戶文件夾的快捷方式
 * 修復：【小鶴雙拼】拼音 an 顯示錯誤
 
-
-
 <a name="0.9.17"></a>
+
 ## 小狼毫 0.9.17 (2012-12-23)
 
 * 新增：切換模式、輸入方案時，短暫顯示狀態圖標
@@ -923,9 +894,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 修復：【小鶴雙拼】diao, tiao 等拼音回顯錯誤
 * 更新：【朙月拼音】【地球拼音】【粵拼】修正用戶反饋的註音錯誤
 
-
-
 <a name="0.9.16"></a>
+
 ## 小狼毫 0.9.16 (2012-10-20)
 
 * 新增：TSF 輸入法框架（測試階段）及嵌入式編碼行
@@ -942,9 +912,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 新增：寒寒豆作《蘇州吳語》輸入方案，方案標識爲 `soutzoe`
 * 新增：配色方案【谷歌／Google】，skoj 作品
 
-
-
 <a name="0.9.15"></a>
+
 ## 小狼毫 0.9.15 (2012-09-12)
 
 * 新增：橫排候選欄——歡迎 wishstudio 同學加入開發！
@@ -955,23 +924,20 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 修復：托盤圖標在重新登錄後不可見的BUG
 * 更新：【明月拼音】【粵拼】【吳語】修正註音錯誤、缺字
 
-
-
 <a name="0.9.14.2"></a>
+
 ## 小狼毫 0.9.14.2 (2012-07-13)
 
 * 重新編譯了 `opencc.dll` 安全軟件不吭氣了
 
-
-
 <a name="0.9.14.1"></a>
+
 ## 小狼毫 0.9.14.1 (2012-07-07)
 
 * 解決【中古全拼】不可用的問題
 
-
-
 <a name="0.9.14"></a>
+
 ## 小狼毫 0.9.14 (2012-07-05)
 
 * 介面採用新的 Rime logo，狀態圖示用較柔和的顏色
@@ -985,9 +951,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 改進：當前設定的字體缺字時，使用系統後備字體顯示文字
 * 解決與MacType同時使用，Ext-B/C/D區文字排版不正確的問題
 
-
-
 <a name="0.9.13"></a>
+
 ## 小狼毫 0.9.13 (2012-06-10)
 
 * 編碼提示用淡墨來寫，亦可在配色方案中設定顏色
@@ -1003,9 +968,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 檢測到用戶詞典文件損壞時，重建詞典並從備份中恢復資料
 * 修改BUG：簡拼 zhzh 因切分歧義使部分用戶詞失效
 
-
-
 <a name="0.9.12"></a>
+
 ## 小狼毫 0.9.12 (2012-05-05)
 
 * 用 Shift+Del 刪除已記入用戶詞典的詞條，詳見 Issue 117
@@ -1015,9 +979,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 支持設置爲系統默認輸入法
 * 支持多個Windows用戶（新用戶執行一次佈署後方可使用）
 
-
-
 <a name="0.9.11"></a>
+
 ## 小狼毫 0.9.11 (2012-04-14)
 
 * 使用 `express_editor` 的輸入方案中，數字、符號鍵直接上屏
@@ -1032,9 +995,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 更新【粵拼】詞典，調整常用粵字的排序、增補粵語常用詞
 * 新增輸入方案【小鶴雙拼】、【筆順五碼】
 
-
-
 <a name="0.9.10"></a>
+
 ## 小狼毫 0.9.10 (2012-03-26)
 
 * 記憶繁簡轉換、全／半角符號開關狀態
@@ -1045,9 +1007,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 新增輸入方案【速成】，速成、倉頡詞句連打
 * 新增【智能ABC雙拼】、【速記打字法】
 
-
-
 <a name="0.9.9"></a>
+
 ## 小狼毫 0.9.9
 
 * 新增「介面風格設定」，快速選擇預設的六款配色方案
@@ -1057,9 +1018,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 修復編碼反查失效的BUG
 * 修改標點符號「間隔號」及「浪紋」
 
-
-
 <a name="0.9.8"></a>
+
 ## 小狼毫 0.9.8
 
 * 新增「輸入方案選單」設定介面
@@ -1067,18 +1027,16 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 修復部分用戶組詞無效的BUG
 * 新增預設輸入方案「MSPY雙拼」
 
-
-
 <a name="0.9.7"></a>
+
 ## 小狼毫 0.9.7
 
 * 逐鍵提示、反查提示碼支持拼寫運算（如顯示倉頡字母等）
 * 重構部署工具；以 `*.custom.yaml` 文件持久保存自定義設置
 * 製作【粵拼】、【吳語】輸入方案「預發行版」
 
-
-
 <a name="0.9.6"></a>
+
 ## 小狼毫 0.9.6
 
 * 關機時妥善保存數據，降低用戶詞庫損壞機率；執行定期備份
@@ -1089,9 +1047,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 修復BUG：「拼寫運算」無法替換爲空串
 * 完善拼寫運算的錯誤日誌；清理調試日誌
 
-
-
 <a name="0.9.5"></a>
+
 ## 小狼毫 0.9.5
 
 * Rime 獨門絕活之「拼寫運算」
@@ -1099,17 +1056,15 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 升級【倉頡五代】，以倉頡字母顯示編碼
 * 重修配色方案【碧水／Aqua】、【青天／Azure】
 
-
-
 <a name="0.9.4"></a>
+
 ## 小狼毫 0.9.4
 
 * 增設編碼反查功能，預設方案以「`」爲反查的引導鍵
 * 修復Windows XP中西文狀態變更時的通知氣球
 
-
-
 <a name="0.9.3"></a>
+
 ## 小狼毫 0.9.3
 
 * 新增預設輸入方案【五笔86】、【臺灣正體】拼音
@@ -1117,9 +1072,8 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 新增輸入法維護模式，更安全地進行部署作業
 * 優化中西文切換、自動識別小數、百分數、網址、郵箱
 
-
-
 <a name="0.9.2"></a>
+
 ## 小狼毫 0.9.2
 
 * 增設半角標點符號
@@ -1130,16 +1084,13 @@ refactorï(RimeWithWeasel) simplify color parsing function ([fxliang](https://gi
 * 增設托盤圖標，快速訪問配置管理工具
 * 改進安裝程序
 
-
-
 <a name="0.9"></a>
+
 ## 小狼毫 0.9
 
 * 用C++重寫核心算法（階段成果）
 * 將輸入法介面從前端遷移到後臺服務進程
 * 兼容64位系統
-
-
 
 ## 小狼毫 0.1 ~ 0.3
 

@@ -9,21 +9,21 @@ source2: fcitx5-macos/README.zh-CN.md
 
 Public beta: please download [installer](https://github.com/fcitx-contrib/fcitx5-macos-installer).
 
-
 > 小企鹅输入法 macOS 版
-> 
+>
 > [Fcitx5](https://github.com/fcitx/fcitx5) 输入框架的 macOS 移植。
-> 
+>
 > 公测进行中，请下载[安装器](https://github.com/fcitx-contrib/fcitx5-macos-installer/blob/master/README.zh-CN.md)。
 
-
 ## Build
+
 Native build on Intel and Apple Silicon is supported.
 
 This is NOT an Xcode project,
 but Xcode is needed for Swift compiler.
 
 ### Install dependencies
+
 You may use [nvm](https://github.com/nvm-sh/nvm)
 to install node, then
 
@@ -36,6 +36,7 @@ pnpm --prefix=fcitx5-webview i
 ```
 
 ### Build with CMake
+
 ```sh
 cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
 cmake --build build
@@ -43,22 +44,26 @@ sudo cmake --install build
 ```
 
 ### Code sign
+
 Some features (e.g. notifications, core dump) require the app bundle be code-signed after installation:
 ```sh
 sudo /usr/bin/codesign --force --sign - --entitlements assets/core.entitlements --deep /Library/Input\ Methods/Fcitx5.app
 ```
 
 ## Debug
+
 ### Console.app
 
 * Check `Include Info Messages` and `Include Debug Messages` in `Action` menu.
 * Put `FcitxLog` in `Search`.
 
 ### Log
+
 `/tmp/Fcitx5.log` contains all log in Console.app,
 plus those written to stderr by engines, e.g. rime.
 
 ### lldb
+
 SSH into the mac from another device, then
 ```sh
 $ /usr/bin/lldb
@@ -66,6 +71,7 @@ $ /usr/bin/lldb
 ```
 
 ### Core dump
+
 ```sh
 sudo chmod 1777 /cores
 sudo sysctl kern.coredump=1
@@ -80,6 +86,7 @@ When Fcitx5 crashes, it creates a ~10GB core file under `/cores`.
 ```
 
 ## Plugins
+
 Fcitx5 only packages keyboard engine.
 To install other [engines](https://github.com/fcitx-contrib/fcitx5-macos-plugins),
 use the built-in Plugin Manager.
@@ -87,6 +94,7 @@ use the built-in Plugin Manager.
 ## Translation
 
 ### Swift sources
+
 To update .strings files for each supported locale, run
 ```sh
 cmake --build build --target GenerateStrings
@@ -95,6 +103,7 @@ cmake --build build --target GenerateStrings
 This will, e.g., update assets/zh-Hans/Localizable.strings, and then the translator can work on it.
 
 ### C++ sources
+
 First, create assets/po/base.pot file:
 ```sh
 cmake --build build --target pot

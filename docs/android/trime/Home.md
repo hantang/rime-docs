@@ -3,8 +3,7 @@ source: trime-trime/Home.md + _Sidebar.md
 title: Trime Wiki
 ---
 
-Welcome to the trime wiki!  
-
+Welcome to the trime wiki!
 
 請從側邊欄定位至相關內容☞
 

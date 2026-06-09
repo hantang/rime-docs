@@ -6,10 +6,10 @@ title: 实现 Shift-L 按下时切换输入法
 > 实现Shift_L-按下时切换输入法即Shift_L-代替Ctrl_Space-切换系统输入法
 
 ### 想要实现的功能 按下shift 来切换中英文状态
+
 理想的情况是 mac 只保留一个Squirrel 输入法，用Squirrel 中的功能（shift切换中英文状态）<br/>
 现实的情况是 mac 不允许删除默认的 英文输入法，且默认某些Application输入法状态是系统默认的英文<br/>
 所以有时实现切换中英文会变得很繁琐 （系统英文态<---> Squirrel英文态<---->Squirrel中文态)
-
 
 解决方案 不使用 Squirrel英文态，但是依然想用Shift_L 来切换中英文状态<br/>
 （系统英文态<---->Squirrel中文态)
@@ -19,26 +19,40 @@ title: 实现 Shift-L 按下时切换输入法
 ###  1 把ascii_composer从processors移除， 只是不知道会不会有负作用，待验证
 
 ###  2 将你用的schema的输入法改为只有中文一种状态，如 wubi_pinyin.schema.yaml
+
 ```
 switches:
   - name: ascii_mode
     reset: 0
     states: [ 中文] #只保留中文输入法，避免无意间切到英文输入状态，因为我使用系统的英文输入法，还不是rime的
+
 #   states: [ 中文, 西文 ]
+
 #或者使用下面这种语法来打patch
+
 # switches/@0/states:  [ 中文]
+
 ```
+
 ###  或者以打补丁的方式wubi_pinyin.schema.custom.yaml
+
 ```
 patch:
+
 # switches:
+
 #   - name: ascii_mode
+
 #     reset: 0
+
 #     states: [ 中文, 西文 ]
-  
+
 # wubi_pinyin.schema.yaml. 里有个reset: 奖0 改成1 就变成默认英文输入状态
+
 # 設輸入方案裏 {name: ascii_mode} 在 switches: 列表中爲第一項，即下標 0
+
 # 默认中文状态
+
   switches/@0/reset: 0
   # 默认英文状态
   # switches/@0/reset: 1
@@ -50,6 +64,7 @@ patch:
 ```
 
 ###  default.custom.yaml中
+
 ```
 patch:
   ascii_composer/switch_key:
@@ -65,7 +80,9 @@ patch:
     - { when: always, accept: F17,  send: Escape}
 
 ```
-###  squirrel.custom.yaml 
+
+###  squirrel.custom.yaml
+
  ```
 patch:
   us_keyboard_layout: false
@@ -100,7 +117,6 @@ patch:
 中文状态下left_shift 激活系统英文
 英文状态下emacs里 按left_shift ,激活rime ,同时执行shell来切换成insert-state下 “open -g hammerspoon://emacs_evil_insert_state”
 中文状态下emacs里按下ctrl-g 则触发ctrl-g按键的时候 激活英文输入法，（我在emacs下ctrl-g会回到evil-normal-state)
-
 
 ```
 {
@@ -314,7 +330,9 @@ patch:
 }
 
 ```
+
 ### emacs 配置
+
 ```
 (global-set-key (kbd "<f17>") 'evil-normal-state) ;mac karabiner用来控制输入法
 (define-key isearch-mode-map (kbd "<f17>") 'evil-normal-state) ;详见isearch-pre-command-hook

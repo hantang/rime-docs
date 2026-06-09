@@ -12,7 +12,6 @@ title: Rime经典资料汇总
 - [Rime 官网](http://rime.im/)
 - [Rime 贴吧](http://tieba.baidu.com/f?ie=utf-8&kw=rime&fr=search)
 
-
 ## 致第一次安装 RIME 的你
 
 [:link: 贴吧](http://tieba.baidu.com/p/3288634121?pid=57279455882&cid=89312209915#89312209915)
@@ -54,8 +53,8 @@ title: Rime经典资料汇总
 - Control 鍵切換中西文
 等等
 
-`Rime 输入方案设计书`的第5部分，讲的是演练实例，是大的输入方案的改造，而这里只是一些我们日常生活是经常会用到的，对输入方案的小小的调整。  
-如果你有什么关于定制的问题想要提问，建议先认真阅读一下这里。  
+`Rime 输入方案设计书`的第5部分，讲的是演练实例，是大的输入方案的改造，而这里只是一些我们日常生活是经常会用到的，对输入方案的小小的调整。
+如果你有什么关于定制的问题想要提问，建议先认真阅读一下这里。
 当然，如果你解决了某个定制问题，你也可以将解决方案添加到这个 wiki 中。
 
 ## Schema.yaml 詳解
@@ -63,9 +62,8 @@ title: Rime经典资料汇总
 [:link: GitHub](https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md)
 [:material-link: 本站](../../collect/RimeDescription-Schema.md)
 
-对一个输入方案的yaml文档做了详解，对`Rime输入方案设计书`中的第三部分的补充，设计书是从理论角度讲，这里是结合schema.yaml文件逐步讲的。  
+对一个输入方案的yaml文档做了详解，对`Rime输入方案设计书`中的第三部分的补充，设计书是从理论角度讲，这里是结合schema.yaml文件逐步讲的。
 另外文章末尾还附了 Dict.yaml 詳解，如果想对词库或者码表作修改，可以看这里。
-
 
 ----
 下面还有一些比较好的贴子。

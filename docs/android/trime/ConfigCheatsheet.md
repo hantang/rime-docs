@@ -3,18 +3,23 @@ source: rime-trime-wiki/trime.yaml.md
 title: trime.yaml 速查
 ---
 
-
 ```yaml
+
 # Trime default style settings
+
 # encoding: utf-8
 
 config_version: "for小鹤主题5.5"
 name: 比翼高飞
+
 # 本主题依附于小鹤主题使用，下面__include: 之后紧跟的就是主题名
+
 # 如使用本主题，小鹤主题名应为：trime.yaml；如小鹤主题名为：小鹤.trime.yaml，则需在本文件内查找“__include: 小鹤.trime”替换为“__include: 小鹤.trime”
-# 
+
+#
 author: 散步的鹤 flypy.com #作者资讯
 height:
+
 # ----------键盘高度调整------------
 
   A: &VJG 54         #主键盘行高  自定
@@ -23,7 +28,7 @@ height:
   D: &FJG 56         #符号键盘行高  D=(A*4+B+C)/5=56
   E: &SZG 64         #数字和编辑键盘行高 E=(D*5-C)/4=64
   F: &SZM 24        #数字和编辑键盘末行高=C 和主键盘不平时调整
-  
+
   M: &SPG 280 #3.2.6竖屏总高=A*4+B+C
   N: &HPG 240 #3.2.6横屏总高
 
@@ -31,23 +36,25 @@ height:
 
   U: &UZYK 5  #竖屏左右留空
   X: &UXMK 0  #竖屏下面留空
-  
+
   H: &HZYK 40 #横屏左右留空
   M: &HXMK 0 #横屏下面留空
-  
+
 # ----------空格行键宽度调整------------
 
   E: &HCK 17          #回车
   K: &KGK 35         #空格
   S: &SBK 16          #数字标点
   #100=数字标点S*3+空格K+回车H
-  
+
   K0: &KBZ 32
   K1: &KGZ 15
   K2: &KGV 5
   K3: &KGY 15
   K4: &KBY 33
+
 # ----------结束------------，
+
 style:
   __include: 小鹤.trime:/style
   key_height: *FJG
@@ -102,12 +109,12 @@ preset_keyboards:
         "keys/@14/long_click": ";"
         "keys/@21/width": 12 #如果需要AZ两行居中对齐，在此行和下行前加#号即可
         "keys/@before 33": {click: "", width: 3, key_back_color: glb, hilited_key_back_color: glb}
-        "keys/@30/height": 
+        "keys/@30/height":
         "keys/@30/key_symbol_offset_x": 0
         "keys/@30/width": *SBK
         "keys/@31/width": *SBK
         "keys/@31/long_click": "!"
-        "keys/@31/composing": 
+        "keys/@31/composing":
         "keys/@31/key_symbol_offset_x": 0
         "keys/@32": {click: space, width: *KGK, key_text_size: 9, key_text_offset_x: 0, key_text_offset_y: 3, key_symbol_offset_x: 0, key_symbol_offset_y: 6, long_click: Mode_switch, key_back_color: kgb, key_text_color: kgt, key_symbol_color: kgs, hilited_key_back_color: kgh, hilited_key_text_color: kght, hilited_key_symbol_color: kghs}
         "keys/@33": {click: ".", label: "  。", width: *SBK, composing: delimiterJ1, long_click: "?", key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: bdht, hilited_key_symbol_color: bdhs}
@@ -138,12 +145,12 @@ preset_keyboards:
         "keys/@14/long_click": "&"
         "keys/@21/width": 12 #如果需要AZ两行居中对齐，在此行和下行前加#号即可
         "keys/@before 33": {click: "", width: 3, key_back_color: xdbdb, hilited_key_back_color: xdbdb}
-        "keys/@30/composing": 
+        "keys/@30/composing":
         "keys/@30/width": *SBK
         "keys/@30/key_symbol_offset_x": 0
-        "keys/@30/height": 
+        "keys/@30/height":
         "keys/@31/long_click": "!"
-        "keys/@31/composing": 
+        "keys/@31/composing":
         "keys/@31/key_symbol_offset_x": 0
         "keys/@31/width": *SBK
         "keys/@32/width": *KGK
@@ -153,8 +160,8 @@ preset_keyboards:
         "keys/@32/key_text_offset_y": 3
         "keys/@32/key_back_color": kgb
         "keys/@32/hilited_key_back_color": kgh
-        "keys/@32/swipe_left": 
-        "keys/@32/swipe_right": 
+        "keys/@32/swipe_left":
+        "keys/@32/swipe_right":
         "keys/@33": {click: ".", label: " 。", composing: delimiterJ, long_click: "?", width: *SBK, key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: hbdt}
         "keys/@34/width": *HCK
         "keys/@34/key_symbol_offset_x": 0

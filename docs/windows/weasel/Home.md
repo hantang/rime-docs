@@ -50,5 +50,6 @@ title: Weasel Wiki
 - 微信输入法风格
 
 ## 输入方案安装与更新 Weasel with plum
+
 - 使用方法
 - plum

@@ -21,12 +21,12 @@ speller:
     - derive/y/t/
     - derive/i/u/
     - derive/p/o/
- 
+
     - derive/s/a/
     - derive/f/d/
     - derive/h/g/
     - derive/k/j/
- 
+
     - derive/c/x/
     - derive/b/v/
     - derive/m/n/
@@ -35,6 +35,7 @@ speller:
 上面的代码就是用来改造五笔双键，也是双键输入法定制的核心。
 
 ## 原理说明
+
 这里主要用到的技术就是模糊音。
 注意上面的derive你可以理解为替换的意思，比如 `- derive/w/q`就是将码表编码中的所有w都替换为q。
 
@@ -55,37 +56,41 @@ speller:
 ## 使用和存在的问题
 
 现在再运行脚本，部署一下。看看会发生什么？
- 
+
 Ctrl+~,切换到"五笔双键"。按一下A,"工"和"要"都出来了，即A和S上的简码都出来了。
- 
+
 呵呵，是不是实现了？
 别着急。目前还是很多问题的：
- 
+
 1. 现在切换到wubi86，试着输入几个字，你会发现，wubi86也被模糊化了。
 2. 注意词频是有问题的，你试着输lqtt. 显示 "输入"这个单词，居然在"加尔各答"后面？
 
 以下都是@xiaoqun2016 老师给出的回答.具体见
 https://github.com/osfans/trime/issues/61
- 
+
 ### 共享码表的问题
+
 在translator结点下，添加如下定义
   　prism: wubi86_double_key
 替换prism这个属性，表示生成的码表棱镜文件。即最终会生成一个名为wubi_double_key.prism.bin的二进制文件，用来存储我们加了模糊音替换后的wubi86的码表。
 如果不加这个选项，就会与原来的wubi86.schema共用一个码表，这样就会改变原来的输入方案。即使用标准的wubi86也会有模糊音的现象。
 
-
 ### 模糊化后的词频问题
+
 这里主要涉及码表翻译器(table_translator)和音节翻译器(script_translator)
 table_traslator对拼写运算支持得不好，经典模糊音转换来的字词的频率都默认为0，所以无法按正常的词频显示。
 script_translator不存在这个问题，但是可能会有别的问题。这个我也在理解中
- 
- 
+
 ## 修改后的源码
+
 以下为我现在使用的 `wubi86_double_key.schema.yaml`的源码
 
 ```yaml
+
 # Rime schema settings
+
 # vim: set sw=2 sts=2 et:
+
 # encoding: utf-8
 
 schema:
@@ -127,7 +132,9 @@ engine:
   translators:
     - punct_translator
     - reverse_lookup_translator
+
 #    - table_translator
+
     - script_translator
 
 speller:
@@ -135,19 +142,19 @@ speller:
   max_code_length: 4
   algebra:
     - derive/w/q/
-    - derive/r/e/ 
-    - derive/y/t/ 
-    - derive/i/u/ 
-    - derive/p/o/ 
+    - derive/r/e/
+    - derive/y/t/
+    - derive/i/u/
+    - derive/p/o/
 
-    - derive/s/a/ 
-    - derive/f/d/ 
-    - derive/h/g/ 
-    - derive/k/j/ 
-    
-    - derive/c/x/ 
-    - derive/b/v/ 
-    - derive/m/n/ 
+    - derive/s/a/
+    - derive/f/d/
+    - derive/h/g/
+    - derive/k/j/
+
+    - derive/c/x/
+    - derive/b/v/
+    - derive/m/n/
 
 translator:
   dictionary: wubi86_double_key

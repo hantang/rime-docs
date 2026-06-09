@@ -20,7 +20,9 @@ schema:
 您也可以在输入方案的补丁文件中自定义图标。例如，将明月拼音的输入方案图标调整为 `cn.ico`。首先，确保 `cn.ico` 文件在小狼毫用户目录下，然后，修改补丁文件 `luna_pinyin.custom.yaml` 如下：
 
 ```yaml
+
 # luna_pinyin.custom.yaml
+
 patch:
   "schema/icon": cn.ico
 ```
@@ -32,7 +34,9 @@ patch:
 以为朙月拼音单独设定配色方案为例，在输入方案中添加：
 
 ```yaml
+
 # luna_pinyin.schema.yaml
+
 style:
   color_scheme: google
 ```
@@ -40,7 +44,9 @@ style:
 或者在 luna_pinyin.custom.yaml 添加如下代码：
 
 ```yaml
+
 # luna_pinyin.custom.yaml
+
 patch:
   "style/color_scheme": google
 ```

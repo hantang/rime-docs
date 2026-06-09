@@ -34,4 +34,3 @@ Rime 輸入法在查找一項資源的時候，會優先訪問 [用戶文件夾|
 其他：
 
 - `opencc/*` - [OpenCC](https://github.com/BYVoid/OpenCC) 字形轉換配置及字典文件。
-

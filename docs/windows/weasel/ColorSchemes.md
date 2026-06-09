@@ -10,7 +10,9 @@ title: 定制小狼毫配色
 下面是一个附有每个条目说明的示例：
 
 ```yaml
+
 # weasel.yaml
+
 preset_color_schemes:
   nord:                                     # 在 `style/color_schema` 指定的配色方案值
     name: "远山／Nord"                       # 方案设置中显示的配色名称
@@ -75,7 +77,9 @@ preset_color_schemes:
 在本例中，如果想将 Weasel 配色方案全局调整为该方案，可以在 `weasel.custom.yaml` 写：
 
 ```yaml
+
 # weasel.custom.yaml
+
 patch:
   "style/color_scheme": nord
 ```
@@ -83,7 +87,9 @@ patch:
 如果想将某个输入方案的配色指定为该方案，例如，将明月拼音（luna_pinyin）的配色指定为 `nord`，可以在 `luna_pinyin.schema.yaml` 添加如下两行：
 
 ```yaml
+
 # luna_pinyin.schema.yaml
+
 style:
   color_scheme: nord
 ```
@@ -91,9 +97,11 @@ style:
 或者，在 `luna_pinyin.schema.custom.yaml` 添加如下一行：
 
 ```yaml
+
 # luna_pinyin.schema.custom.yaml
+
 patch:
-  "style/color_scheme": nord 
+  "style/color_scheme": nord
 ```
 
 这样，当使用其他输入方案时，小狼毫将使用全局配色方案；当切换到明月拼音时，小狼毫将会使用 `nord` 配色方案。

@@ -4,8 +4,10 @@ title: trime.yaml 詳解
 ---
 
 <!--
+
 # `trime.yaml`详解
- -->
+
+-->
 
 基于同文 V3.1.2 20181229 版修订
 
@@ -19,7 +21,7 @@ title: trime.yaml 詳解
 
 ### 注解
 
-每个配置条目以“`**[版本号]**`配置名：配置作用简介”或“`配置名`：配置作用简介”的格式呈现。 
+每个配置条目以“`**[版本号]**`配置名：配置作用简介”或“`配置名`：配置作用简介”的格式呈现。
 
 **\[版本号\]** 表示此配置项自该版本才可用，**\[~~版本号~~\]** 表示此配置自该版本弃用。**\[不可用\]** 即不确定被弃用的起始版本。
 
@@ -58,9 +60,9 @@ title: trime.yaml 詳解
 - **\[3.2.3\]**`background_folder`：背景图路径，即保存在 background 的哪个子目录。 使用此参数可以方便管理多个主题的图片（当然也可以指定多个主题共用一套图片）。
 - `reset_ascii_mode`: 不同进程中显示键盘时重置为中文状态（`true`:重置为中文；`false`:记忆中英状态）
 - `latin_locale`: 在英文状态（ascii_mode）下，朗读按键时所用的语言。
-- `locale`: 在中文状态下，朗读上屏文本和按键时所用的语言。  
+- `locale`: 在中文状态下，朗读上屏文本和按键时所用的语言。
   ※ 需要先在同文设置界面开启朗读功能。朗读功能还需要手机的 TTS 引擎支持。可使用系统默认引擎，也可安装讯飞语记等第三方引擎。`latin_local`和`local`可以设置的语言也取决于 TTS 引擎。常见的语言：`zh_TW`, `zh_CN`, `zh_HK`, `en_US`, `ja_JP`, `ko_KR`,……
-- **\[语音识别几乎不可用\]**`speech_opencc_config`: 语音输入简繁转换（默认值`s2t.json`: 将语音识别的结果转换成繁体再上屏）  
+- **\[语音识别几乎不可用\]**`speech_opencc_config`: 语音输入简繁转换（默认值`s2t.json`: 将语音识别的结果转换成繁体再上屏）
   需要配合 OpenCC 组件来使用。转换的选项有：
   - `s2t.json` #简体 → 繁体
   - `t2s.json` #繁体 → 简体
@@ -72,13 +74,15 @@ title: trime.yaml 詳解
   - `tw2sp.json` #台湾繁体 → 简体，并转换常用词汇（作業系統 → 操作系统）
   - `t2hk.json` #OpenCC 标准繁体 → 香港繁体
   - `t2tw.json` #OpenCC 标准繁体 → 台湾繁体
-  - 如果不需要转换，想让语音引擎按原样输出，可设为`none`。(2017-9-13 开始，也可以直接注释掉)  
+  - 如果不需要转换，想让语音引擎按原样输出，可设为`none`。(2017-9-13 开始，也可以直接注释掉)
     ⚠ 同文输入法的语音输入依赖的是手机的「语音识别服务」，而且必须安装「讯飞语记」或者「讯飞语音+」才能使用。
 
 #### 示例：开启英文模式句首自动大写
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "style/auto_caps": ascii
 ```
@@ -86,14 +90,16 @@ patch:
 #### 示例：在预设 26 键键盘上添加语音输入键
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_keyboards/qwerty/keys/@31/click": VOICE_ASSIST #将原来的符号键替换为语音键
 ```
 
-※ 对于默认主题`trime.yaml`，修改的时候需要打补丁。对于自制的主题，一般不需要打补丁。  
- 上例若直接修改主题文件，是这样做的：  
- 查找按键布局`qwerty`，  
+※ 对于默认主题`trime.yaml`，修改的时候需要打补丁。对于自制的主题，一般不需要打补丁。
+ 上例若直接修改主题文件，是这样做的：
+ 查找按键布局`qwerty`，
  将按键`{click: Keyboard_symbols, long_click: Keyboard_number}`
 修改成`{click: VOICE_ASSIST, long_click: Keyboard_number}`
 
@@ -105,9 +111,9 @@ patch:
 - `label_font`: 悬浮窗候选项序号字体
 - `candidate_font`: 候选字体
 - `comment_font`: 候选注释字体
-- `hanb_font`: 后备字体。用于补充候选字体（`candidate_font`）。  
+- `hanb_font`: 后备字体。用于补充候选字体（`candidate_font`）。
   ※ 某些特殊符号，或者很多生僻字（比如 Unicode Ext-B~Ext-F 的字符）在大多数手机上通常都会显示成方框或空白。`hanb_font`可以使这些字符在同文输入法里正常显示（推荐使用[花园明朝](https://zh.osdn.net/projects/hanazono-font/releases/)B 字体：HanaMinB.ttf）。您也可以直接在系统中设置 fallback 字体（全局生效，但需要 root）。
-- `latin_font`: 候选及候选注释拉丁字体（暂时对悬浮窗候选无效）  
+- `latin_font`: 候选及候选注释拉丁字体（暂时对悬浮窗候选无效）
   ※ 当`latin_font`生效时，拉丁字符（\< 0x2e80）就不再由`comment_font`和`candidate_font`控制
 - `key_font`: 按键字体（click）
 - `symbol_font`: 符号字体（long_click 和 hint）
@@ -124,7 +130,7 @@ patch:
 - `comment_text_size`: 候选注释大小
 - `comment_height`: 候选注释区高度
 - `key_height`: 键高\*
-- `key_width`: 键宽\*，占屏幕宽的百分比  
+- `key_width`: 键宽\*，占屏幕宽的百分比
   ⚠ 当按键布局中的`height`与`width`省略不写时，此处设置的`key_height`与`key_width`才会生效。
 - `key_text_size`: 按键文本大小（click）
 - `key_long_text_size`: 按键长文本大小（字数 ≥2）
@@ -135,9 +141,9 @@ patch:
 - `preview_text_size`: 按键气泡字体大小
 - `shadow_radius`: 键盘字体阴影大小（数值不宜过大，可能会造成卡顿）
 - `horizontal_gap`: 键水平间距
-- `vertical_gap`: 键盘行距  
+- `vertical_gap`: 键盘行距
   ⚠ 若关闭了`proximity_correction`，过大的`horizontal_gap`与`vertical_gap`会引起空按漏按
-- `vertical_correction`: 触摸位置校正（竖直方向）。  
+- `vertical_correction`: 触摸位置校正（竖直方向）。
   ※ 为了提升打字手感，可将按键的实际触摸位置相对其显示位置上下偏移一点点（默认值`-10`，上偏为正，下偏为负，为`0`则不偏移）。
 - **\[3.2.3\]**`keyboard_padding`: 竖屏模式下，屏幕左右两侧与键盘的距离（减少曲面屏误触）
 - **\[3.2.3\]\[不可用\]**`keyboard_padding_left`: 竖屏屏模式下，左手键盘布局，屏幕左侧与键盘的距离
@@ -150,18 +156,20 @@ patch:
 
 #### 示例：更改字体
 
-① 在 rime 文件夹内新建 fonts 文件夹  
+① 在 rime 文件夹内新建 fonts 文件夹
  ⚠ fonts 文件夹建在共享文件夹与用户文件夹皆可（若共享文件夹存在 fonts，则字体放在用户文件夹内无效）
 
-② 将字体文件复制到 fonts 文件夹  
- 　本例用到了两个字体文件：  
- 　　:page_facing_up: gunplay.ttf  
+② 将字体文件复制到 fonts 文件夹
+ 　本例用到了两个字体文件：
+ 　　:page_facing_up: gunplay.ttf
  　　:page_facing_up: 方正行楷简体.ttf
 
 ③ 配置字体参数:
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "style/candidate_font": 方正行楷简体.ttf #候选字体
   "style/key_font": 方正行楷简体.ttf #按键字体
@@ -179,29 +187,31 @@ patch:
   "style/text_size": 18 #编码字体大小
 ```
 
-效果图：  
+效果图：
  <img src="http://imgsrc.baidu.com/forum/pic/item/db4c0fdda3cc7cd933b21c603e01213fba0e91cb.jpg" alt="更换字体效果图" width="512" height="488">
 
 #### 示例：局部尺寸微调
 
 `style`里的尺寸是全局生效的。实际上我们也可以对某些局部的尺寸做微调。
 
-可以在键盘布局里微调的尺寸：  
- • `horizontal_gap`: 键水平间距  
- • `vertical_gap`: 键盘行距  
- • `round_corner`: 按键圆角（对整个键盘生效）
+可以在键盘布局里微调的尺寸：
+* `horizontal_gap`: 键水平间距
+* `vertical_gap`: 键盘行距
+* `round_corner`: 按键圆角（对整个键盘生效）
 
-可以在按键里微调的尺寸：  
- • `key_text_size`: 按键文本（对长标签也生效，不区分按键文本的长短）  
- • `symbol_text_size`: 符号（long_click 和 hint）  
- • `round_corner`: 按键圆角（对单个按键生效）
+可以在按键里微调的尺寸：
+* `key_text_size`: 按键文本（对长标签也生效，不区分按键文本的长短）
+* `symbol_text_size`: 符号（long_click 和 hint）
+* `round_corner`: 按键圆角（对单个按键生效）
 
 另外，按键字符的偏移量也是可以局部微调的，详见后面 preset_keyboards。
 
 例 1：调整预设 26 键键盘布局的水平间距和圆角
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_keyboards/qwerty/horizontal_gap": 0 #水平间距改为0
   "preset_keyboards/qwerty/round_corner": 0 #按键圆角改为0
@@ -211,13 +221,15 @@ patch:
 例 2：单独修改预设 26 键键盘布局中的空格键
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_keyboards/qwerty/keys/@33/key_text_size": 12 #空格键字体改小
   "preset_keyboards/qwerty/keys/@33/round_corner": 32 #圆角增大
 ```
 
-※上例若直接修改主题文件，是这样写的：  
+※上例若直接修改主题文件，是这样写的：
  `{click: space, key_text_size: 12, round_corner: 32, width: 30}`
 
 ### 4.悬浮窗口
@@ -245,18 +257,18 @@ patch:
   - `elevation`: 悬浮窗阴影（~~≥Android 5.0~~，同文现已最低支持 Android 5.0）
   - `movable`: 是否可移动窗口，或仅移动一次。可能值：`true`|`false`|`once`
 - `window`: #悬浮窗口组件
-  - `- {start: "", move: 'ㄓ ', end: ""}`  
+  - `- {start: "", move: 'ㄓ ', end: ""}`
     #窗口移动图标。当`movable`设为可移动时，拖动这个图标即可调整悬浮窗的位置。`move`可改为任意符号，`start` `end`为左右修饰符号，若不需要修饰可简化为`{move: 'ㄓ '}`。
-  - `- {start: "", composition: "%s", end: "", letter_spacing: 0}`  
+  - `- {start: "", composition: "%s", end: "", letter_spacing: 0}`
     #这个组件用来显示输入的编码。`composition`若去掉则不显示编码区。`letter_spacing`为字符间距，需要 ≥Android5.0。
-  - `- {start: "\n", label: "%s.", candidate: "%s", comment: " %s", end: "", sep: " "}`  
-    #这个组件用来显示候选项。`start: "\n"`表示这个组件另起一行，`label`候选项序号，`candidate`候选项，`comment`候选项注释，`sep`候选项分隔符。（除`candidate`外，其它都是可选的。比如删掉`label`则不显示候选项序号）  
+  - `- {start: "\n", label: "%s.", candidate: "%s", comment: " %s", end: "", sep: " "}`
+    #这个组件用来显示候选项。`start: "\n"`表示这个组件另起一行，`label`候选项序号，`candidate`候选项，`comment`候选项注释，`sep`候选项分隔符。（除`candidate`外，其它都是可选的。比如删掉`label`则不显示候选项序号）
     ※ 奇技淫巧：当前版本（截止到3.2.13），都不支持在隐藏候选单的情况下（即去掉该组件）让`composition`（即上一个组件）支持换行，所以这里提供一个技巧，如果不想显示候选单，那么只在保留该组件的同时，按需求将除`candidate`以外的值改为空（`""`）或去掉，只将`candidate`后面的`"%s"`改为`"‏"`，注意这里是一个不可见字符，请直接复制，它会保证`candidate`有值但不显示任何东西，这个时候`composition`超长时会自动换行。
-  - #~~~~~~~~  
+  - #~~~~~~~~
     ※ 另外还可以在悬浮窗内放置普通按键，比如地球拼音的声调键：
-  - `- {start: "\n", click: ";", label: " ˉ ", align: center, end: " "}`  
+  - `- {start: "\n", click: ";", label: " ˉ ", align: center, end: " "}`
     #`click: ";"` `label: " ˉ "`作用与键盘按键相同。`align`对齐方式，left 左对齐|right 右对齐|center 居中，默认为左对齐可省略不写（align 每行组件只需写一个，也可用于上面的编码与候选）
-  - `- {click: "/", label: " ˊ ", end: " "}`  
+  - `- {click: "/", label: " ˊ ", end: " "}`
     #`end: " "`的作用是在按键间形成间隙
   - `- {click: ",", label: " ˇ ", end: " "}`
   - `- {click: "\\", label: " ˋ "}`
@@ -268,7 +280,9 @@ patch:
 - 1、横排
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "style/horizontal": true
   "style/layout/position": left
@@ -290,12 +304,12 @@ patch:
 
 ![横排效果](./images/16501929/30546255-c1380606-9c51-11e7-8043-48da4cf04119.png)
 
-- 2、竖排  
-  把上面补丁的`sticky_lines`改成`5`，水平模式`horizontal`改成`false`。  
+- 2、竖排
+  把上面补丁的`sticky_lines`改成`5`，水平模式`horizontal`改成`false`。
   ![竖排效果](./images/16501929/30546276-cde91520-9c51-11e7-8d17-0541b140a7a4.png)
 
-- 3、横竖混排  
-  只需要把上面补丁的`sticky_lines`改成`1`即可。  
+- 3、横竖混排
+  只需要把上面补丁的`sticky_lines`改成`1`即可。
   ![混排效果](./images/16501929/30546289-d8ac3046-9c51-11e7-8344-0015197d8c89.png)
 
 ※ 以上示例中去掉了悬浮窗的`composition`组件，因此需要开启嵌入模式才能在文本框中显示编码。另外，开启悬浮窗后，也可以把底下多余的候选栏关掉（参考附录中的示例）。
@@ -384,17 +398,17 @@ shadow_color: border_color
 
   - `border_color`: 悬浮窗边框
 
-  - `label_color`: 悬浮窗候选项序号  
+  - `label_color`: 悬浮窗候选项序号
     ※ 悬浮窗高亮候选项序号与`hilited_candidate_text_color`相同
 
   - `hilited_text_color`: 高亮编码（一般是位于光标插入点左边的编码）
 
   - `text_color`: 编码（位于光标插入点右边的编码，或者是拼音类方案中无法正常解析的空码，比如全拼时输入 hau，u 就属于这种）
 
-  - `hilited_back_color`: 高亮编码背景  
+  - `hilited_back_color`: 高亮编码背景
     ※ 非高亮的编码背景与`back_color`相同
 
-  - ☆`text_back_color`: 编码区背景 
+  - ☆`text_back_color`: 编码区背景
     ※ **\[3.2.3\]** 支持图片
     ※ **\[3.2.3\]** 仅当`style/layout/background`设置失效时才会起作用（当`background`生效时，`text_back_color`就会失效）
 
@@ -418,7 +432,7 @@ shadow_color: border_color
 
   - `comment_text_color`: 候选项注释
 
-  - `hilited_comment_text_color`: 高亮候选项注释  
+  - `hilited_comment_text_color`: 高亮候选项注释
     ▼ 键盘
 
   - ☆`key_back_color`: 按键背景
@@ -447,7 +461,7 @@ shadow_color: border_color
 
   - ☆\[3.2.3\]`long_text_back_color`: 包含长文本的按键背景（比如剪贴板）
 
-  - `key_border_color`: 按键边框\*(暂无)  
+  - `key_border_color`: 按键边框\*(暂无)
     ▼ 功能键（functional: true）
 
   - ☆`off_key_back_color`: 功能键背景
@@ -456,7 +470,7 @@ shadow_color: border_color
 
   - `off_key_text_color`: 功能键文本
 
-  - `hilited_off_key_text_color`: 功能键高亮文本  
+  - `hilited_off_key_text_color`: 功能键高亮文本
     ※ 在没有特别指定的时候，功能键的 long_click 和 hint 颜色与普通按键一样
 
   - ☆`on_key_back_color`: shift 键锁定时背景
@@ -465,7 +479,7 @@ shadow_color: border_color
 
   - `on_key_text_color`: shift 键锁定时文本
 
-  - `hilited_on_key_text_color`: shift 键锁定时的高亮文本  
+  - `hilited_on_key_text_color`: shift 键锁定时的高亮文本
     ※ shift 键锁定时的这四种颜色不会因为`functional: false`而失效
 
   ※ 以上标记为 ☆ 的都可以使用图片作背景（与悬浮窗背景图做法相同）。
@@ -476,7 +490,9 @@ shadow_color: border_color
 有了`fallback_colors`，最少只需要`back_color`和`text_color`就可以做出一个配色方案。
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_color_schemes/xxx": #配色方案ID
     name: xxx极简 #配色名称
@@ -484,14 +500,16 @@ patch:
     text_color: 0x000000 #文字
 ```
 
-这是一个用色最少的配色方案。效果是这样：  
- <img src="./images/16501929/30100484-a77d63fc-92ae-11e7-87b9-42f546ba7f19.png" alt="简单配色" width="512" height="438">  
+这是一个用色最少的配色方案。效果是这样：
+ <img src="./images/16501929/30100484-a77d63fc-92ae-11e7-87b9-42f546ba7f19.png" alt="简单配色" width="512" height="438">
  ※ 部署完成后，需要从配色菜单中选取刚才添加的配色方案「xxx 极简」，才能看到效果。
 
 试试再加两个颜色：
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_color_schemes/xxx": #配色方案ID
     name: xxx极简 #配色名称
@@ -501,13 +519,15 @@ patch:
     hilited_candidate_back_color: 0xD4ED89 #候选高亮背景
 ```
 
-好像变得更难看了 😜：  
+好像变得更难看了 😜：
  <img src="./images/16501929/30100628-17401176-92af-11e7-8a9b-1634647cd38f.png" alt="改进效果" width="512" height="436">
 
 再加个背景图看看：
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_color_schemes/xxx": #配色方案ID
     name: xxx极简 #配色名称
@@ -518,10 +538,10 @@ patch:
     keyboard_back_color: xxx.jpg #图片需放在rime/backgrounds文件夹内
 ```
 
-最后变成这样：  
+最后变成这样：
  <img src="./images/16501929/30100688-39976756-92af-11e7-946d-f7e041137a87.png" alt="改进效果" width="512" height="439">
 
-……  
+……
 在每个按键上加图片背景会怎样？您若感兴趣可以试试。
 
 ⚠ 图片不需要太大，上例用到的背景图只有 32KB。
@@ -530,28 +550,30 @@ patch:
 
 `preset_color_schemes`里的颜色是全局生效的。同文也提供了一些方法可以对某些局部的颜色做微调。
 
-可以在键盘布局里微调的颜色：  
- • ☆`keyboard_back_color`: 键盘背景
+可以在键盘布局里微调的颜色：
+* ☆`keyboard_back_color`: 键盘背景
 
-可以在按键里微调的颜色：  
- • ☆`key_back_color`: 按键背景（对功能键也有效，下同）  
- • ☆`hilited_key_back_color`: 高亮按键背景（按下按键时）  
- • `key_text_color`: 按键文本（click）  
- • `hilited_key_text_color`: 高亮按键文本  
- • `key_symbol_color`: 按键符号（long_click 和 hint）  
- • `hilited_key_symbol_color`: 高亮按键符号  
- ※ 除了颜色值和图片，在按键里还可以使用分组颜色标签，详见下面例 2、例 3。  
- ※ 若在键盘里调整功能键颜色，则不区分是否锁定。
+可以在按键里微调的颜色：
+* ☆`key_back_color`: 按键背景（对功能键也有效，下同）
+* ☆`hilited_key_back_color`: 高亮按键背景（按下按键时）
+* `key_text_color`: 按键文本（click）
+* `hilited_key_text_color`: 高亮按键文本
+* `key_symbol_color`: 按键符号（long_click 和 hint）
+* `hilited_key_symbol_color`: 高亮按键符号
+    - ※ 除了颜色值和图片，在按键里还可以使用分组颜色标签，详见下面例 2、例 3。
+    - ※ 若在键盘里调整功能键颜色，则不区分是否锁定。
 
 例 1：修改预设 26 键键盘回车键的颜色
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_keyboards/qwerty/keys/@36/key_back_color": 0xFFAE00
 ```
 
-※ 上例中，我们给预设 26 键键盘的回车键分配了一个颜色值。这样的话，不管您切换到哪个配色方案，回车键的颜色都固定是`0xFFAE00`。  
+※ 上例中，我们给预设 26 键键盘的回车键分配了一个颜色值。这样的话，不管您切换到哪个配色方案，回车键的颜色都固定是`0xFFAE00`。
 若您想更灵活地更改一个按键的颜色，就需要用到分组颜色标签。
 
 例 2：使用分组标签定义按键颜色
@@ -559,7 +581,9 @@ patch:
 先来看一个简单的例子：
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_keyboards/qwerty/keys/@15/key_back_color": off_key_back_color
   "preset_keyboards/qwerty/keys/@15/hilited_key_back_color": hilited_off_key_back_color
@@ -574,7 +598,9 @@ patch:
 现在我们要改变数字键盘的数字键颜色，以便快速地与普通按键作区分。
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   #步骤一，在数字键盘的数字键中添加分组颜色标签
   "preset_keyboards/number":
@@ -621,7 +647,7 @@ patch:
     h_k_n_b: 0x60DEEDB1 #高亮数字键背景色
 ```
 
-好了，看看效果：  
+好了，看看效果：
  <img src="./images/16501929/30117873-266633a0-92e7-11e7-9f3a-4de6d0e8bd8f.png" alt="数字键颜色分组" width="360" height="226">
 
 ※自定义的分组标签可以在当前主题的所有配色方案中使用。只需要在相应的配色方案中给`k_n_b`和`h_k_n_b`设定颜色值即可。这样每个配色方案中的数字键都可以独立设置颜色，自由度更高。（若某个配色方案中的`k_n_b`省略不写，则数字键的背景色会默认使用普通按键背景色，不用担心会出错。）
@@ -648,7 +674,7 @@ h_k_n_b: 0x60DEEDB1 #高亮数字键背景色
 
 这样就进一步简化了配色方案。
 
-咦，怎么感觉绕来绕去的，为什么不直接在键盘上写`{click: '1', key_back_color: hilited_key_back_color, hilited_key_back_color: key_back_color}`呢？其实这样写也可以，例 2 就是这样做的。  
+咦，怎么感觉绕来绕去的，为什么不直接在键盘上写`{click: '1', key_back_color: hilited_key_back_color, hilited_key_back_color: key_back_color}`呢？其实这样写也可以，例 2 就是这样做的。
 例 4 是综合了例 2、例 3 的优点。在`fallback_colors`中建立对应关系，可以简化配色方案，另外还给配色方案单独控制数字键颜色预留了一个通道，可以实现更多的可能。
 
 （若您的主题中只有一个配色方案，那基本上不需要这些复杂的方法）
@@ -672,7 +698,7 @@ h_k_n_b: 0x60DEEDB1 #高亮数字键背景色
   - `swipe_left`: 左滑
   - `swipe_right`: 右滑
   - `swipe_up`: 上滑
-  - `swipe_down`: 下滑  
+  - `swipe_down`: 下滑
     ※️ 标注#的暂未实现。
 
 - `property`: 各种属性
@@ -699,7 +725,7 @@ h_k_n_b: 0x60DEEDB1 #高亮数字键背景色
   - `text`: 组合键 （用于输出各种组合键）
   - `commit`: 直接上屏 （用于输出各种网址邮箱等）
 
-  ※`when` `name`的用法可参考[按键功能组合示例](#按键功能组合示例)。  
+  ※`when` `name`的用法可参考[按键功能组合示例](#按键功能组合示例)。
   ※其它参数的用法可参考默认的`trime.yaml`。
 
 `android_keys`目前的主要作用是供定义`preset_keys`和`preset_keyboards`时**查阅**，目前已经基本不生效。用户自定义的主题可直接导入默认主题的对应节点：
@@ -739,7 +765,9 @@ Return:
 如果要把回车键显示成`回车`，可以这样：
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_keys/Return":
     label: "回车"
@@ -764,7 +792,9 @@ space: { repeatable: true, functional: false, send: space }
 我们给它添加一个`preview`属性
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_keys/space":
     repeatable: true
@@ -778,7 +808,9 @@ patch:
 以预设 26 键键盘为例：
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   # 参考trime.yaml内置的date键，新建一个按键date_time
   "preset_keys/date_time":
@@ -795,11 +827,13 @@ patch:
 
 例 4：关闭功能键属性
 
-在`preset_keys`里面定义的按键，默认会打开`functional`属性。这些按键在键盘上会显示出功能键特有的颜色（比如回车键和退格键）。  
+在`preset_keys`里面定义的按键，默认会打开`functional`属性。这些按键在键盘上会显示出功能键特有的颜色（比如回车键和退格键）。
 假设要让回车键也变为普通按键的颜色，可以关闭它的`functional`属性（关闭后只会改变功能键的颜色，其它功能不会有变化）
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_keys/Return":
     functional: false #不使用功能键颜色
@@ -809,7 +843,7 @@ patch:
 
 例 5: 自定义组合键
 
-使用`text`可以实现一些比较复杂的操作  
+使用`text`可以实现一些比较复杂的操作
 比如：
 
 ```yaml
@@ -834,7 +868,7 @@ overwrite: { text: "{Control+a}{Control+v}", label: 覆盖 }
 特别的，keyboard 中允许一定程度的简写，从而减少 presetkey 的数量。
 
 ```
- - {click: f, swipe_up: {commit: "%"}}
+- {click: f, swipe_up: {commit: "%"}}
 ```
 
 ## 六、`preset_keyboards`
@@ -867,21 +901,21 @@ overwrite: { text: "{Control+a}{Control+v}", label: 覆盖 }
 - `key_text_offset_x`: 按键文本 x 方向偏移量
 - `key_text_offset_y`: 按键文本 y 方向偏移量
 - `key_press_offset_x`：按键按下时所有文本 x 方向偏移量
-- `key_press_offset_y`：按键按下时所有文本 y 方向偏移量  
+- `key_press_offset_y`：按键按下时所有文本 y 方向偏移量
   ※以上这几个 offset 也可以直接写在按键中，仅对该按键生效。
-- `keys`: 按键排列顺序  
+- `keys`: 按键排列顺序
   键盘中每对{}括号代表一个按键，按从左到右、从上到下的顺序排列。每行的宽度排满`100`或虽然不足`100`但无法再容纳一个按键又或者每行按键数量达到`columns`的设定值时，转到下一行继续排列。
 
 ### 布局调用
 
-`trime.yaml`已经内置了很多种键盘布局，一般常用的输入方案都可以自动匹配到合适的预置键盘。  
+`trime.yaml`已经内置了很多种键盘布局，一般常用的输入方案都可以自动匹配到合适的预置键盘。
 ※️`style/keyboards`中的`.default`，就是用来自动匹配键盘布局的。
 
 自动匹配的过程：
 
-- 如果输入方案的`schema_id`可以找到对应的键盘布局`ID`，则直接使用这个布局  
+- 如果输入方案的`schema_id`可以找到对应的键盘布局`ID`，则直接使用这个布局
   比如仓颉五代的`schema_id`是`cangjie5`，在`trime.yaml`中刚好有`ID`为`cangjie5`的键盘布局，那就直接使用它。
-- 如果匹配不了`ID`，那根据输入方案的`speller/alphabet`所用的字符，匹配最合适的布局方案  
+- 如果匹配不了`ID`，那根据输入方案的`speller/alphabet`所用的字符，匹配最合适的布局方案
   比如朙月拼音的`speller/alphabet`是`zyxwvutsrqponmlkjihgfedcba`，恰好使用了 26 个英文字母。那就自动套用`预设26键`键盘。
 - 如果`ID`和`speller/alphabet`都匹配不到，就用默认的`预设26键`键盘。
 
@@ -892,7 +926,9 @@ overwrite: { text: "{Control+a}{Control+v}", label: 覆盖 }
 （36 键键盘比 26 键的多了一排数字键，可以快捷输入数字）
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   "preset_keyboards/luna_pinyin/import_preset": qwerty0 #预设36键布局的ID是qwerty0
 ```
@@ -947,13 +983,15 @@ luna_pinyin:
 
 对于使用`script_translator`的拼音类输入方案，如果在打错词后，马上按退格键删除已经上屏的错词，可以使错词不被记录到用户词典中。但是如果隔的时间太长，或者使用的是`table_translator`形码方案，那就没办法这样删词了。这时候就需要定制键盘来辅助我们进行删词。
 
-以明月拼音为例，键盘示意图：  
+以明月拼音为例，键盘示意图：
 <img src="http://imgsrc.baidu.com/forum/pic/item/24a0daf2b2119313910f6c0d62380cd790238d26.jpg" alt="添加删词功能" width="620" height="585">
 
 ※ 由于用到了`has_menu`条件，键盘右上角的左右方向键和删词键只在正常打字的过程中出现。处于英文状态或不打字时仍然是数字键 8、9、0。
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   # 1、让朙月拼音使用36键键盘布局
   "preset_keyboards/luna_pinyin/import_preset": qwerty0
@@ -969,7 +1007,9 @@ patch:
 #### 示例：新建一个副键盘
 
 ```yaml
+
 # trime.custom.yaml
+
 patch:
   # 1、新建一个键盘布局xkey
   "preset_keyboards/xkey": #布局ID
@@ -1037,7 +1077,7 @@ patch:
     - xkey #style/keyboards不能只写xkey一个，其它用到的键盘要照原样抄过来，不然会出错
 ```
 
-副键盘就这样做出来了。效果图：  
+副键盘就这样做出来了。效果图：
 <img src="http://imgsrc.baidu.com/forum/pic/item/eb61f058ccbf6c8156cb2f46bb3eb13531fa4087.jpg" alt="添加附属键盘" width="620" height="387">
 
 ⚠ 如果是新建主键盘，则可以省略步骤 2、3、4，因为同文可以根据键盘 ID 自动调用键盘。
@@ -1093,7 +1133,7 @@ switches:
     # 由于没有设置states，这个开关是隐藏的。只在切换到该方案时将_hide_candidate设为1。
 ```
 
-当切换到这个方案时，候选栏自动关闭。  
+当切换到这个方案时，候选栏自动关闭。
 ※在需要时，也可以通过快捷键或键盘按键随时打开候选栏。
 
 也可以在状态栏上添加按键：

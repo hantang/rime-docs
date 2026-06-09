@@ -9,8 +9,11 @@ source:  rime-collect/Rime_description.md#Schema
 ## 開始之前
 
 ```yaml
+
 # Rime schema
+
 # encoding: utf-8
+
 ```
 
 ## 描述檔
@@ -567,20 +570,20 @@ end
 4.  `key_binder:` 下設`bindings:` 設置功能性快捷鍵
     *   每一條`binding`包含：`when`作用範圍、`accept`實際所按之鍵，以及期望的操作
     *   操作可爲以下任意一個：`send`輸出按鍵、`toggle`切換開關、`send_sequence`輸出一串按鍵、`set_option`開某多選開關、`unset_option`關某多選開關、`select`選候選字
-    
+
     *   `toggle`可用字段包含各開關名
     *   `set_option`、`unset_option`可用字段包含多選開關名
     *   `when`可用字段包含：
-    
+
     ```
     paging	翻䈎用
     has_menu	操作候選項用
     composing	操作輸入碼用
     always	全域
     ```
-    
+
     *   `accept`和`send`可用字段除A-Za-z0-9外，還包含以下鍵板上實際有的鍵：
-    
+
     ```
     BackSpace	退格
     Tab	水平定位符
@@ -627,8 +630,8 @@ end
     Cancel	取消
     Help	幫助
     Break	中斷
-    
-    space	 
+
+    space
     exclam	!
     quotedbl	"
     numbersign	#
@@ -661,7 +664,7 @@ end
     bar	|
     braceright	}
     asciitilde	~
-    
+
     KP_Space	小鍵板空格
     KP_Tab	小鍵板水平定位符
     KP_Enter	小鍵板回車
@@ -693,7 +696,7 @@ end
     KP_8	小鍵板8
     KP_9	小鍵板9
     ```
-    
+
 5.  `editor`用以訂製操作鍵〔不支持`import_preset:`〕，鍵板鍵名同`key_binder/bindings`中的`accept`和`send`，效果定義如下：
 
 ```
@@ -771,8 +774,6 @@ style:
   inline_preedit: true #輸入碼內嵌
 ```
 
-  
-
 # `Dict.yaml` 詳解
 
 - - -
@@ -780,8 +781,11 @@ style:
 ## 開始之前
 
 ```yaml
+
 # Rime dict
+
 # encoding: utf-8
+
 〔你還可以在這註釋字典來源、變動記錄等〕
 ```
 
@@ -875,7 +879,7 @@ cangjie6.dict.yaml
 
 - - -
 
-雪齋  
+雪齋
 09-Nov-2013
 
 [1]: https://www.boost.org/doc/libs/1_49_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html

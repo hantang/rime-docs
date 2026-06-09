@@ -14,7 +14,7 @@ Refer https://github.com/rime/librime?tab=readme-ov-file#frontends
 | fcitx5 + plugin.rime (小企鹅) | macOS | [fcitx-contrib/fcitx5-macos](https://github.com/fcitx-contrib/fcitx5-macos) | [link](https://github.com/fcitx-contrib/fcitx5-macos-installer/blob/master/README.zh-CN.md) |
 | XIME | macOS | [stackia/XIME](https://github.com/stackia/XIME) | [link](https://github.com/stackia/XIME/releases) |
 | ibus-rime | Linux | [rime/ibus-rime](https://github.com/rime/ibus-rime) | [link](https://github.com/rime/home/wiki/RimeWithIBus) |
-| fcitx-rime | Linux | [fcitx/fcitx-rime](https://github.com/fcitx/fcitx-rime) | [link](https://github.com/fcitx/fcitx-rime/blob/master/README.md) | 
+| fcitx-rime | Linux | [fcitx/fcitx-rime](https://github.com/fcitx/fcitx-rime) | [link](https://github.com/fcitx/fcitx-rime/blob/master/README.md) |
 | Trime (同文) | Android | [osfans/trime](https://github.com/osfans/trime) | [link](https://github.com/osfans/trime/releases) |
 | 中文输入法（同文输入法无障碍版） | Android | 包名 com.osfans.trime.accessibility | none |
 | fcitx5 + plugin.rime（配套插件之一） | Android | [fcitx5-android/fcitx5-android](https://github.com/fcitx5-android/fcitx5-android) | [link](https://github.com/fcitx5-android/fcitx5-android/releases)

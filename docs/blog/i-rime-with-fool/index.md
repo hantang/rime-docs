@@ -1,6 +1,8 @@
 ---
 title: 〔新韻〕
+
 # icon: fa fa-download
+
 date: 2016-04-01 14:36:45
 tags: Fool 愚者
 ---

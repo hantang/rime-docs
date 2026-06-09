@@ -167,7 +167,6 @@
   用戶不能罵我
   ```
 
-
 [^1]: 1、本文首發於 [一个人开发一个项目是一种怎样的体验？ - 居戎氏的回答 - 知乎](https://www.zhihu.com/question/283349146/answer/451162371)
 
 [^2]: 2、ＫＣＰ的評測文： [推薦一個神級輸入法——Rime](https://byvoid.com/blog/recommend-rime/)

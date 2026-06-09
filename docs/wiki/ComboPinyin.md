@@ -4,9 +4,9 @@
 
 詩云：
 
-宮保拼音並擊術　節奏明快又直觀 \
-一擊一個中文字　能分平翹與尖團 \
-標準設備廣兼容　六鍵無衝七指禪 \
+宮保拼音並擊術　節奏明快又直觀   
+一擊一個中文字　能分平翹與尖團   
+標準設備廣兼容　六鍵無衝七指禪   
 速記千宗歸簡易　音韻萬變列琴盤
 
 ## 宮保拼音是啥
@@ -198,7 +198,7 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
 | b  | p  | m  | f |   | d | t | n | l |
 | g  | k  | h  |   |   | j | q | x |   |
 | zh | ch | sh | r |   | z | c | s |   |
-    
+
 漢語拼音共設以上 21 個聲母。根據發音部位分爲六組。
 
 在宮保拼音中，表中每一組發音部位相近的聲母，排列在同一行或同一列上；
@@ -240,7 +240,7 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
 
 1. 左列不帶介音的韻母，每個都是一個整體的符號，組成這些韻母的多個字母只描述大致的發音部位，不能直接按照字母拼出。
    特別是⟨ao, ong⟩兩個韻母中字母⟨o⟩對應的發音更接近元音⟨u⟩，而距元音⟨o⟩較遠。
-   
+
 2. 介音與韻的搭配，顯示了一定的規律性。
    如⟨ai, ei⟩只與介音⟨u⟩相拼、⟨ao, ou⟩只與介音⟨i⟩相拼；
    又如⟨o, e⟩在與介音的搭配上形成互補，⟨o⟩只在少量音節中與⟨e⟩形成對立且多爲語氣詞；
@@ -250,7 +250,7 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
    且⟨ueng, ong⟩這兩個韻母在與聲母的搭配上形成互補——⟨ueng⟩只拼零聲母或者說只用在自成音節的⟨weng⟩，而⟨ong⟩用於拼其他聲母。
    兩者無論從實際發音的近似性，還是歷史淵源，都可以視爲同一個韻母的條件變體。
    如果拋開方案擬定的拼寫，按照四呼的分類，可將⟨ong, iong⟩併入⟨eng⟩行合口呼（⟨u⟩介音）、撮口呼（⟨ü⟩介音）的位置。
-   
+
 至此，我們可以將普通話的韻母歸納爲 3 個介音、2 類韻核、4 種韻尾搭配組合的音位配列。
 
 在宮保拼音的設計中，會運用我們對〈韻母表〉的分析，這可以幫助學習者理解並擊韻母的設置；
@@ -271,16 +271,16 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
   - “知、蚩、詩、日、資、雌、思”等七個音節的韻母，也可叫做舌尖元音。
     他的發音不同於⟨i⟩，且傳統音韻學將其分類爲開口呼而非齊齒呼。大致可以放入表中左上角空白的位置。
     本文爲了區別於⟨i⟩，把舌尖元音標記爲⟨ï⟩。注意這個符號不是《漢語拼音方案》的一部分。
-    
+
   - 韻母⟨er⟩只獨用，不與聲母搭配。
     從歷史上看，⟨er⟩是從舌尖元音分化出來，也與舌尖元音形成互補。因此也可以併入左上角的單元格。
-    
+
   - 韻母⟨ê⟩極少單用，但與介音相拼得⟨ie, üe⟩兩個韻母。反而是⟨e⟩不能與任何介音拼合。可知方案視⟨ê⟩爲⟨e⟩的變體。
 
->（4）i行的韻母，前面沒有聲母的時候，寫成 yi（衣），ya（呀），ye（耶），yao（腰），you（憂），yan（煙），yin（因），yang（央），ying（英），yong（雍）。\
->u行的韻母，前面沒有聲母的時候，寫成 wu（烏），wa（蛙），wo（窩），wai（歪），wei（威），wan（彎），wen（溫），wang（汪），weng（翁）。\
->ü行的韻母，前面沒有聲母的時候，寫成 yu（迂），yue（約），yuan（冤），yun（暈）；ü 上兩點省略。\
->ü行的韻母跟聲母 j，q，x 拼的時候，寫成 ju（居），qu（區），xu（虛），ü上兩點也省略；但是跟聲母 n，l 拼的時候，仍然寫成 nü（女），lü（呂）。
+>（4）i行的韻母，前面沒有聲母的時候，寫成 yi（衣），ya（呀），ye（耶），yao（腰），you（憂），yan（煙），yin（因），yang（央），ying（英），yong（雍）。  
+> - u行的韻母，前面沒有聲母的時候，寫成 wu（烏），wa（蛙），wo（窩），wai（歪），wei（威），wan（彎），wen（溫），wang（汪），weng（翁）。  
+> - ü行的韻母，前面沒有聲母的時候，寫成 yu（迂），yue（約），yuan（冤），yun（暈）；ü 上兩點省略。  
+> - ü行的韻母跟聲母 j，q，x 拼的時候，寫成 ju（居），qu（區），xu（虛），ü上兩點也省略；但是跟聲母 n，l 拼的時候，仍然寫成 nü（女），lü（呂）。
 >
 >（5）iou，uei，uen 前面加聲母的時候，寫成 iu，ui，un。例如 niu（牛），gui（歸），lun（論）。
 
@@ -288,7 +288,7 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
 
   - ⟨i, u, ü⟩與各種聲母拼合時的改寫方法、拼音字母⟨y, w⟩的使用；
   - ⟨iou, uei, uen⟩自成音節時（改寫首字母）以及與其他聲母拼合時（省略中間的元音字母）所得的兩種拼寫形式。
-  
+
 宮保拼音不使用這些拼寫規則。同一個韻母在不同的音節裏有一致的鍵位和指法。
 
 >（6）在給漢字注音的時候，爲了使拼式簡短，ng可以省作ŋ。
@@ -328,7 +328,7 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
   - `[D][T][L]` 位於第一行，對應鍵盤上的字母 R, T, E
   - `[G][K][H]` 位於第二行，對應鍵盤上的字母 F, G, D
   - `[Z][C][S]` 位於縱向第一列，對應的鍵盤字母 X, W, S
-  
+
 其他 9 個未分配鍵位的聲母用並擊輸入。
 
 各個縱列的分佈規律是：
@@ -431,7 +431,7 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
 ![](images/combo-pinyin-v3/combo-pinyin-io-yue.png)
 
 `[A]` 鍵單擊爲空格鍵，用於輸入空格、選字等操作。
-  
+
 ![](images/combo-pinyin-v3/combo-pinyin-space.png)
 
 音節⟨'a⟩用特定並擊組合 `[AE]` 輸入。
@@ -441,7 +441,7 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
 #### 複韻母
 
 雙元音⟨ai, ei, ou⟩用 `[R]` 鍵與 `[A][E][O]` 並擊。`[R]` 代表韻尾 ⟨-i⟩ 或 ⟨-u⟩。
-  
+
 雙元音⟨ao⟩用`[AO]`並擊。韻尾的⟨-u⟩用與拼寫一致的 `[O]` 表示。
 
 ![](images/combo-pinyin-v3/combo-pinyin-ai-ao-an.png)
@@ -449,9 +449,9 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
 ![](images/combo-pinyin-v3/combo-pinyin-ei-uen.png)
 
 ![](images/combo-pinyin-v3/combo-pinyin-zh-ch-sh-ou-eng.png)
-  
+
 雙元音與介音相拼，得⟨iao, iou, uai, uei⟩。
- 
+
 ![](images/combo-pinyin-v3/combo-pinyin-iao-yuan.png)
 
 ![](images/combo-pinyin-v3/combo-pinyin-j-q-x-iou-yun.png)
@@ -471,7 +471,7 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
 不與其他元音字母鍵並擊時，二者分別代表韻母⟨en, eng⟩，省略拼音字母⟨e⟩。
 
 ![](images/combo-pinyin-v3/combo-pinyin-i-u-yu-er-en-o-e.png)
-    
+
 ![](images/combo-pinyin-v3/combo-pinyin-zh-ch-sh-ou-eng.png)
 
 按照四呼拼讀，⟨en, in, uen, ün⟩分別爲並擊 `[N], [IN], [UN], [ÜN]`。
@@ -483,13 +483,13 @@ Rime 輸入法支持 Windows、Linux、macOS 等電腦操作系統。詳見 [Rim
 ![](images/combo-pinyin-v3/combo-pinyin-j-q-x-iou-yun.png)
 
 按照四呼拼讀，⟨eng, ing, ueng/ong, iong⟩分別爲並擊 `[NE], [INE], [UNE], [ÜNE]`。
-    
+
 `[UNE]` = ⟨ueng/ong⟩，需要錯行並擊，可借用 `[U]` 所在行的 `[RO]` 兩鍵代替 `[NE]`。於是有：
 
 `[URO]` = ⟨ueng/ong⟩。相鄰三鍵並擊，指法便利。也可以看作爲⟨ong⟩的拼寫而設置的並擊組合鍵。
 
 ![](images/combo-pinyin-v3/combo-pinyin-ing-ong.png)
-    
+
 `[ÜNE]` = ⟨iong⟩，可以把三鍵同時上移到 `[IRO]` 的位置，使該並擊韻母更符合拼寫。
 
 ![](images/combo-pinyin-v3/combo-pinyin-iong.png)

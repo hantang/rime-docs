@@ -1,6 +1,8 @@
 ---
 source: rime-hamster-wiki/自定义布局.md
+
 # title: 自定义布局
+
 ---
 
 # 自定义键盘布局
@@ -57,7 +59,7 @@ source: rime-hamster-wiki/自定义布局.md
 
   * 可选值，字符串类型。如果不填写，则使用 `action` 对应的文本显示，比如 `action` 的值为 `character(a)`，则显示为 `a`。
   * `label` 可填写两种格式，
-    * 格式1: `label: '长显文本'`，为非空格键指定长显的文本。 
+    * 格式1: `label: '长显文本'`，为非空格键指定长显的文本。
     * 格式2: 为空格指定加载文本使用。
     ```yaml
     label:
@@ -86,10 +88,10 @@ source: rime-hamster-wiki/自定义布局.md
 
 * `action`：表示划动触发的操作。
   * **必选值**，配置与 Key 模型中的 action 配置相同。
-  
+
 * `label`: 表示划动显示的文本。
   * 可选值，字符串类型。配置与 Key 模型中的 label 配置相同。
-  
+
 * `display`: 表示是否在按键 UI 中显示滑动的文本。
   * 可选值，布尔类型(true/false)。如果不填写，默认为 true，即显示。
 
@@ -118,17 +120,16 @@ source: rime-hamster-wiki/自定义布局.md
 * `tab`：表示物理键盘的 Tab 键。
 * `space`：表示物理键盘的空格键。
 * `character: { char: 字符 }`：表示物理键盘的字符按键，其中`字符`表示具体的 ASCII 字符。
-  
+
   > 注意：`character`类型会经过 RIME 引擎处理，所以必须是 ASCII 中的单个字符，如果是多个，则截取首个字符。
-  
+
   例如：
   * `a` 键的配置为 `action: { character: { char: a } }`，注意是小写，如果想显示为大写可以通过 `label` 属性配置实现。
-
 
 * `characterMargin: { char: 字符 }`：用来表示虚拟按键的占位符。不显示，但点击后会和 `character` 的效果相同。例如中文26键中 `A` 键的左侧空白，`L`键的右侧空白。
 
   > 注意：`characterMargin` 类型会经过 RIME 引擎处理，所以必须是 ASCII 中的单个字符，如果是多个，则截取首个字符。
-  
+
 * `keyboardType: type`: 表示切换虚拟键盘的类型，其中 type 表示切换的类型。type 必须符合 [KeyboardType 选项](#KeyboardType选项)，具体如何填写请参考 [KeyboardType 选项](#KeyboardType选项)。
 
   例如：
@@ -139,7 +140,7 @@ source: rime-hamster-wiki/自定义布局.md
 * `symbol: { char: string }`：用来表示想要输入字符串，其中 `string` 表示您想输入的字符串，可以为任何 unicode 字符，不限长度。
 
   > 注意：`symbol` 类型不会经过 RIME 引擎处理。
-  
+
   例如：
   * `action: { symbol: { char: 你好 } }`，会直接上屏“你好”。
 
@@ -195,12 +196,12 @@ KeyWidth 选项可以填写以下值：
 * `input`: 全键盘中全部 input 类型的按键，宽度相同。系统会自动计算 `input` 类型的宽度。
 * `inputPercentage: value`: 使用 `input` 类型宽度的百分比作为按键的宽度, 其中 `value` 为表示百分比的值，浮点类型。
 
-  例如: 
+  例如:
   * `width: { inputPercentage: 2 }` 表示 `input` 类型宽度的 2 倍作为按键宽度。
   * `width: { inputPercentage: 0.5 }` 表示 `input` 类型宽度的 1/2 作为按键宽度。
-  
+
 * `percentage: value`：使用行宽度的百分比作为按键的宽度，其中 `value` 为表示百分比的值，浮点类型。
- 
+
   例如：`width: { percentage: 0.13 }` 表示行宽度的 13% 作为当前按键的宽度。
 
 * `points: value`: 指定按键宽度为已 pt(point) 为单位的固定值。其中 `value` 为浮点类型。
@@ -231,7 +232,6 @@ width:
 * `left`: 表示向左划动。
 * `right`：表示向右划动。
 
-
 ## RowHeight选项
 
 用来表示行高。有两种表达方式
@@ -257,7 +257,6 @@ buttonInsets: { left: 2, right: 2, top: 4, bottom: 4 }
 ```
 
 > 注意：单个属性如果未赋值，则该属性值为零。
-
 
 ## 配置示例
 
@@ -1868,5 +1867,3 @@ keyboards:
 感谢 @lost-melody 开发的自定义键盘工具。
 
 [https://lost-melody.github.io/hamster-tools](https://lost-melody.github.io/hamster-tools)
-
-

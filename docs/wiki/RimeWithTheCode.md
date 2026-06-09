@@ -2,7 +2,6 @@
 
 > La Rime HowTo for Developers
 
-
 ## Get the Code
 
 Fork Rime on [GitHub](https://github.com/rime):

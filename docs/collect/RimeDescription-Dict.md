@@ -9,8 +9,11 @@ source:  rime-collect/Rime_description.md#Dict
 ## 開始之前
 
 ```yaml
+
 # Rime dict
+
 # encoding: utf-8
+
 〔你還可以在這註釋字典來源、變動記錄等〕
 ```
 
@@ -104,5 +107,5 @@ cangjie6.dict.yaml
 
 - - -
 
-雪齋  
+雪齋
 09-Nov-2013

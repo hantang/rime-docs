@@ -6,19 +6,19 @@ title: 用户指南
 ## 简易索引
 
 - 下载及安装
-  - 稳定版：[F-Droid][]，[酷安][]，[Google Play][]，[Releases][]  
+  - 稳定版：[F-Droid][]，[酷安][]，[Google Play][]，[Releases][]
   - [测试版][]
 - 添加输入方案
-  - [简易图解][]（待更新）  
-  - [常用输入方案][]（或至 [Rime 同文堂][]（811142286）下载“Brise 懒人包”）  
-  - [更多开源输入方案][]  
+  - [简易图解][]（待更新）
+  - [常用输入方案][]（或至 [Rime 同文堂][]（811142286）下载“Brise 懒人包”）
+  - [更多开源输入方案][]
 - 学习如何DIY
-  - 配置输入法（键盘及各种界面功能），可参考 [`trime.yaml`详解][]。  
+  - 配置输入法（键盘及各种界面功能），可参考 [`trime.yaml`详解][]。
   - 配置输入方案，请参阅 [Rime说明书][]。
 
 ## 附表1
 
-`附表1: （同文）Rime 文件分布、作用及相关教程`  
+`附表1: （同文）Rime 文件分布、作用及相关教程`
 
 |文件&文件夹|作用及相关教程|
 |------|------|
@@ -40,7 +40,7 @@ title: 用户指南
 |:page_facing_up:`user.yaml`|<u>用户状态信息</u>：用来保存当前所使用的方案ID，以及各种开关的状态。|
 
 [Google Play]:https://play.google.com/store/apps/details?id=com.osfans.trime
-[Releases]:https://github.com/osfans/trime/releases  
+[Releases]:https://github.com/osfans/trime/releases
 [酷安]:https://www.coolapk.com/apk/com.osfans.trime
 [F-Droid]:https://f-droid.org/packages/com.osfans.trime/
 [测试版]:https://osfans.github.io/trime/

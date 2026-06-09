@@ -3,8 +3,8 @@ source: rime-squirrel-wiki/禁用-Squirrel-英文模式，使用左侧-Shift-切
 title: 使用左侧-Shift 切换中英
 ---
 
-时间：2018-08-19    
-系统：macOS 10.13.6     
+时间：2018-08-19
+系统：macOS 10.13.6
 应用版本：
 - Karabiner-Elements 12.1.0
 - Squirrel 2018/04/12 编译

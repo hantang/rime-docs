@@ -1,6 +1,8 @@
 ---
 source: rime-hamster-wiki/配色说明.md
+
 # title: 配色说明
+
 ---
 
 # 仓输入法配色
@@ -19,9 +21,7 @@ source: rime-hamster-wiki/配色说明.md
 
 ![Pasted image 20231020173507](./assets/6482586/276895217-d802b994-9e6f-4deb-8fee-43ee69670cba.png)
 
-
 上面是BGR格式颜色，下面是对应的RGB格式颜色。你会发现他们只是交换了一下 R 与 B 所表示的的两位数字的**位置**。
-
 
 你在配置文件中会发现有的颜色是八位长度，非上面说的 BGR 的六位数字长度。这是因为八位长度0x后的2位是透明度，例如0x50FFFFFF，这里的50就表示透明度。如果用六位表示，则没有透明度，例如`0xFFFFFF`。
 
@@ -135,7 +135,6 @@ source: rime-hamster-wiki/配色说明.md
 | 1%     | FC               |
 | 0%     | FF（完全不透明） |
 
-  
 ## 配色参数说明
 
 已 `曬經・月／Solarized Dark`,`曬經・日／Solarized Light` 配色为例:
@@ -181,7 +180,6 @@ source: rime-hamster-wiki/配色说明.md
 
 ![IMG_0258](./assets/6482586/276895339-d6e424d7-b00c-4218-88e8-719a29102128.jpeg)
 
-
 键盘配色
 
 * `back_color`: 键盘背景色
@@ -206,4 +204,3 @@ source: rime-hamster-wiki/配色说明.md
 * `candidate_text_color`：候选栏次选文字颜色
 * `comment_text_color`：候选栏次选文字 Comment 信息颜色
 * `label_color`: 候选栏次选序号颜色
-

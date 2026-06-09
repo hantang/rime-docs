@@ -87,10 +87,13 @@ git submodule update --init --recursive
 #### 2. Debug version without signature:
 
 ```sh
+
 # On Linux or macOS
+
 make debug
 
 # On Windows
+
 .\gradlew assembleDebug
 ```
 
@@ -108,10 +111,13 @@ storeFile=myStoreFileLocation
 Then, you may run:
 
 ```sh
+
 # On Linux or macOS
+
 make release
 
 # On Windows
+
 .\gradlew assembleRelease
 ```
 

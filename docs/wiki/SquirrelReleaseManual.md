@@ -64,4 +64,3 @@
 1.  Commit changes with commit message `chore(release): squirrel ${version} :tada:` and push to [`rime/home`](https://github.com/rime/home).
 
     This will trigger automated update to the site <https://rime.im>.
-

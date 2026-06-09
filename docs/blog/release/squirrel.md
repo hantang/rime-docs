@@ -3,36 +3,44 @@ title: 【鼠鬚管】更新日誌
 date: 2026-01-13 19:00:00
 ---
 <a name="1.1.2"></a>
+
 ## 1.1.2 (2026-01-13)
 
 ### 構建 | Build
+
 - use macos-latest image runner (550b355)
 - upgrade action with node 24 (2cc3d17)
 
 ### 雜項 | Miscellaneous
+
 - update Icon that can adapt with system color scheme (714325e)
 - remove unused arg in bump_version (32db10d)
 
 **Full Changelog**: https://github.com/rime/squirrel/compare/1.1.1...1.1.2
 
 <a name="1.1.1"></a>
+
 ## 1.1.1 (2026-01-11)
 
 ### 構建 | Build
+
 - build universal binary (2154997)
 
 **Full Changelog**: https://github.com/rime/squirrel/compare/1.1.0...1.1.1
 
 <a name="1.1.0"></a>
+
 ## 1.1.0 (2026-01-11)
 
 ### Bug 修復 | Bug Fixes
+
 - boundary check to prevent crash (#1044)
 - no index offset to an empty string (#1045)
 - 開啓 `inline_candidate` 選項後移動光標導致崩潰 (#1047)
 - 橫向候選詞列表末尾元素高亮區域渲染錯誤 (#1071)
 
 ### 主要功能更新 | Major Updates
+
 - 「系統原生」風格 `native` 跟隨系統主題切換明暗色調；提高文字對比度
 - `librime` 更新至 1.16.0：
   - 優化音節切分算法，調整簡拼、歧義切分路徑的權重
@@ -41,15 +49,18 @@ date: 2026-01-13 19:00:00
   - 輸入方案自動引用組件默認配置 `default:/{navigator,selector}`
 
 ### 構建 | Build
+
 - remove paths filter from release-ci for nightly builds
 - fix sign_update call
 
 **Full Changelog**: https://github.com/rime/squirrel/compare/1.0.3...1.1.0
 
 <a name="1.0.3"></a>
+
 ## 1.0.3 (2025-01-23)
 
 #### 主要功能更新
+
 * 新增翻䈎提示，以`style/show_paging: true/false`控制
 * `librime` 更新至1.13.0：
   * 數字後標點優化，可用`punctuator/digit_separators`調整
@@ -57,11 +68,13 @@ date: 2026-01-13 19:00:00
   * 詳見 librime [更新紀錄](https://github.com/rime/librime/blob/master/CHANGELOG.md)，含 1.12、1.13 兩個主要版本更新
 
 #### 其它更新內容
+
 * bug 修復
   * 自emoji面板切換後無法使用的問題
   * 每次開機重新布署的問題
 
 #### Major Update
+
 * Added paging indicator, gated by `style/show_paging: true/false`
 * Update `librime` to 1.13.0:
   * Optimized punctuator after digits, customizable by `punctuator/digit_separators`
@@ -69,6 +82,7 @@ date: 2026-01-13 19:00:00
   * See librime [change log](https://github.com/rime/librime/blob/master/CHANGELOG.md) for details, including 1.12 and 1.13 major updates
 
 #### Other Updates
+
 * Bug fixes:
   * IME unavailable after using emoji-selection panel
   * Deploy upon every start-up regardless of changes
@@ -76,9 +90,11 @@ date: 2026-01-13 19:00:00
 **Full Changelog**: https://github.com/rime/squirrel/compare/1.0.2...1.0.3
 
 <a name="1.0.2"></a>
+
 ## 1.0.2 (2024-06-07)
 
 #### 其它更新內容
+
 * bug 修復
   * 未設定暗色主題時，配色不生效
   * 橫排時序號偏高
@@ -89,6 +105,7 @@ date: 2026-01-13 19:00:00
 * 日誌置於 $TMPDIR/rime.squirrel 內，以便查找
 
 #### Other Updates
+
 * Bug fixes:
   * `color_scheme` doesn't apply in dark mode when `color_scheme_dark` is not set
   * Label baseline too high in horizontal orientation
@@ -101,9 +118,11 @@ date: 2026-01-13 19:00:00
 **Full Changelog**: https://github.com/rime/squirrel/compare/1.0.1...1.0.2
 
 <a name="1.0.1"></a>
+
 ## 1.0.1 (2024-06-01)
 
 #### 其它更新內容
+
 * bug 修復
   * 不再注冊爲拉丁輸入法，修復 Caps Lock 切換輸入法時不能切換至西文的問題
   * 修復配色中的 candidate_list_layout, text_orientation 不生效問題
@@ -111,6 +130,7 @@ date: 2026-01-13 19:00:00
 * 不再支持 `style/horizontal` 和 `style/vertical`
 
 #### Other Updates
+
 * Bug fixes:
   * Remove Latn repertoire so that switching IME by Caps Lock can toggle Squirrel and Latin input
   * Fix: candidate_list_layout, text_orientation do not take effect when put in color scheme
@@ -120,19 +140,22 @@ date: 2026-01-13 19:00:00
 **Full Changelog**: https://github.com/rime/squirrel/compare/1.0.0...1.0.1
 
 <a name="1.0.0"></a>
+
 ## 1.0.0 (2024-05-30)
 
 #### 主要功能更新
+
 * 純 Swift 重寫，代碼更易維護，更易讀，貢獻代碼的門檻更低。今天就來看看源代碼，嘗試動手吧！
 
 #### 其它更新內容
+
 * UI 設置【**敬請留意**】
   * `style/candidate_format` 格式修改爲 `"[label]. [candidate] [comment]"`，原格式仍能使用，但建議遷移至更靈活、直觀的新格式
   * `style/horizontal` 將徹底移除，雖然本版程序仍支持，但會被新控件的默認值覆蓋
     請使用 `candidate_list_layout`: `stacked`/`linear` 和 `text_orientation`: `horizontal`/`vertical`
   * `style/label_hilited_color` 已移除，請使用 `style/hilited_candidate_label_color`
   * `native` 配色小幅修改，減小字號，更像原生輸入法
-* UI 
+* UI
   * 在菜單欄新增日志檔案夾，方便快速進入
   * 序號居中顯示，更像原生輸入法
 * 新增 `--help` 命令行命令，以便查詢支持的命令
@@ -141,9 +164,11 @@ date: 2026-01-13 19:00:00
 * librime：使用 stdbool 後綴 API，以便與 Swift 更好橋接
 
 #### Major Update
+
 * Migrated code to pure Swift, which is easier to code, read and learn. Build your own Squirrel today!
 
 #### Other Updates
+
 * UI settings (**Breaking Changes**)
   * `style/candidate_format` now updated to `"[index]. [candidate] [comment]"`, while the old format still works, please consider migrating to this more readable and flexible format at your convenience
   * `style/horizontal` will be dropped, it's still supported but will be overwrite by the default values of new options.
@@ -161,9 +186,11 @@ date: 2026-01-13 19:00:00
 **Full Changelog**: https://github.com/rime/squirrel/compare/0.18...1.0.0
 
 <a name="0.18"></a>
+
 ## 0.18 (2024-05-04)
 
 #### 主要功能更新
+
 * 現可設定非高亮候選項背景色：
   * 以 `preset_color_schemes/xxx/candidate_back_color: 0xAABBGGRR` 設定，未設定則不啓用本功能
   * 以 `style/surrounding_extra_expansion` 控制非高亮候選背景大小，正數則相對高亮背景擴大，負數則相對高亮背景收縮，默認爲0
@@ -187,12 +214,14 @@ date: 2026-01-13 19:00:00
 * 最低支持的系統應爲 13.0，14.0 以上系統經過較好測試
 
 #### 其它更新內容
+
 * 啓用CI自動構建
 * 應用 Clang 格式標準化
 * 更新已過時的方法
 * 支持沙盒機制
 
 #### Main Updates
+
 * Surrounding high lights for all candidates:
   * Set `preset_color_schemes/xxx/candidate_back_color` to enable (Not specified unless explicitly defined)
   * `style/surrounding_extra_expansion` controls the relative size to the selected candidate's surrounding block. Negative value means smaller, while positive means larger, default to 0.
@@ -206,7 +235,7 @@ date: 2026-01-13 19:00:00
   * All `font_size` accepts float number.
   * Labels are vertically centered when using a different `label_font_size` from the main `font_size`
   * Add `style/status_message_type`: `mix(default) / long / short` to Handle abbrev status label when status updates
-  * Add `style/memorize_size: true/false` to control sticking panel width behavior 
+  * Add `style/memorize_size: true/false` to control sticking panel width behavior
   * `style/alpha: 0` is now valid, setting so completely hides the panel
   * Add `style/shadow_size` to specify shadow under selected candidate. Default to `0` with no shadow.
   * Add `style/mutual_exclusive`: `true`/`false` to allow colors not stacking on each other. Default to `false`
@@ -216,12 +245,14 @@ date: 2026-01-13 19:00:00
 * Minimum OS supported should be 13.0, while 14.0+ is better tested
 
 #### Other Updates
+
 * Adopts CI workflow
 * Applies Clang linting
 * Modernized several deprecated methods
 * Supports sandbox
 
 #### 完整更新列表 Change Log
+
 * build: specify build target OS in makefile by @LEOYoon-Tsaw in https://github.com/rime/squirrel/pull/727
 * Consolidated update to Squirrel by @LEOYoon-Tsaw in https://github.com/rime/squirrel/pull/749
 * Update INSTALL.md: Fix script by @EdgarDegas in https://github.com/rime/squirrel/pull/800
@@ -239,6 +270,7 @@ date: 2026-01-13 19:00:00
 * ci: disable nightly build in forked repos by @Bambooin in https://github.com/rime/squirrel/pull/862
 
 #### 新增貢獻者 New Contributors
+
 * @EdgarDegas made their first contribution in https://github.com/rime/squirrel/pull/800
 * @hezhizhen made their first contribution in https://github.com/rime/squirrel/pull/794
 * @determ1ne made their first contribution in https://github.com/rime/squirrel/pull/777
@@ -247,61 +279,55 @@ date: 2026-01-13 19:00:00
 **Full Changelog**: https://github.com/rime/squirrel/compare/0.16.2...0.18
 
 <a name="0.16.2"></a>
+
 ## 0.16.2 (2023-02-05)
 
 #### 須知
 
- * 升級安裝後遇輸入法不可用，須手動重新添加 [#704](https://github.com/rime/squirrel/issues/704)
+* 升級安裝後遇輸入法不可用，須手動重新添加 [#704](https://github.com/rime/squirrel/issues/704)
 
 #### 主要更新
 
- * 更新 Rime 核心算法庫至 [1.8.5](https://github.com/rime/librime/releases/tag/1.8.5)
- * 修復：橫向候選欄 Tab 鍵應當用作移動插入點 [rime/librime#609](https://github.com/rime/librime/issues/609)
- * 修復：macOS Mojave 及以下版本單擊 Shift 等修飾鍵失效 [#715](https://github.com/rime/squirrel/issues/715)
- * 修復：全新安裝只添加一個輸入法選項（簡體中文） [#714](https://github.com/rime/squirrel/issues/714)
-
+* 更新 Rime 核心算法庫至 [1.8.5](https://github.com/rime/librime/releases/tag/1.8.5)
+* 修復：橫向候選欄 Tab 鍵應當用作移動插入點 [rime/librime#609](https://github.com/rime/librime/issues/609)
+* 修復：macOS Mojave 及以下版本單擊 Shift 等修飾鍵失效 [#715](https://github.com/rime/squirrel/issues/715)
+* 修復：全新安裝只添加一個輸入法選項（簡體中文） [#714](https://github.com/rime/squirrel/issues/714)
 
 #### Bug Fixes
 
 *   modifier change event in older macOS ([5c2b7e64](https://github.com/rime/squirrel/commit/5c2b7e64980b7e6b7eb3a8b392163ce89d244f37))
 *   install one input mode or keep previous ones ([3bc6c2c0](https://github.com/rime/squirrel/commit/3bc6c2c0edbb1adaa22e79da65c6f0116b164de7))
 
-
-
 <a name="0.16.1"></a>
+
 ## 0.16.1 (2023-01-30)
 
-
 #### 主要更新
 
- * 更新 Rime 核心算法庫至 [1.8.4](https://github.com/rime/librime/releases/tag/1.8.4)
- * 修復：橫向候選欄不響應左方向鍵移動插入點
-
-
+* 更新 Rime 核心算法庫至 [1.8.4](https://github.com/rime/librime/releases/tag/1.8.4)
+* 修復：橫向候選欄不響應左方向鍵移動插入點
 
 <a name="0.16.0"></a>
-## 0.16.0 (2023-01-30)
 
+## 0.16.0 (2023-01-30)
 
 #### 主要更新
 
- * 輸入狀態變化時顯示方案中設定的狀態名稱 [#540](https://github.com/rime/squirrel/pull/540)
- * 修正繪文字行高 [#559](https://github.com/rime/squirrel/issues/559)
- * 支持半透明視窗背景 [#589](https://github.com/rime/squirrel/pull/589)
- * 由 GitHub Actions執行自動構建 [#633](https://github.com/rime/squirrel/pull/633)
- * 將鼠鬚管的輸入語言註冊爲簡體中文及繁體中文 [#648](https://github.com/rime/squirrel/pull/648)
- * 可指定使用任意一種系統鍵盤佈局 [#687](https://github.com/rime/squirrel/pull/687)
+* 輸入狀態變化時顯示方案中設定的狀態名稱 [#540](https://github.com/rime/squirrel/pull/540)
+* 修正繪文字行高 [#559](https://github.com/rime/squirrel/issues/559)
+* 支持半透明視窗背景 [#589](https://github.com/rime/squirrel/pull/589)
+* 由 GitHub Actions執行自動構建 [#633](https://github.com/rime/squirrel/pull/633)
+* 將鼠鬚管的輸入語言註冊爲簡體中文及繁體中文 [#648](https://github.com/rime/squirrel/pull/648)
+* 可指定使用任意一種系統鍵盤佈局 [#687](https://github.com/rime/squirrel/pull/687)
    例如： `squirrel.yaml:/keyboard_layout: USExtended`
- * 區分左、右修飾鍵 [#688](https://github.com/rime/squirrel/pull/688)
- * 支持以命令行方式同步用戶數據 [#694](https://github.com/rime/squirrel/pull/694)
+* 區分左、右修飾鍵 [#688](https://github.com/rime/squirrel/pull/688)
+* 支持以命令行方式同步用戶數據 [#694](https://github.com/rime/squirrel/pull/694)
    命令： `Squirrel --sync`
- * 更新 Rime 核心算法庫至 [1.8.3](https://github.com/rime/librime/releases/tag/1.8.3)
-
-
+* 更新 Rime 核心算法庫至 [1.8.3](https://github.com/rime/librime/releases/tag/1.8.3)
 
 <a name="0.15.2"></a>
-## 0.15.2 (2021-02-13)
 
+## 0.15.2 (2021-02-13)
 
 #### 主要更新
 
@@ -318,11 +344,9 @@ date: 2026-01-13 19:00:00
 
 * **RimeIcon:**  updated app icon ([76d742b8](https://github.com/rime/squirrel/commit/76d742b8ee271c24dae5f98251a93930e57279ec))
 
-
-
 <a name="0.15.1"></a>
-## 0.15.1 (2021-02-11)
 
+## 0.15.1 (2021-02-11)
 
 #### 主要更新
 
@@ -350,11 +374,9 @@ date: 2026-01-13 19:00:00
 
 * **SquirrelPanel:**  comment font config (#511) ([3d0ab6a2](https://github.com/rime/squirrel/commit/3d0ab6a209c31c0ac2b97bd8ab1bddcc269aa9bb))
 
-
-
 <a name="0.15.0"></a>
-## 0.15.0 (2021-02-06)
 
+## 0.15.0 (2021-02-06)
 
 #### 主要更新
 
@@ -412,11 +434,9 @@ date: 2026-01-13 19:00:00
 * **data/squirrel.yaml:**  solarized color schemes ([35b9ea76](https://github.com/rime/squirrel/commit/35b9ea76d2c3c4ce095bc838948ba43761022a12))
 * **ui:**  vertical text orientation, rounded corner text with TextStorage, wrapping lone lines and border color ([c6c9302d](https://github.com/rime/squirrel/commit/c6c9302dcd537e0b72af729082390483bc3d07c0))
 
-
-
 <a name="0.14.0"></a>
-## 0.14.0 (2019-06-23)
 
+## 0.14.0 (2019-06-23)
 
 #### 主要更新
 
@@ -432,11 +452,9 @@ date: 2026-01-13 19:00:00
 * **package/add_data_files:**  update xcode project to install all files under data/plum ([2ab1810e](https://github.com/rime/squirrel/commit/2ab1810e94b963df27e6fd2e399465ccdabba138))
 * **travis-ci:**  fetch latest rime binaries in install script, install extra recipes ([027679d5](https://github.com/rime/squirrel/commit/027679d58974845a83a393a313bbd63462a795b1))
 
-
-
 <a name="0.13"></a>
-## 0.13 (2019-06-17)
 
+## 0.13 (2019-06-17)
 
 #### 主要更新
 
@@ -449,11 +467,9 @@ date: 2026-01-13 19:00:00
 
 * **plum:**  bundle preset recipes ([7885c5fa](https://github.com/rime/squirrel/commit/7885c5fa6006e999c5a07ac1800e9afa15d629a8))
 
-
-
 <a name="0.12.0"></a>
-## 0.12.0 (2019-06-16)
 
+## 0.12.0 (2019-06-16)
 
 #### 主要更新
 
@@ -473,11 +489,9 @@ date: 2026-01-13 19:00:00
 * **squirrel.yaml:**  udpate UI settings ([d8b1dc56](https://github.com/rime/squirrel/commit/d8b1dc569cc2c168f0fc5e8240ff6e049142fc24))
 * **travis-ci:**  deploy release package ([c367b675](https://github.com/rime/squirrel/commit/c367b675bbca4f7e4467b71b9f42adbb888b77a5))
 
-
-
 <a name="0.11.0"></a>
-## 0.11.0 (2019-01-21)
 
+## 0.11.0 (2019-01-21)
 
 #### 主要更新
 
@@ -497,11 +511,9 @@ date: 2026-01-13 19:00:00
 
 * **app:**  opt out of dark mode ([083817cb](https://github.com/rime/squirrel/commit/083817cba5ccb1f5b9589b7e7a2fbeca4ec4d9dd), closes [#273](https://github.com/rime/squirrel/issues/273))
 
-
-
 <a name="0.10.0"></a>
-## 0.10.0 (2019-01-01)
 
+## 0.10.0 (2019-01-01)
 
 #### 主要更新
 
@@ -549,19 +561,20 @@ date: 2026-01-13 19:00:00
   *  run rime-install preset packages ([de8f32a2](https://github.com/rime/squirrel/commit/de8f32a2c00c4fac4cd0a23b80722e3129477086))
   *  run `Squirrel --install` as login user; do not update packages during installation ([66948afe](https://github.com/rime/squirrel/commit/66948afe6c50ef1a72a55abd505d2c8ceae4fe37))
 
-
-
 <a name="0.9.26.2"></a>
+
 ## 鼠鬚管 0.9.26.2 (2014-12-23)
 
   * 修復：安裝後輸入法在一些 app 中無法啓用 [#43](https://github.com/lotem/squirrel/issues/43)
 
 <a name="0.9.26.1"></a>
+
 ## 鼠鬚管 0.9.26.1 (2014-12-22)
 
   * 修復：0.9.26 版本設置 `translator/enable_user_dict: false` 發生崩潰
 
 <a name="0.9.26"></a>
+
 ## 鼠鬚管 0.9.26 (2014-12-16)
 
 #### 【鼠鬚管】變更集
@@ -594,6 +607,7 @@ date: 2026-01-13 19:00:00
   * 更新：【八股文】【朙月拼音】【地球拼音】【粵拼】【中古漢語拼音】
 
 <a name="0.9.25"></a>
+
 ## 鼠鬚管 0.9.25 (2014-03-29)
 
 #### Rime 算法庫變更集
@@ -613,6 +627,7 @@ date: 2026-01-13 19:00:00
   * 改進：【朙月拼音·語句流】`/0` ~ `/10` 輸入數字符號
 
 <a name="0.9.24.2"></a>
+
 ## 鼠鬚管 0.9.24.2 (2013-12-25)
 
 #### 【鼠鬚管】變更集
@@ -635,6 +650,7 @@ date: 2026-01-13 19:00:00
   * 優化：調整部分異體字的字頻
 
 <a name="0.9.23"></a>
+
 ## 鼠鬚管 0.9.23 (2013-12-01)
 
 #### 【鼠鬚管】變更集
@@ -658,6 +674,7 @@ date: 2026-01-13 19:00:00
   * 更新：【八股文】【朙月拼音】【地球拼音】【中古全拼】修正錯別字、註音錯誤
 
 <a name="0.9.22"></a>
+
 ## 鼠鬚管 0.9.22 (2013-11-09)
 
 #### 【鼠鬚管】變更集
@@ -690,11 +707,13 @@ date: 2026-01-13 19:00:00
   * 變更：間隔號採用「·」`U+00B7`
 
 <a name="0.9.21.1"></a>
+
 ## 鼠鬚管 0.9.21.1 (2013-10-09)
 
   * 修復：從上一個版本升級【倉頡】輸入方案不會自動更新的問題
 
 <a name="0.9.21"></a>
+
 ## 鼠鬚管 0.9.21 (2013-10-06)
 
   * 新增：【倉頡】開啓自動造詞<br/>
@@ -713,11 +732,13 @@ date: 2026-01-13 19:00:00
   * 更新：2013款 Rime 輸入法圖標
 
 <a name="0.9.20.4"></a>
+
 ## 鼠鬚管 0.9.20.4 (2013-07-25)
 
   * 修復：原生配色方案候選序號顏色不正確
 
 <a name="0.9.20.3"></a>
+
 ## 鼠鬚管 0.9.20.3 (2013-07-24)
 
   * 修復：0.9.20 版本引入【朙月拼音】詞典缺失詞組的BUG<br/>
@@ -726,6 +747,7 @@ date: 2026-01-13 19:00:00
   * 更新：`symbols.yaml` 增加一批特殊符號
 
 <a name="0.9.20"></a>
+
 ## 鼠鬚管 0.9.20 (2013-07-24)
 
   * 新增：支持全角模式
@@ -739,6 +761,7 @@ date: 2026-01-13 19:00:00
     選項 `translator/initial_quality: 0`
 
 <a name="0.9.19"></a>
+
 ## 鼠鬚管 0.9.19 (2013-06-24)
 
   * 新增：切換輸入法狀態時在光標處延時顯示當前狀態
@@ -753,6 +776,7 @@ date: 2026-01-13 19:00:00
     例如不轉換反查字 `simplifier/exclude_types: \[ reverse_lookup \]`
 
 <a name="0.9.18"></a>
+
 ## 鼠鬚管 0.9.18 (2013-04-26)
 
   * 新增：配色方案【曬經石】／Solarized Rock
@@ -775,6 +799,7 @@ date: 2026-01-13 19:00:00
   * 改進：檢測到因斷電造成用戶詞典損壞時，自動在後臺線程恢復數據文件
 
 <a name="0.9.17"></a>
+
 ## 鼠鬚管 0.9.17 (2013-01-31)
 
   * 改進：安裝完畢自動啓用鼠鬚管
@@ -795,6 +820,7 @@ date: 2026-01-13 19:00:00
   * 修復：糾正用戶詞典中無法調頻的受損詞條
 
 <a name="0.9.16"></a>
+
 ## 鼠鬚管 0.9.16 (2013-01-18)
 
   * 新增：支持設定候選序號的字體和顏色 `squirrel.yaml`
@@ -809,6 +835,7 @@ date: 2026-01-13 19:00:00
     請刪除用戶文件夾中對應的 `.bin` 文件，再用新版本部署。
 
 <a name="0.9.15.1"></a>
+
 ## 鼠鬚管 0.9.15.1 (2013-01-17)
 
   * 新增：Caps Lock 點亮時，切換到西文模式，輸出小寫字母<br/>
@@ -818,6 +845,7 @@ date: 2026-01-13 19:00:00
   * 修復：用戶詞典有可能因讀取時 I/O 錯誤導致部份詞序無法調整
 
 <a name="0.9.14.5"></a>
+
 ## 鼠鬚管 0.9.14.5 (2013-01-10)
 
   * 新增：接收外部應用請求重新部署的通知，及命令行選項 Squirrel --reload
@@ -825,6 +853,7 @@ date: 2026-01-13 19:00:00
     如果因此丟失詞彙，手動恢復的方法是：執行「同步用戶資料」
 
 <a name="0.9.14"></a>
+
 ## 鼠鬚管 0.9.14 (2013-01-07)
 
   * 新增：同步用戶詞典，詳見 [Wiki » UserGuide](https://code.google.com/p/rimeime/wiki/UserGuide)
@@ -834,6 +863,7 @@ date: 2026-01-13 19:00:00
   * 新增：設定候選字及序號格式的選項 `squirrel.yaml`: `style/candidate_format:`
 
 <a name="0.9.13"></a>
+
 ## 鼠鬚管 0.9.13 (2012-12-26)
 
   * 優化：在編碼行分別標記已選定文字和未轉換的編碼
@@ -841,6 +871,7 @@ date: 2026-01-13 19:00:00
   * 新增：切換狀態時是否顯示氣泡通知的選項 `show_notifications_when:`
 
 <a name="0.9.12"></a>
+
 ## 鼠鬚管 0.9.12 (2012-12-23)
 
   * 新增：切換模式、輸入方案時彈出氣泡提示（安裝 Growl 效果最佳）
@@ -853,6 +884,7 @@ date: 2026-01-13 19:00:00
   * 刪除：因有用家向用戶詞典導入巨量詞條，故取消自動備份的功能，後續代之以用戶詞典同步
 
 <a name="0.9.11"></a>
+
 ## 鼠鬚管 0.9.11 (2012-10-17)
 
   * 修復：選中的輸入方案、繁簡轉換等選項關機時不會保存的BUG
@@ -866,12 +898,14 @@ date: 2026-01-13 19:00:00
   * 新增：寒寒豆作《蘇州吳語》輸入方案，方案標識爲 `soutzoe`
 
 <a name="0.9.10"></a>
+
 ## 鼠鬚管 0.9.10 (2012-09-19)
 
   * 修復：全新安裝無法建立用戶文件夾 `~/Library/Rime`
   * 修復：在 Quicksilver 中默認關閉漢字輸入的配置無效
 
 <a name="0.9.9"></a>
+
 ## 鼠鬚管 0.9.9 (2012-09-17)
 
   * 新增：碼表輸入法啓用用戶詞典、字頻調整
@@ -884,6 +918,7 @@ date: 2026-01-13 19:00:00
   * 更新：【明月拼音】【粵拼】【吳語】修正註音錯誤、缺字
 
 <a name="0.9.8"></a>
+
 ## 鼠鬚管 0.9.8 (2012-07-08)
 
   * 新的 Rime logo
@@ -896,6 +931,7 @@ date: 2026-01-13 19:00:00
   * 更新：【朙月拼音】碼表，修正多音字
 
 <a name="0.9.7"></a>
+
 ## 鼠鬚管 0.9.7 (2012-06-10)
 
   * 提供指定候選窗邊界高度、寬度的選項 [Gist](https://gist.github.com/2290714)
@@ -905,6 +941,7 @@ date: 2026-01-13 19:00:00
   * 檢測到用戶詞典文件損壞時重建詞典並從備份中恢復資料
 
 <a name="0.9.6"></a>
+
 ## 鼠鬚管 0.9.6 (2012-06-0x)
 
   * 候選窗圓角效果、自定義色彩，感謝 waynezhang 貢獻代碼
@@ -920,6 +957,7 @@ date: 2026-01-13 19:00:00
   * 修改BUG：簡拼 zhzh 因切分歧義使部分用戶詞失效
 
 <a name="0.9.5"></a>
+
 ## 鼠鬚管 0.9.5 (2012-05-06)
 
   * 用 Shift+Del 刪除已記入用戶詞典的詞條，詳見 Issue 117
@@ -928,6 +966,7 @@ date: 2026-01-13 19:00:00
   * 候選字的編碼提示以灰色顯示
 
 <a name="0.9.4"></a>
+
 ## 鼠鬚管 0.9.4 (2012-04-15)
 
   * 探測失敗的啓動，預防設定不當導致持續崩潰、系統響應緩慢
@@ -943,6 +982,7 @@ date: 2026-01-13 19:00:00
   * 新增輸入方案【筆順五碼】
 
 <a name="0.9.3"></a>
+
 ## 鼠鬚管 0.9.3 (2012-04-04)
 
   * 支持非US鍵盤佈局
@@ -959,17 +999,20 @@ date: 2026-01-13 19:00:00
   * 新增【智能ABC雙拼】、【速記打字法】
 
 <a name="0.9.2.1"></a>
+
 ## 鼠鬚管 0.9.2.1
 
   * 消除對第三方庫的依賴（用戶安裝失敗）
   * 新增安裝步驟：預編譯輸入方案，提升首次啓動速度
 
 <a name="0.9.1"></a>
+
 ## 鼠鬚管 0.9.1
 
   * 新增備選輸入方案【注音】、【地球拼音】
 
 <a name="0.9"></a>
+
 ## 鼠鬚管 0.9
 
   * 初試鋒芒

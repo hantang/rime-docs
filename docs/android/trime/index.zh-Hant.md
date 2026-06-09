@@ -82,10 +82,13 @@ git submodule update --init --recursive
 #### 2. 編譯除錯版本:
 
 ```sh
+
 # On Linux or macOS
+
 make debug
 
 # On Windows
+
 .\gradlew assembleDebug
 ```
 
@@ -103,10 +106,13 @@ storeFile=myStoreFileLocation
 然後執行：
 
 ```sh
+
 # On Linux or macOS
+
 make release
 
 # On Windows
+
 .\gradlew assembleRelease
 ```
 

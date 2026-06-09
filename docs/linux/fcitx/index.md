@@ -9,7 +9,6 @@ RIME(中州韻輸入法引擎) is _mainly_ a Traditional Chinese input method en
 
 project: http://rime.im/
 
-
 ## Build From Source:
 
 ### special notice of RIME dependency:
@@ -41,8 +40,7 @@ Generally it means, distros that are a little old like openSUSE 11.4 or Ubuntu 1
 * `hicolor-icon-theme`
   optional, for directory ownership.
 
-#### openSUSE: 
-
+#### openSUSE:
 
 ```shell
 sudo zypper ar -f http://download.opensuse.org/repositories/M17N/openSUSE_12.2/ M17N
