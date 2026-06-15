@@ -20,7 +20,7 @@ title: 实现 Shift-L 按下时切换输入法
 
 ###  2 将你用的schema的输入法改为只有中文一种状态，如 wubi_pinyin.schema.yaml
 
-```
+```yaml
 switches:
   - name: ascii_mode
     reset: 0
@@ -36,15 +36,12 @@ switches:
 
 ###  或者以打补丁的方式wubi_pinyin.schema.custom.yaml
 
-```
+```yaml
 patch:
 
 # switches:
-
 #   - name: ascii_mode
-
 #     reset: 0
-
 #     states: [ 中文, 西文 ]
 
 # wubi_pinyin.schema.yaml. 里有个reset: 奖0 改成1 就变成默认英文输入状态
@@ -52,7 +49,6 @@ patch:
 # 設輸入方案裏 {name: ascii_mode} 在 switches: 列表中爲第一項，即下標 0
 
 # 默认中文状态
-
   switches/@0/reset: 0
   # 默认英文状态
   # switches/@0/reset: 1
@@ -60,12 +56,11 @@ patch:
   # 只保留中文输入法，避免无意间切到英文输入状态，因为我使用系统的英文输入法，还不是rime的
   # states: [ 中文, 西文 ]
   switches/@0/states:  [ 中文]
-
 ```
 
 ###  default.custom.yaml中
 
-```
+```yaml
 patch:
   ascii_composer/switch_key:
     # Shift_L: clear
@@ -78,12 +73,11 @@ patch:
     # - { when: composing, accept: Control+g,  send: Escape}
     - { when: always, accept: Control+g,  send: Escape}
     - { when: always, accept: F17,  send: Escape}
-
 ```
 
 ###  squirrel.custom.yaml
 
- ```
+```yaml
 patch:
   us_keyboard_layout: false
   # 修改默认输入法的状态
@@ -105,20 +99,19 @@ patch:
     org.gnu.Emacs:
         ascii_mode: false
         no_inline: true
-
 ```
 
 ###  需要 配合 https://github.com/tekezo/Karabiner-Elements
 
-~/.config/karabiner/karabiner.json 示例
+`~/.config/karabiner/karabiner.json` 示例
 
-里面写了4个规则,
-英文状态切换left_shift 激活rime
-中文状态下left_shift 激活系统英文
-英文状态下emacs里 按left_shift ,激活rime ,同时执行shell来切换成insert-state下 “open -g hammerspoon://emacs_evil_insert_state”
-中文状态下emacs里按下ctrl-g 则触发ctrl-g按键的时候 激活英文输入法，（我在emacs下ctrl-g会回到evil-normal-state)
+里面写了4个规则：
+- 英文状态切换left_shift 激活rime
+- 中文状态下left_shift 激活系统英文
+- 英文状态下emacs里 按left_shift ,激活rime ,同时执行shell来切换成insert-state下 “open -g hammerspoon://emacs_evil_insert_state”
+- 中文状态下emacs里按下ctrl-g 则触发ctrl-g按键的时候 激活英文输入法，（我在emacs下ctrl-g会回到evil-normal-state）
 
-```
+```json
 {
    "global" : {
       "show_in_menu_bar" : true,
@@ -328,12 +321,11 @@ patch:
       }
    ]
 }
-
 ```
 
 ### emacs 配置
 
-```
+```text
 (global-set-key (kbd "<f17>") 'evil-normal-state) ;mac karabiner用来控制输入法
 (define-key isearch-mode-map (kbd "<f17>") 'evil-normal-state) ;详见isearch-pre-command-hook
 (global-set-key (kbd "<f18>") 'evil-insert-state) ;mac karabiner用来控制输入法

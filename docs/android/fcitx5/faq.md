@@ -199,7 +199,7 @@ Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%
 
 首先确保您已经安装了“Google”及“Google 语音识别和语音合成”这两个应用，可以在 Android 系统设置中的 “应用 - 查看全部 XX 个应用” 页面，点击右上角的搜索按钮并输入“Google”来确认：
 
-<center><img src="/assets/install-google-tts.png" width="400"/></center>
+<center><img src="./assets/install-google-tts.png" width="400"/></center>
 
 !!! note
 
@@ -211,4 +211,4 @@ Fcitx 5 支持使用第三方[词库](https://wiki.archlinux.org/title/Fcitx5_(%
 
 此外，您还需要在 Android 系统设置中的“系统 - 语言和输入法 - 屏幕键盘”页面，启用“Google 语音输入”：
 
-<center><img src="/assets/enable-google-tts.png" width="400"/></center>
+<center><img src="./assets/enable-google-tts.png" width="400"/></center>

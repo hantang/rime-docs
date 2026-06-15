@@ -33,16 +33,21 @@ title: squirrel.yaml 配置指南
 
   * candidate_list_layout: `stack`/`linear`，候選詞堆疊或平鋪顯示
   * text_orientation: `horizontal`/`vertical`，文字橫排或縱排
-    || stack | linear |
+
+    |  | stack | linear |
     |:---:|:---:|:---:|
     | **horizontal** | 智能ABC | 流行輸入法 |
     | **vertical** | Rime獨有 | Rime獨有 |
+
   * inline_preedit: `true`/`false` 是否行內編輯
+
   * inline_candidate: `true`/`false` 是否行內顯示第一候選
+
     |  | inline_candidate: true | false |
     |:---:|:---:|:---:|
     | **inline_preedit: true** | 第一候選及未成字編碼皆行內顯示，候選框沒有編輯區 | 輸入碼行內顯示，候選框沒有編輯區 |
     | **false** | 第一候選行內顯示，候選框有編輯區 | 行內顯示空白佔位符，候選框有編輯區 |
+
   * memorize_size: `true`/`false` 一次輸入過程中，候選框觸及屏幕邊緣時**是否**粘住不再縮回，避免來回跳動
   * mutual_exclusive: `true`/`false` 候選區各背景色**是否**各自獨立，帶透明度的情況下互不浸染
   * translucency: `true`/`false` 是否添加毛玻璃背景（需配合透明背景色才得看到）

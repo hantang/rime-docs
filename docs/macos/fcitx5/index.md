@@ -5,6 +5,8 @@ source2: fcitx5-macos/README.zh-CN.md
 
 # Fcitx5 macOS
 
+[**详细文档**](https://fcitx-contrib.github.io/docs/)
+
 [Fcitx5](https://github.com/fcitx/fcitx5) input method framework ported to macOS.
 
 Public beta: please download [installer](https://github.com/fcitx-contrib/fcitx5-macos-installer).
