@@ -14,7 +14,9 @@ license: GPLv3-or-later
 
 ## installation
 
-Refer to https://github.com/rime/home/wiki/RimeWithIBus
+Refer to [RimeWithIBus](../../wiki/RimeWithIBus.md)
+
+<!--https://github.com/rime/home/wiki/RimeWithIBus-->
 
 build dependencies:
 

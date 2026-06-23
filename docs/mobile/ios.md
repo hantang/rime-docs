@@ -1,3 +1,9 @@
+---
+icon: material/apple-ios
+tags:
+  - apple-ios
+---
+
 # iOS RIME输入法
 
 ## 仓输入法（Hamster）文档

@@ -1,3 +1,7 @@
+---
+icon: material/list-box
+---
+
 # RIME LIST
 
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/hantang/rime-list)

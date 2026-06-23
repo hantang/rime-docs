@@ -18,11 +18,11 @@ extra_javascript = [
 
 nav = [
   { "主页" = [
-    "index.md",
-    "list.md",
+    { "首页" = "index.md" },
+    { "资料" = "list.md" },
   ] },
   { "文档" = [
-    { "安装" = [
+    { "§ 安装" = [
       "blog/download/index.md",
       # "wiki/Downloads.md",
       "blog/docs/index.md",
@@ -34,21 +34,21 @@ nav = [
         "blog/release/squirrel.md",
       ] },
     ] },
-    { "介绍" = [
+    { "§ 介绍" = [
       "wiki/HOME.md",
       "wiki/Introduction.md",
       "wiki/FAQ.md",
       "wiki/MoodCollection.md",
       "wiki/UserQuotes.md",
     ] },
-    { "基础" = [
+    { "§ 基础" = [
       "wiki/GettingStarted.md",
       "wiki/UserGuide.md",
       "wiki/RimeWithTheDesign.md",
       "wiki/RimeWithSchemata.md",
       "wiki/CustomizationGuide.md",
     ] },
-    { "进阶" = [
+    { "§ 进阶" = [
       "wiki/Configuration.md",
       "wiki/UserData.md",
       "wiki/SharedData.md",
@@ -61,12 +61,14 @@ nav = [
     ] },
   ] },
   { "Windows" = [
-    "windows/index.md",
-    "windows/INSTALL.md",
-    "windows/CHANGELOG.md",
-    "wiki/RimeWithWeasel.md",
-    "wiki/WeaselReleaseManual.md",
-    { "小狼毫" = [
+    { "§ 基础知识" = [
+      "windows/index.md",
+      "windows/INSTALL.md",
+      "windows/CHANGELOG.md",
+      "wiki/RimeWithWeasel.md",
+      "wiki/WeaselReleaseManual.md",
+    ] },
+    { "§ 小狼毫" = [
       "windows/weasel/Home.md",
       "windows/weasel/Installation.md",
       "windows/weasel/Customization.md",
@@ -79,13 +81,15 @@ nav = [
     ] },
   ] },
   { "macOS" = [
-    "macos/index.md",
-    "macos/INSTALL.md",
-    "macos/CHANGELOG.md",
-    "collect/SquirrelGuide.md",
-    "wiki/RimeWithSquirrel.md",
-    "wiki/SquirrelReleaseManual.md",
-    { "鼠须管" = [
+    { "§ 基础知识" = [
+      "macos/index.md",
+      "macos/INSTALL.md",
+      "macos/CHANGELOG.md",
+      "collect/SquirrelGuide.md",
+      "wiki/RimeWithSquirrel.md",
+      "wiki/SquirrelReleaseManual.md",
+    ] },
+    { "§ 鼠须管" = [
       "macos/squirrel/Home.md",
       "macos/squirrel/Customization.md",
       "macos/squirrel/FindFontname.md",
@@ -94,52 +98,25 @@ nav = [
       "macos/squirrel/SwitchInputMethod.md",
       "macos/squirrel/SwitchLanguage.md",
     ] },
-    { "Fcitx5版" = [
+    { "§ Fcitx5版" = [
       "macos/fcitx5/index.md",
       "macos/fcitx5/install.md",
     ] },
   ] },
   { "Linux" = [
-    { "中州韵（IBus版）" = [
-      "linux/index.md",
-      "linux/CHANGELOG.md",
+    { "§ 中州韵（IBus版）" = [
+      "linux/ibus/index.md",
+      "linux/ibus/CHANGELOG.md",
       "wiki/RimeWithIBus.md",
     ] },
-    { "Fcitx版" = [
-      "linux/fcitx5/index.md",
-      "linux/fcitx/index.md",
+    { "§ 中州韵（Fcitx版）" = [
+      {"Fcitx5" = "linux/fcitx5/index.md"},
+      {"Fcitx旧版" = "linux/fcitx/index.md"}
     ] },
   ] },
-  { "Android" = [
-    { "Fcitx5版" = [
-      "android/fcitx5/index.md",
-      "android/fcitx5/installation.md",
-      "android/fcitx5/faq.md",
-      "android/fcitx5/privacy.md",
-      "android/fcitx5/readme.md",
-    ] },
-    { "Trime（同文）" = [
-      "android/trime/index.md",
-      "android/trime/CHANGELOG.md",
-      "android/trime/Home.md",
-      "android/trime/Customization.md",
-      "android/trime/ConfigCheatsheet.md",
-      "android/trime/Frontends.md",
-      "android/trime/Materials.md",
-      "android/trime/UserGuide.md",
-      "android/trime/Tricks.md",
-      "android/trime/Tips1.md",
-      "android/trime/Tips2.md",
-      "android/trime/Case1.md",
-      "android/trime/Case2.md",
-      "android/trime/Case3.md",
-      "android/trime/Case4.md",
-      "android/trime/CONTRIBUTING.md",
-      "android/trime/CODE_OF_CONDUCT.md",
-    ] },
-  ] },
-  { "iOS" = [
-    "ios/index.md"
+  { "移动端" = [
+    { "Android" = "mobile/android.md"},
+    { "iOS" = "mobile/ios.md"}
   ] },
   { "更多" = [
     "wiki/ComboPinyin.md",
@@ -253,3 +230,5 @@ custom_checkbox = true
 [project.markdown_extensions.pymdownx.tilde]
 [project.markdown_extensions.zensical.extensions.macros]
 module_name = "macros"
+[project.markdown_extensions.gfm_admonition]
+# https://github.com/zensical/docs/issues/125

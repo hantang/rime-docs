@@ -6,7 +6,7 @@ icon: material/keyboard
 
 本站汇集RIME相关工具、输入法方案、配置和词库等，以及文档备份。
 
-!!! INFO
+!!! info "本站说明"
 
     本站展示的文档，来源RIME各平台发行版文档和博客资料，对其中等标题格式、目录、图片链接以及Markdown解析错误问题进行适当修正，
     另外对文章简单进行了适当分组归档（仅供参考，部分文档可能原文已更新）。
@@ -14,7 +14,7 @@ icon: material/keyboard
     由于部分文档年代较久，维护欠佳，存在格式凌乱、笔误、错字、重复引用、链接过时等问题，目前仍留有原样；
     待时机合适，当发布新版的简明文档，以飨用户。
 
-## RIME 网站
+## RIME 资料
 
 - GitHub仓库: [:simple-github: rime](https://github.com/rime/)
 - 官网：[:material-link: RIME | 中州韻輸入法引擎](https://rime.im/)
