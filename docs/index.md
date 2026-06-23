@@ -47,7 +47,8 @@ icon: material/keyboard
 | | | | |
 | :fontawesome-brands-apple: **iOS** | | | |
 | | `Hamster` 仓 | [:simple-github: imfuxiao/Hamster][gh-ham] <br> [:simple-appstore: 仓输入法][ap-ham] | ![][rel-ham] |
-| | `iRime` 输入法 | [:simple-appstore: iRime 输入法 （收费）][ap-irime] | |
+| | `Hamster` 元书| [:simple-appstore: 元书输入法][app-ys] |  |
+| | `iRime` | [:simple-appstore: iRime 输入法 （收费）][ap-irime] | |
 
 [gh-ibus-rime]: https://github.com/rime/ibus-rime
 [gh-fcitx5-rime]: https://github.com/fcitx/fcitx5-rime
@@ -65,6 +66,7 @@ icon: material/keyboard
 [gh-ham]: https://github.com/imfuxiao/Hamster
 [ap-ham]: https://apps.apple.com/cn/app/仓输入法/id6446617683
 [ap-irime]: https://apps.apple.com/cn/app/irime输入法-小鹤双拼五笔郑码输入法/id1142623977
+[app-ys]: https://apps.apple.com/cn/app/元书输入法/id6744464701
 [gh-xime]: https://github.com/ximeiorg/Xime
 [gh-yuyanime]: https://github.com/gurecn/YuyanIme
 [gh-moqi-im-android]: https://github.com/gaboolic/moqi-im-android
@@ -101,8 +103,8 @@ icon: material/keyboard
 | ![17724][gh_036_stars]<br>![1099][gh_036_forks] | ![gh_036_commit] | [iDvel/rime-ice][gh_036] | 雾凇拼音（简体词库）<br> <https//dvel.me/posts/rime-ice/> |
 | ![4685][gh_041_stars]<br>![309][gh_041_forks] | ![gh_041_commit] | [Mintimate/oh-my-rime][gh_041] | 薄荷输入法 / Mint Input <br> <https//www.mintimate.cc> |
 | ![3696][gh_030_stars]<br>![140][gh_030_forks] | ![gh_030_commit] | [amzxyz/rime-wanxiang][gh_030] | 万象拼音 <br> <https//amzxyz.github.io/> |
-| ![3507][gh_045_stars]<br>![298][gh_045_forks] | ![gh_045_commit] | [ssnhd/rime][gh_045] | 鼠须管（Squirrel）朙月拼音、小鹤双拼、自然码双拼配置 |
 | ![3365][gh_034_stars]<br>![153][gh_034_forks] | ![gh_034_commit] | [gaboolic/rime-frost][gh_034] | 白霜拼音 |
+| ![3507][gh_045_stars]<br>![298][gh_045_forks] | ![gh_045_commit] | [ssnhd/rime][gh_045] | 鼠须管（Squirrel）朙月拼音、小鹤双拼、自然码双拼配置 |
 | ![1992][gh_033_stars]<br>![137][gh_033_forks] | ![gh_033_commit] | [fkxxyz/rime-cloverpinyin][gh_033] | 四叶草拼音输入方案<br> <https//www.fkxxyz.com/d/cloverpinyin/> |
 | ![1565][gh_039_stars]<br>![312][gh_039_forks] | ![gh_039_commit] | [KyleBing/rime-wubi86-jidian][gh_039] | 86版极点五笔的Rime配置方案 |
 | ![1521][gh_046_stars]<br>![149][gh_046_forks] | ![gh_046_commit] | [wongdean/rime-settings][gh_046] | 鼠须管输入法傻瓜式配置指南 |

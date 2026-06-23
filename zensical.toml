@@ -139,22 +139,8 @@ nav = [
     ] },
   ] },
   { "iOS" = [
-    { "Hamster（仓）" = [
-      "ios/hamster/index.md",
-      "ios/hamster/Home.md",
-      "ios/hamster/ConfigCheatsheet.md",
-      "ios/hamster/CustomKeyboard.md",
-      "ios/hamster/CustomLayout.md",
-      "ios/hamster/ColorSchemes.md",
-      "ios/hamster/Clipboard.md",
-      "ios/hamster/iCloud.md",
-      "ios/hamster/ImportRimeIce.md",
-      "ios/hamster/SwitchChinese.md",
-      "ios/hamster/Sync.md",
-      "ios/hamster/Develop.md",
-    ] },
+    "ios/index.md"
   ] },
-
   { "更多" = [
     "wiki/ComboPinyin.md",
     "collect/OldCantonese.md",

@@ -30,3 +30,6 @@
 
 - [:link: RIME | 中州韻輸入法引擎](https://rime.im/)
 - [:link: hantang/rime-list](https://github.com/hantang/rime-list)
+
+- https://github.com/imfuxiao/Hamster3Document
+- 
