@@ -20,6 +20,9 @@ nav = [
   { "主页" = [
     { "首页" = "index.md" },
     { "资料" = "list.md" },
+    { "简明教程" =  [
+      "tutorial/installation.md",
+   ] },
   ] },
   { "文档" = [
     { "§ 安装" = [
@@ -121,7 +124,9 @@ nav = [
   { "更多" = [
     "wiki/ComboPinyin.md",
     "collect/OldCantonese.md",
-    "appendix/lotem.md",
+    "appendix/2010.md",
+    "appendix/2013.md",
+    "appendix/2014.md",
   ] },
 ]
 

@@ -76,16 +76,15 @@
 於是整個工程又可分爲若干子項目：
 
 * librime－輸入法引擎
-
 * ibus-rime－Linux發行版
-
 * weasel／小狼毫－Windows發行版
-
 * squirrel／鼠鬚管－Mac發行版
-
 * plum／東風破－配置管理器及輸入方案倉庫
-
 * essay／八股文－預設詞典及語言模型
+
+<!-- plume／大白雲－Web大輸入 -->
+<!-- brise／東風破－輸入方案倉庫 -->
+<!-- http://code.google.com/p/rimeime/wiki/Introduction -->
 
 ### 開發計劃
 

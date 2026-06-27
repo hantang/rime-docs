@@ -83,13 +83,13 @@ https://www.boost.org/doc/libs/1_49_0/libs/regex/doc/html/boost_regex/syntax/per
 除程序文件以外，Rime 還包括多種數據文件。
 這些數據文件存在於以下位置：
 
-[共享資料夾](https://github.com/rime/home/wiki/SharedData)
+[共享資料夾](./SharedData.md)
 
 * 【中州韻】  `/usr/share/rime-data/`
 * 【小狼毫】  `安裝目錄\data`
 * 【鼠鬚管】  `/Library/Input Methods/Squirrel.app/Contents/SharedSupport/`
 
-[用戶資料夾](https://github.com/rime/home/wiki/UserData)
+[用戶資料夾](./UserData.md)
 
 * 【中州韻】  `~/.config/ibus/rime/`
   * 0.9.1 以下版本爲 `~/.ibus/rime/`；
@@ -97,13 +97,13 @@ https://www.boost.org/doc/libs/1_49_0/libs/regex/doc/html/boost_regex/syntax/per
 * 【小狼毫】  `%APPDATA%\Rime`
 * 【鼠鬚管】  `~/Library/Rime/`
 
-[共享資料夾](https://github.com/rime/home/wiki/SharedData) 包含預設輸入方案的源文件。
+[共享資料夾](./SharedData.md) 包含預設輸入方案的源文件。
 這些文件屬於 Rime 所發行軟件的一部份，在訪問權限控制較嚴格的系統上對用戶是只讀的，因此謝絕軟件版本更新以外的任何修改——
 一旦用戶修改這裏的文件，很可能影響後續的軟件升級或在升級時丟失數據。
 
 在「[部署](./CustomizationGuide.md#重新佈署的操作方法)」操作時，將用到這裏的輸入方案源文件、並結合用戶定製的內容來編譯預設輸入方案。
 
-[用戶資料夾](https://github.com/rime/home/wiki/UserData) 則包含爲用戶準備的內容，如：
+[用戶資料夾](./UserData.md) 則包含爲用戶準備的內容，如：
 
 * 〔全局設定〕 `default.yaml`
 * 〔發行版設定〕 `weasel.yaml`
@@ -544,13 +544,13 @@ patch:
 
 `patch` 定義了一組「補靪」，以源文件中的設定爲底本，寫入新的設定項、或以新的設定值取代舊有的值。
 
-以下這些例子，另載於一篇[[《定製指南》|CustomizationGuide]]，其中所介紹的知識和技巧，覆蓋了不少本文未討論的細節，想必對於創作新的輸入方案會有啓發。
+以下這些例子，另載於一篇[《定製指南》](./CustomizationGuide.md)，其中所介紹的知識和技巧，覆蓋了不少本文未討論的細節，想必對於創作新的輸入方案會有啓發。
 
-* [[一例、定製每頁候選數|CustomizationGuide#一例定製每頁候選數]]
-* [[一例、定製標點符號|CustomizationGuide#一例定製標點符號]]
-* [[一例、定製簡化字輸出|CustomizationGuide#一例定製簡化字輸出]]
-* [[一例、默認英文輸出|CustomizationGuide#一例默認英文輸出]]
-* [[一例、定製方案選單|CustomizationGuide#一例定製方案選單]]
+* [一例、定製每頁候選數](./CustomizationGuide.md#一例定製每頁候選數)
+* [一例、定製標點符號](./CustomizationGuide.md#一例定製標點符號)
+* [一例、定製簡化字輸出](./CustomizationGuide.md#一例定製簡化字輸出)
+* [一例、默認英文輸出](./CustomizationGuide.md#一例默認英文輸出)
+* [一例、定製方案選單](./CustomizationGuide.md#一例定製方案選單)
 
 重要！創作了新的輸入方案，最後一步就是在「方案選單」裏啓用他。
 
@@ -573,7 +573,7 @@ patch:
 
 給力嗎？
 
-[[★這裏|SpellingAlgebra]] 有介紹拼寫運算的專題文章。
+[★這裏](./SpellingAlgebra.md) 有介紹拼寫運算的專題文章。
 
 ## 綜合演練
 
@@ -616,7 +616,7 @@ schema:
 
 縮進表示設定項所屬的層次。在他處引用到此文檔中的設定項，可分別以 `schema/schema_id`, `schema/name`, `schema/version` 來指稱。
 
-我現在把寫好的方案文檔命名爲 `hello.schema.yaml`，丟進[用戶資料夾](https://github.com/rime/home/wiki/UserData)，只要這一個文件就妥了；
+我現在把寫好的方案文檔命名爲 `hello.schema.yaml`，丟進[用戶資料夾](./UserData.md)，只要這一個文件就妥了；
 
 然後，啓用他。有些版本會有「方案選單設定」這個介面，在那裏勾選【大家好】這個方案即可。若無有設定介面，則按照上文《定製方案選單》一節來做。
 
