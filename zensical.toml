@@ -8,21 +8,32 @@ copyright = "Copyleft &copy; 2024-2026"
 repo_url = "https://github.com/hantang/rime-list"
 repo_name = "RIME-LIST"
 
-# extra_css = []
 extra_javascript = [
   "https://cdn.jsdelivr.net/npm/tablesort@5.7.1/src/tablesort.min.js",
   "https://cdn.jsdelivr.net/npm/tablesort@5.7.1/dist/sorts/tablesort.date.min.js",
   "https://cdn.jsdelivr.net/npm/tablesort@5.7.1/dist/sorts/tablesort.number.min.js",
   "static/js/tablesort.js",
+
+  # "https://unpkg.com/katex@0/dist/katex.min.js",
+  # "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js",
+  "https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.js",
+  "https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/contrib/auto-render.min.js",
+  "static/js/katex.js",
+]
+
+extra_css = [
+  # "https://unpkg.com/katex@0/dist/katex.min.css"
+  "https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css",
+
 ]
 
 nav = [
   { "主页" = [
     { "首页" = "index.md" },
     { "资料" = "list.md" },
-    { "简明教程" =  [
+    { "简明教程" = [
       "tutorial/installation.md",
-   ] },
+    ] },
   ] },
   { "文档" = [
     { "§ 安装" = [
@@ -32,10 +43,6 @@ nav = [
       "blog/i-rime-with-fool/index.md",
       "wiki/Rime-in-Emacs.md",
       "wiki/RimeWithTheCode.md",
-      { "版本" = [
-        "blog/release/weasel.md",
-        "blog/release/squirrel.md",
-      ] },
     ] },
     { "§ 介绍" = [
       "wiki/HOME.md",
@@ -64,10 +71,9 @@ nav = [
     ] },
   ] },
   { "Windows" = [
+    "windows/index.md",
+    "blog/release/weasel.md",
     { "§ 基础知识" = [
-      "windows/index.md",
-      "windows/INSTALL.md",
-      "windows/CHANGELOG.md",
       "wiki/RimeWithWeasel.md",
       "wiki/WeaselReleaseManual.md",
     ] },
@@ -84,10 +90,9 @@ nav = [
     ] },
   ] },
   { "macOS" = [
+    "macos/index.md",
+    "blog/release/squirrel.md",
     { "§ 基础知识" = [
-      "macos/index.md",
-      "macos/INSTALL.md",
-      "macos/CHANGELOG.md",
       "collect/SquirrelGuide.md",
       "wiki/RimeWithSquirrel.md",
       "wiki/SquirrelReleaseManual.md",
@@ -113,13 +118,13 @@ nav = [
       "wiki/RimeWithIBus.md",
     ] },
     { "§ 中州韵（Fcitx版）" = [
-      {"Fcitx5" = "linux/fcitx5/index.md"},
-      {"Fcitx旧版" = "linux/fcitx/index.md"}
+      { "Fcitx5" = "linux/fcitx5/index.md" },
+      { "Fcitx旧版" = "linux/fcitx/index.md" },
     ] },
   ] },
   { "移动端" = [
-    { "Android" = "mobile/android.md"},
-    { "iOS" = "mobile/ios.md"}
+    { "Android" = "mobile/android.md" },
+    { "iOS" = "mobile/ios.md" },
   ] },
   { "更多" = [
     "wiki/ComboPinyin.md",
@@ -128,6 +133,7 @@ nav = [
     "appendix/2013.md",
     "appendix/2014.md",
   ] },
+  { "🚀 主题" = "https://hantang.github.io/rime-theme" },
 ]
 
 [project.theme]

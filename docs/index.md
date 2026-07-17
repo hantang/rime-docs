@@ -83,13 +83,17 @@ icon: material/keyboard
 ## 配置工具
 
 - App版：
-  - 【多平台】 [:simple-github: 中州韵助手（重构版）](https://github.com/yanhuacuo/rimetool)
-  - 【Windows】 [:simple-github: 小狼毫 Weasel的基本配置工具](https://github.com/qzly/RimeControl)
-  - 【macOS】 [:simple-github: Squirrel Theme Simulator](https://github.com/LEOYoon-Tsaw/Squirrel-Designer)
-  - 【macOS】 [:simple-github: Squirrel Configuration Tool (SCT)](https://github.com/neolee/sct)
-- 【Web】[:simple-github: 小狼毫主题编辑器](https://github.com/owlzou/weasel-theme-editor)
-- 配色（皮肤）等调试：
+    - 【多平台】 [:simple-github: 中州韵助手（重构版）](https://github.com/yanhuacuo/rimetool)
+    - 【Windows】 [:simple-github: 小狼毫 Weasel的基本配置工具](https://github.com/qzly/RimeControl)
+    - 【macOS】 [:simple-github: Squirrel Theme Simulator](https://github.com/LEOYoon-Tsaw/Squirrel-Designer)
+    - 【macOS】 [:simple-github: Squirrel Configuration Tool (SCT)](https://github.com/neolee/sct)
+- 主题（配色、皮肤）等调试：
     - RIME西米
+      [:material-link: RimeSeeMe](https://fxliang.github.io/RimeSeeMe/)
+      [:material-link: Rime-See-Me](https://nb5p.github.io/Rime-See-Me/)
+      [:material-link: Rime-See-Me-squirrel](https://gjrobert.github.io/Rime-See-Me-squirrel/)
+    - [:simple-github: 小狼毫主题编辑器](https://github.com/owlzou/weasel-theme-editor)
+      [:material-link: weasel-theme-editor](https://owlzou.github.io/weasel-theme-editor/)
     - [:simple-github: 倉輸入法·工具](https://lost-melody.github.io/hamster-tools/)
     - [:simple-github: rime-soak 「润笔」](https://pdog18.github.io/rime-soak)
 
