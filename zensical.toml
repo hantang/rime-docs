@@ -239,7 +239,7 @@ combine_header_slug = true
 [project.markdown_extensions.pymdownx.tasklist]
 custom_checkbox = true
 [project.markdown_extensions.pymdownx.tilde]
-[project.markdown_extensions.zensical.extensions.macros]
-module_name = "macros"
+# [project.markdown_extensions.zensical.extensions.macros]
+# module_name = "macros"
 [project.markdown_extensions.gfm_admonition]
 # https://github.com/zensical/docs/issues/125

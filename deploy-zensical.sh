@@ -17,6 +17,6 @@ if [[ -f $readme_file ]]; then
 fi
 
 echo "Build sites"
-zensical build >/dev/null 2>&1
+zensical build # >/dev/null 2>&1
 
 echo Done
